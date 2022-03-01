@@ -1,0 +1,12 @@
+build/*
+**.o* 
+**.baknotincludedingit
+*.log
+.vs/
+x64/
+.idea/
+*.ncu-rep
+*.nsys_output.qdrep
+.vscode/
+thrust/
+*.filters

@@ -1,0 +1,773 @@
+#re -pl fsm '([A-z]:\\)([^\\/:*?"<>|]*\\)*[^\\/:*?"<>|]*(\\)?[ \t\r\n\f]?'
+0  ->  0 "\x00"; # start
+0  ->  0 "\x01"; # start
+0  ->  0 "\x02"; # start
+0  ->  0 "\x03"; # start
+0  ->  0 "\x04"; # start
+0  ->  0 "\x05"; # start
+0  ->  0 "\x06"; # start
+0  ->  0 "\x07"; # start
+0  ->  0 "\x08"; # start
+0  ->  0 "\t"; # start
+0  ->  0 "\n"; # start
+0  ->  0 "\v"; # start
+0  ->  0 "\f"; # start
+0  ->  0 "\r"; # start
+0  ->  0 "\x0e"; # start
+0  ->  0 "\x0f"; # start
+0  ->  0 "\x10"; # start
+0  ->  0 "\x11"; # start
+0  ->  0 "\x12"; # start
+0  ->  0 "\x13"; # start
+0  ->  0 "\x14"; # start
+0  ->  0 "\x15"; # start
+0  ->  0 "\x16"; # start
+0  ->  0 "\x17"; # start
+0  ->  0 "\x18"; # start
+0  ->  0 "\x19"; # start
+0  ->  0 "\x1a"; # start
+0  ->  0 "\x1b"; # start
+0  ->  0 "\x1c"; # start
+0  ->  0 "\x1d"; # start
+0  ->  0 "\x1e"; # start
+0  ->  0 "\x1f"; # start
+0  ->  0 " "; # start
+0  ->  0 "!"; # start
+0  ->  0 "\""; # start
+0  ->  0 "#"; # start
+0  ->  0 "$"; # start
+0  ->  0 "%"; # start
+0  ->  0 "&"; # start
+0  ->  0 "'"; # start
+0  ->  0 "("; # start
+0  ->  0 ")"; # start
+0  ->  0 "*"; # start
+0  ->  0 "+"; # start
+0  ->  0 ","; # start
+0  ->  0 "-"; # start
+0  ->  0 "."; # start
+0  ->  0 "/"; # start
+0  ->  0 "0"; # start
+0  ->  0 "1"; # start
+0  ->  0 "2"; # start
+0  ->  0 "3"; # start
+0  ->  0 "4"; # start
+0  ->  0 "5"; # start
+0  ->  0 "6"; # start
+0  ->  0 "7"; # start
+0  ->  0 "8"; # start
+0  ->  0 "9"; # start
+0  ->  0 ":"; # start
+0  ->  0 ";"; # start
+0  ->  0 "<"; # start
+0  ->  0 "="; # start
+0  ->  0 ">"; # start
+0  ->  0 "?"; # start
+0  ->  0 "@"; # start
+0  ->  1 "A"; # e.g. "a"
+0  ->  1 "B"; # e.g. "a"
+0  ->  1 "C"; # e.g. "a"
+0  ->  1 "D"; # e.g. "a"
+0  ->  1 "E"; # e.g. "a"
+0  ->  1 "F"; # e.g. "a"
+0  ->  1 "G"; # e.g. "a"
+0  ->  1 "H"; # e.g. "a"
+0  ->  1 "I"; # e.g. "a"
+0  ->  1 "J"; # e.g. "a"
+0  ->  1 "K"; # e.g. "a"
+0  ->  1 "L"; # e.g. "a"
+0  ->  1 "M"; # e.g. "a"
+0  ->  1 "N"; # e.g. "a"
+0  ->  1 "O"; # e.g. "a"
+0  ->  1 "P"; # e.g. "a"
+0  ->  1 "Q"; # e.g. "a"
+0  ->  1 "R"; # e.g. "a"
+0  ->  1 "S"; # e.g. "a"
+0  ->  1 "T"; # e.g. "a"
+0  ->  1 "U"; # e.g. "a"
+0  ->  1 "V"; # e.g. "a"
+0  ->  1 "W"; # e.g. "a"
+0  ->  1 "X"; # e.g. "a"
+0  ->  1 "Y"; # e.g. "a"
+0  ->  1 "Z"; # e.g. "a"
+0  ->  1 "["; # e.g. "a"
+0  ->  1 "\\"; # e.g. "a"
+0  ->  1 "]"; # e.g. "a"
+0  ->  1 "^"; # e.g. "a"
+0  ->  1 "_"; # e.g. "a"
+0  ->  1 "`"; # e.g. "a"
+0  ->  1 "a"; # e.g. "a"
+0  ->  1 "b"; # e.g. "a"
+0  ->  1 "c"; # e.g. "a"
+0  ->  1 "d"; # e.g. "a"
+0  ->  1 "e"; # e.g. "a"
+0  ->  1 "f"; # e.g. "a"
+0  ->  1 "g"; # e.g. "a"
+0  ->  1 "h"; # e.g. "a"
+0  ->  1 "i"; # e.g. "a"
+0  ->  1 "j"; # e.g. "a"
+0  ->  1 "k"; # e.g. "a"
+0  ->  1 "l"; # e.g. "a"
+0  ->  1 "m"; # e.g. "a"
+0  ->  1 "n"; # e.g. "a"
+0  ->  1 "o"; # e.g. "a"
+0  ->  1 "p"; # e.g. "a"
+0  ->  1 "q"; # e.g. "a"
+0  ->  1 "r"; # e.g. "a"
+0  ->  1 "s"; # e.g. "a"
+0  ->  1 "t"; # e.g. "a"
+0  ->  1 "u"; # e.g. "a"
+0  ->  1 "v"; # e.g. "a"
+0  ->  1 "w"; # e.g. "a"
+0  ->  1 "x"; # e.g. "a"
+0  ->  1 "y"; # e.g. "a"
+0  ->  1 "z"; # e.g. "a"
+0  ->  0 "{"; # start
+0  ->  0 "|"; # start
+0  ->  0 "}"; # start
+0  ->  0 "~"; # start
+0  ->  0 "\x7f"; # start
+0  ->  0 "\x80"; # start
+0  ->  0 "\x81"; # start
+0  ->  0 "\x82"; # start
+0  ->  0 "\x83"; # start
+0  ->  0 "\x84"; # start
+0  ->  0 "\x85"; # start
+0  ->  0 "\x86"; # start
+0  ->  0 "\x87"; # start
+0  ->  0 "\x88"; # start
+0  ->  0 "\x89"; # start
+0  ->  0 "\x8a"; # start
+0  ->  0 "\x8b"; # start
+0  ->  0 "\x8c"; # start
+0  ->  0 "\x8d"; # start
+0  ->  0 "\x8e"; # start
+0  ->  0 "\x8f"; # start
+0  ->  0 "\x90"; # start
+0  ->  0 "\x91"; # start
+0  ->  0 "\x92"; # start
+0  ->  0 "\x93"; # start
+0  ->  0 "\x94"; # start
+0  ->  0 "\x95"; # start
+0  ->  0 "\x96"; # start
+0  ->  0 "\x97"; # start
+0  ->  0 "\x98"; # start
+0  ->  0 "\x99"; # start
+0  ->  0 "\x9a"; # start
+0  ->  0 "\x9b"; # start
+0  ->  0 "\x9c"; # start
+0  ->  0 "\x9d"; # start
+0  ->  0 "\x9e"; # start
+0  ->  0 "\x9f"; # start
+0  ->  0 "\xa0"; # start
+0  ->  0 "\xa1"; # start
+0  ->  0 "\xa2"; # start
+0  ->  0 "\xa3"; # start
+0  ->  0 "\xa4"; # start
+0  ->  0 "\xa5"; # start
+0  ->  0 "\xa6"; # start
+0  ->  0 "\xa7"; # start
+0  ->  0 "\xa8"; # start
+0  ->  0 "\xa9"; # start
+0  ->  0 "\xaa"; # start
+0  ->  0 "\xab"; # start
+0  ->  0 "\xac"; # start
+0  ->  0 "\xad"; # start
+0  ->  0 "\xae"; # start
+0  ->  0 "\xaf"; # start
+0  ->  0 "\xb0"; # start
+0  ->  0 "\xb1"; # start
+0  ->  0 "\xb2"; # start
+0  ->  0 "\xb3"; # start
+0  ->  0 "\xb4"; # start
+0  ->  0 "\xb5"; # start
+0  ->  0 "\xb6"; # start
+0  ->  0 "\xb7"; # start
+0  ->  0 "\xb8"; # start
+0  ->  0 "\xb9"; # start
+0  ->  0 "\xba"; # start
+0  ->  0 "\xbb"; # start
+0  ->  0 "\xbc"; # start
+0  ->  0 "\xbd"; # start
+0  ->  0 "\xbe"; # start
+0  ->  0 "\xbf"; # start
+0  ->  0 "\xc0"; # start
+0  ->  0 "\xc1"; # start
+0  ->  0 "\xc2"; # start
+0  ->  0 "\xc3"; # start
+0  ->  0 "\xc4"; # start
+0  ->  0 "\xc5"; # start
+0  ->  0 "\xc6"; # start
+0  ->  0 "\xc7"; # start
+0  ->  0 "\xc8"; # start
+0  ->  0 "\xc9"; # start
+0  ->  0 "\xca"; # start
+0  ->  0 "\xcb"; # start
+0  ->  0 "\xcc"; # start
+0  ->  0 "\xcd"; # start
+0  ->  0 "\xce"; # start
+0  ->  0 "\xcf"; # start
+0  ->  0 "\xd0"; # start
+0  ->  0 "\xd1"; # start
+0  ->  0 "\xd2"; # start
+0  ->  0 "\xd3"; # start
+0  ->  0 "\xd4"; # start
+0  ->  0 "\xd5"; # start
+0  ->  0 "\xd6"; # start
+0  ->  0 "\xd7"; # start
+0  ->  0 "\xd8"; # start
+0  ->  0 "\xd9"; # start
+0  ->  0 "\xda"; # start
+0  ->  0 "\xdb"; # start
+0  ->  0 "\xdc"; # start
+0  ->  0 "\xdd"; # start
+0  ->  0 "\xde"; # start
+0  ->  0 "\xdf"; # start
+0  ->  0 "\xe0"; # start
+0  ->  0 "\xe1"; # start
+0  ->  0 "\xe2"; # start
+0  ->  0 "\xe3"; # start
+0  ->  0 "\xe4"; # start
+0  ->  0 "\xe5"; # start
+0  ->  0 "\xe6"; # start
+0  ->  0 "\xe7"; # start
+0  ->  0 "\xe8"; # start
+0  ->  0 "\xe9"; # start
+0  ->  0 "\xea"; # start
+0  ->  0 "\xeb"; # start
+0  ->  0 "\xec"; # start
+0  ->  0 "\xed"; # start
+0  ->  0 "\xee"; # start
+0  ->  0 "\xef"; # start
+0  ->  0 "\xf0"; # start
+0  ->  0 "\xf1"; # start
+0  ->  0 "\xf2"; # start
+0  ->  0 "\xf3"; # start
+0  ->  0 "\xf4"; # start
+0  ->  0 "\xf5"; # start
+0  ->  0 "\xf6"; # start
+0  ->  0 "\xf7"; # start
+0  ->  0 "\xf8"; # start
+0  ->  0 "\xf9"; # start
+0  ->  0 "\xfa"; # start
+0  ->  0 "\xfb"; # start
+0  ->  0 "\xfc"; # start
+0  ->  0 "\xfd"; # start
+0  ->  0 "\xfe"; # start
+0  ->  0 "\xff"; # start
+1  ->  0 "\x00"; # start
+1  ->  0 "\x01"; # start
+1  ->  0 "\x02"; # start
+1  ->  0 "\x03"; # start
+1  ->  0 "\x04"; # start
+1  ->  0 "\x05"; # start
+1  ->  0 "\x06"; # start
+1  ->  0 "\x07"; # start
+1  ->  0 "\x08"; # start
+1  ->  0 "\t"; # start
+1  ->  0 "\n"; # start
+1  ->  0 "\v"; # start
+1  ->  0 "\f"; # start
+1  ->  0 "\r"; # start
+1  ->  0 "\x0e"; # start
+1  ->  0 "\x0f"; # start
+1  ->  0 "\x10"; # start
+1  ->  0 "\x11"; # start
+1  ->  0 "\x12"; # start
+1  ->  0 "\x13"; # start
+1  ->  0 "\x14"; # start
+1  ->  0 "\x15"; # start
+1  ->  0 "\x16"; # start
+1  ->  0 "\x17"; # start
+1  ->  0 "\x18"; # start
+1  ->  0 "\x19"; # start
+1  ->  0 "\x1a"; # start
+1  ->  0 "\x1b"; # start
+1  ->  0 "\x1c"; # start
+1  ->  0 "\x1d"; # start
+1  ->  0 "\x1e"; # start
+1  ->  0 "\x1f"; # start
+1  ->  0 " "; # start
+1  ->  0 "!"; # start
+1  ->  0 "\""; # start
+1  ->  0 "#"; # start
+1  ->  0 "$"; # start
+1  ->  0 "%"; # start
+1  ->  0 "&"; # start
+1  ->  0 "'"; # start
+1  ->  0 "("; # start
+1  ->  0 ")"; # start
+1  ->  0 "*"; # start
+1  ->  0 "+"; # start
+1  ->  0 ","; # start
+1  ->  0 "-"; # start
+1  ->  0 "."; # start
+1  ->  0 "/"; # start
+1  ->  0 "0"; # start
+1  ->  0 "1"; # start
+1  ->  0 "2"; # start
+1  ->  0 "3"; # start
+1  ->  0 "4"; # start
+1  ->  0 "5"; # start
+1  ->  0 "6"; # start
+1  ->  0 "7"; # start
+1  ->  0 "8"; # start
+1  ->  0 "9"; # start
+1  ->  2 ":"; # e.g. "a:"
+1  ->  0 ";"; # start
+1  ->  0 "<"; # start
+1  ->  0 "="; # start
+1  ->  0 ">"; # start
+1  ->  0 "?"; # start
+1  ->  0 "@"; # start
+1  ->  1 "A"; # e.g. "a"
+1  ->  1 "B"; # e.g. "a"
+1  ->  1 "C"; # e.g. "a"
+1  ->  1 "D"; # e.g. "a"
+1  ->  1 "E"; # e.g. "a"
+1  ->  1 "F"; # e.g. "a"
+1  ->  1 "G"; # e.g. "a"
+1  ->  1 "H"; # e.g. "a"
+1  ->  1 "I"; # e.g. "a"
+1  ->  1 "J"; # e.g. "a"
+1  ->  1 "K"; # e.g. "a"
+1  ->  1 "L"; # e.g. "a"
+1  ->  1 "M"; # e.g. "a"
+1  ->  1 "N"; # e.g. "a"
+1  ->  1 "O"; # e.g. "a"
+1  ->  1 "P"; # e.g. "a"
+1  ->  1 "Q"; # e.g. "a"
+1  ->  1 "R"; # e.g. "a"
+1  ->  1 "S"; # e.g. "a"
+1  ->  1 "T"; # e.g. "a"
+1  ->  1 "U"; # e.g. "a"
+1  ->  1 "V"; # e.g. "a"
+1  ->  1 "W"; # e.g. "a"
+1  ->  1 "X"; # e.g. "a"
+1  ->  1 "Y"; # e.g. "a"
+1  ->  1 "Z"; # e.g. "a"
+1  ->  1 "["; # e.g. "a"
+1  ->  1 "\\"; # e.g. "a"
+1  ->  1 "]"; # e.g. "a"
+1  ->  1 "^"; # e.g. "a"
+1  ->  1 "_"; # e.g. "a"
+1  ->  1 "`"; # e.g. "a"
+1  ->  1 "a"; # e.g. "a"
+1  ->  1 "b"; # e.g. "a"
+1  ->  1 "c"; # e.g. "a"
+1  ->  1 "d"; # e.g. "a"
+1  ->  1 "e"; # e.g. "a"
+1  ->  1 "f"; # e.g. "a"
+1  ->  1 "g"; # e.g. "a"
+1  ->  1 "h"; # e.g. "a"
+1  ->  1 "i"; # e.g. "a"
+1  ->  1 "j"; # e.g. "a"
+1  ->  1 "k"; # e.g. "a"
+1  ->  1 "l"; # e.g. "a"
+1  ->  1 "m"; # e.g. "a"
+1  ->  1 "n"; # e.g. "a"
+1  ->  1 "o"; # e.g. "a"
+1  ->  1 "p"; # e.g. "a"
+1  ->  1 "q"; # e.g. "a"
+1  ->  1 "r"; # e.g. "a"
+1  ->  1 "s"; # e.g. "a"
+1  ->  1 "t"; # e.g. "a"
+1  ->  1 "u"; # e.g. "a"
+1  ->  1 "v"; # e.g. "a"
+1  ->  1 "w"; # e.g. "a"
+1  ->  1 "x"; # e.g. "a"
+1  ->  1 "y"; # e.g. "a"
+1  ->  1 "z"; # e.g. "a"
+1  ->  0 "{"; # start
+1  ->  0 "|"; # start
+1  ->  0 "}"; # start
+1  ->  0 "~"; # start
+1  ->  0 "\x7f"; # start
+1  ->  0 "\x80"; # start
+1  ->  0 "\x81"; # start
+1  ->  0 "\x82"; # start
+1  ->  0 "\x83"; # start
+1  ->  0 "\x84"; # start
+1  ->  0 "\x85"; # start
+1  ->  0 "\x86"; # start
+1  ->  0 "\x87"; # start
+1  ->  0 "\x88"; # start
+1  ->  0 "\x89"; # start
+1  ->  0 "\x8a"; # start
+1  ->  0 "\x8b"; # start
+1  ->  0 "\x8c"; # start
+1  ->  0 "\x8d"; # start
+1  ->  0 "\x8e"; # start
+1  ->  0 "\x8f"; # start
+1  ->  0 "\x90"; # start
+1  ->  0 "\x91"; # start
+1  ->  0 "\x92"; # start
+1  ->  0 "\x93"; # start
+1  ->  0 "\x94"; # start
+1  ->  0 "\x95"; # start
+1  ->  0 "\x96"; # start
+1  ->  0 "\x97"; # start
+1  ->  0 "\x98"; # start
+1  ->  0 "\x99"; # start
+1  ->  0 "\x9a"; # start
+1  ->  0 "\x9b"; # start
+1  ->  0 "\x9c"; # start
+1  ->  0 "\x9d"; # start
+1  ->  0 "\x9e"; # start
+1  ->  0 "\x9f"; # start
+1  ->  0 "\xa0"; # start
+1  ->  0 "\xa1"; # start
+1  ->  0 "\xa2"; # start
+1  ->  0 "\xa3"; # start
+1  ->  0 "\xa4"; # start
+1  ->  0 "\xa5"; # start
+1  ->  0 "\xa6"; # start
+1  ->  0 "\xa7"; # start
+1  ->  0 "\xa8"; # start
+1  ->  0 "\xa9"; # start
+1  ->  0 "\xaa"; # start
+1  ->  0 "\xab"; # start
+1  ->  0 "\xac"; # start
+1  ->  0 "\xad"; # start
+1  ->  0 "\xae"; # start
+1  ->  0 "\xaf"; # start
+1  ->  0 "\xb0"; # start
+1  ->  0 "\xb1"; # start
+1  ->  0 "\xb2"; # start
+1  ->  0 "\xb3"; # start
+1  ->  0 "\xb4"; # start
+1  ->  0 "\xb5"; # start
+1  ->  0 "\xb6"; # start
+1  ->  0 "\xb7"; # start
+1  ->  0 "\xb8"; # start
+1  ->  0 "\xb9"; # start
+1  ->  0 "\xba"; # start
+1  ->  0 "\xbb"; # start
+1  ->  0 "\xbc"; # start
+1  ->  0 "\xbd"; # start
+1  ->  0 "\xbe"; # start
+1  ->  0 "\xbf"; # start
+1  ->  0 "\xc0"; # start
+1  ->  0 "\xc1"; # start
+1  ->  0 "\xc2"; # start
+1  ->  0 "\xc3"; # start
+1  ->  0 "\xc4"; # start
+1  ->  0 "\xc5"; # start
+1  ->  0 "\xc6"; # start
+1  ->  0 "\xc7"; # start
+1  ->  0 "\xc8"; # start
+1  ->  0 "\xc9"; # start
+1  ->  0 "\xca"; # start
+1  ->  0 "\xcb"; # start
+1  ->  0 "\xcc"; # start
+1  ->  0 "\xcd"; # start
+1  ->  0 "\xce"; # start
+1  ->  0 "\xcf"; # start
+1  ->  0 "\xd0"; # start
+1  ->  0 "\xd1"; # start
+1  ->  0 "\xd2"; # start
+1  ->  0 "\xd3"; # start
+1  ->  0 "\xd4"; # start
+1  ->  0 "\xd5"; # start
+1  ->  0 "\xd6"; # start
+1  ->  0 "\xd7"; # start
+1  ->  0 "\xd8"; # start
+1  ->  0 "\xd9"; # start
+1  ->  0 "\xda"; # start
+1  ->  0 "\xdb"; # start
+1  ->  0 "\xdc"; # start
+1  ->  0 "\xdd"; # start
+1  ->  0 "\xde"; # start
+1  ->  0 "\xdf"; # start
+1  ->  0 "\xe0"; # start
+1  ->  0 "\xe1"; # start
+1  ->  0 "\xe2"; # start
+1  ->  0 "\xe3"; # start
+1  ->  0 "\xe4"; # start
+1  ->  0 "\xe5"; # start
+1  ->  0 "\xe6"; # start
+1  ->  0 "\xe7"; # start
+1  ->  0 "\xe8"; # start
+1  ->  0 "\xe9"; # start
+1  ->  0 "\xea"; # start
+1  ->  0 "\xeb"; # start
+1  ->  0 "\xec"; # start
+1  ->  0 "\xed"; # start
+1  ->  0 "\xee"; # start
+1  ->  0 "\xef"; # start
+1  ->  0 "\xf0"; # start
+1  ->  0 "\xf1"; # start
+1  ->  0 "\xf2"; # start
+1  ->  0 "\xf3"; # start
+1  ->  0 "\xf4"; # start
+1  ->  0 "\xf5"; # start
+1  ->  0 "\xf6"; # start
+1  ->  0 "\xf7"; # start
+1  ->  0 "\xf8"; # start
+1  ->  0 "\xf9"; # start
+1  ->  0 "\xfa"; # start
+1  ->  0 "\xfb"; # start
+1  ->  0 "\xfc"; # start
+1  ->  0 "\xfd"; # start
+1  ->  0 "\xfe"; # start
+1  ->  0 "\xff"; # start
+2  ->  0 "\x00"; # start
+2  ->  0 "\x01"; # start
+2  ->  0 "\x02"; # start
+2  ->  0 "\x03"; # start
+2  ->  0 "\x04"; # start
+2  ->  0 "\x05"; # start
+2  ->  0 "\x06"; # start
+2  ->  0 "\x07"; # start
+2  ->  0 "\x08"; # start
+2  ->  0 "\t"; # start
+2  ->  0 "\n"; # start
+2  ->  0 "\v"; # start
+2  ->  0 "\f"; # start
+2  ->  0 "\r"; # start
+2  ->  0 "\x0e"; # start
+2  ->  0 "\x0f"; # start
+2  ->  0 "\x10"; # start
+2  ->  0 "\x11"; # start
+2  ->  0 "\x12"; # start
+2  ->  0 "\x13"; # start
+2  ->  0 "\x14"; # start
+2  ->  0 "\x15"; # start
+2  ->  0 "\x16"; # start
+2  ->  0 "\x17"; # start
+2  ->  0 "\x18"; # start
+2  ->  0 "\x19"; # start
+2  ->  0 "\x1a"; # start
+2  ->  0 "\x1b"; # start
+2  ->  0 "\x1c"; # start
+2  ->  0 "\x1d"; # start
+2  ->  0 "\x1e"; # start
+2  ->  0 "\x1f"; # start
+2  ->  0 " "; # start
+2  ->  0 "!"; # start
+2  ->  0 "\""; # start
+2  ->  0 "#"; # start
+2  ->  0 "$"; # start
+2  ->  0 "%"; # start
+2  ->  0 "&"; # start
+2  ->  0 "'"; # start
+2  ->  0 "("; # start
+2  ->  0 ")"; # start
+2  ->  0 "*"; # start
+2  ->  0 "+"; # start
+2  ->  0 ","; # start
+2  ->  0 "-"; # start
+2  ->  0 "."; # start
+2  ->  0 "/"; # start
+2  ->  0 "0"; # start
+2  ->  0 "1"; # start
+2  ->  0 "2"; # start
+2  ->  0 "3"; # start
+2  ->  0 "4"; # start
+2  ->  0 "5"; # start
+2  ->  0 "6"; # start
+2  ->  0 "7"; # start
+2  ->  0 "8"; # start
+2  ->  0 "9"; # start
+2  ->  0 ":"; # start
+2  ->  0 ";"; # start
+2  ->  0 "<"; # start
+2  ->  0 "="; # start
+2  ->  0 ">"; # start
+2  ->  0 "?"; # start
+2  ->  0 "@"; # start
+2  ->  1 "A"; # e.g. "a"
+2  ->  1 "B"; # e.g. "a"
+2  ->  1 "C"; # e.g. "a"
+2  ->  1 "D"; # e.g. "a"
+2  ->  1 "E"; # e.g. "a"
+2  ->  1 "F"; # e.g. "a"
+2  ->  1 "G"; # e.g. "a"
+2  ->  1 "H"; # e.g. "a"
+2  ->  1 "I"; # e.g. "a"
+2  ->  1 "J"; # e.g. "a"
+2  ->  1 "K"; # e.g. "a"
+2  ->  1 "L"; # e.g. "a"
+2  ->  1 "M"; # e.g. "a"
+2  ->  1 "N"; # e.g. "a"
+2  ->  1 "O"; # e.g. "a"
+2  ->  1 "P"; # e.g. "a"
+2  ->  1 "Q"; # e.g. "a"
+2  ->  1 "R"; # e.g. "a"
+2  ->  1 "S"; # e.g. "a"
+2  ->  1 "T"; # e.g. "a"
+2  ->  1 "U"; # e.g. "a"
+2  ->  1 "V"; # e.g. "a"
+2  ->  1 "W"; # e.g. "a"
+2  ->  1 "X"; # e.g. "a"
+2  ->  1 "Y"; # e.g. "a"
+2  ->  1 "Z"; # e.g. "a"
+2  ->  1 "["; # e.g. "a"
+2  ->  3 "\\"; # e.g. "a:\\"
+2  ->  1 "]"; # e.g. "a"
+2  ->  1 "^"; # e.g. "a"
+2  ->  1 "_"; # e.g. "a"
+2  ->  1 "`"; # e.g. "a"
+2  ->  1 "a"; # e.g. "a"
+2  ->  1 "b"; # e.g. "a"
+2  ->  1 "c"; # e.g. "a"
+2  ->  1 "d"; # e.g. "a"
+2  ->  1 "e"; # e.g. "a"
+2  ->  1 "f"; # e.g. "a"
+2  ->  1 "g"; # e.g. "a"
+2  ->  1 "h"; # e.g. "a"
+2  ->  1 "i"; # e.g. "a"
+2  ->  1 "j"; # e.g. "a"
+2  ->  1 "k"; # e.g. "a"
+2  ->  1 "l"; # e.g. "a"
+2  ->  1 "m"; # e.g. "a"
+2  ->  1 "n"; # e.g. "a"
+2  ->  1 "o"; # e.g. "a"
+2  ->  1 "p"; # e.g. "a"
+2  ->  1 "q"; # e.g. "a"
+2  ->  1 "r"; # e.g. "a"
+2  ->  1 "s"; # e.g. "a"
+2  ->  1 "t"; # e.g. "a"
+2  ->  1 "u"; # e.g. "a"
+2  ->  1 "v"; # e.g. "a"
+2  ->  1 "w"; # e.g. "a"
+2  ->  1 "x"; # e.g. "a"
+2  ->  1 "y"; # e.g. "a"
+2  ->  1 "z"; # e.g. "a"
+2  ->  0 "{"; # start
+2  ->  0 "|"; # start
+2  ->  0 "}"; # start
+2  ->  0 "~"; # start
+2  ->  0 "\x7f"; # start
+2  ->  0 "\x80"; # start
+2  ->  0 "\x81"; # start
+2  ->  0 "\x82"; # start
+2  ->  0 "\x83"; # start
+2  ->  0 "\x84"; # start
+2  ->  0 "\x85"; # start
+2  ->  0 "\x86"; # start
+2  ->  0 "\x87"; # start
+2  ->  0 "\x88"; # start
+2  ->  0 "\x89"; # start
+2  ->  0 "\x8a"; # start
+2  ->  0 "\x8b"; # start
+2  ->  0 "\x8c"; # start
+2  ->  0 "\x8d"; # start
+2  ->  0 "\x8e"; # start
+2  ->  0 "\x8f"; # start
+2  ->  0 "\x90"; # start
+2  ->  0 "\x91"; # start
+2  ->  0 "\x92"; # start
+2  ->  0 "\x93"; # start
+2  ->  0 "\x94"; # start
+2  ->  0 "\x95"; # start
+2  ->  0 "\x96"; # start
+2  ->  0 "\x97"; # start
+2  ->  0 "\x98"; # start
+2  ->  0 "\x99"; # start
+2  ->  0 "\x9a"; # start
+2  ->  0 "\x9b"; # start
+2  ->  0 "\x9c"; # start
+2  ->  0 "\x9d"; # start
+2  ->  0 "\x9e"; # start
+2  ->  0 "\x9f"; # start
+2  ->  0 "\xa0"; # start
+2  ->  0 "\xa1"; # start
+2  ->  0 "\xa2"; # start
+2  ->  0 "\xa3"; # start
+2  ->  0 "\xa4"; # start
+2  ->  0 "\xa5"; # start
+2  ->  0 "\xa6"; # start
+2  ->  0 "\xa7"; # start
+2  ->  0 "\xa8"; # start
+2  ->  0 "\xa9"; # start
+2  ->  0 "\xaa"; # start
+2  ->  0 "\xab"; # start
+2  ->  0 "\xac"; # start
+2  ->  0 "\xad"; # start
+2  ->  0 "\xae"; # start
+2  ->  0 "\xaf"; # start
+2  ->  0 "\xb0"; # start
+2  ->  0 "\xb1"; # start
+2  ->  0 "\xb2"; # start
+2  ->  0 "\xb3"; # start
+2  ->  0 "\xb4"; # start
+2  ->  0 "\xb5"; # start
+2  ->  0 "\xb6"; # start
+2  ->  0 "\xb7"; # start
+2  ->  0 "\xb8"; # start
+2  ->  0 "\xb9"; # start
+2  ->  0 "\xba"; # start
+2  ->  0 "\xbb"; # start
+2  ->  0 "\xbc"; # start
+2  ->  0 "\xbd"; # start
+2  ->  0 "\xbe"; # start
+2  ->  0 "\xbf"; # start
+2  ->  0 "\xc0"; # start
+2  ->  0 "\xc1"; # start
+2  ->  0 "\xc2"; # start
+2  ->  0 "\xc3"; # start
+2  ->  0 "\xc4"; # start
+2  ->  0 "\xc5"; # start
+2  ->  0 "\xc6"; # start
+2  ->  0 "\xc7"; # start
+2  ->  0 "\xc8"; # start
+2  ->  0 "\xc9"; # start
+2  ->  0 "\xca"; # start
+2  ->  0 "\xcb"; # start
+2  ->  0 "\xcc"; # start
+2  ->  0 "\xcd"; # start
+2  ->  0 "\xce"; # start
+2  ->  0 "\xcf"; # start
+2  ->  0 "\xd0"; # start
+2  ->  0 "\xd1"; # start
+2  ->  0 "\xd2"; # start
+2  ->  0 "\xd3"; # start
+2  ->  0 "\xd4"; # start
+2  ->  0 "\xd5"; # start
+2  ->  0 "\xd6"; # start
+2  ->  0 "\xd7"; # start
+2  ->  0 "\xd8"; # start
+2  ->  0 "\xd9"; # start
+2  ->  0 "\xda"; # start
+2  ->  0 "\xdb"; # start
+2  ->  0 "\xdc"; # start
+2  ->  0 "\xdd"; # start
+2  ->  0 "\xde"; # start
+2  ->  0 "\xdf"; # start
+2  ->  0 "\xe0"; # start
+2  ->  0 "\xe1"; # start
+2  ->  0 "\xe2"; # start
+2  ->  0 "\xe3"; # start
+2  ->  0 "\xe4"; # start
+2  ->  0 "\xe5"; # start
+2  ->  0 "\xe6"; # start
+2  ->  0 "\xe7"; # start
+2  ->  0 "\xe8"; # start
+2  ->  0 "\xe9"; # start
+2  ->  0 "\xea"; # start
+2  ->  0 "\xeb"; # start
+2  ->  0 "\xec"; # start
+2  ->  0 "\xed"; # start
+2  ->  0 "\xee"; # start
+2  ->  0 "\xef"; # start
+2  ->  0 "\xf0"; # start
+2  ->  0 "\xf1"; # start
+2  ->  0 "\xf2"; # start
+2  ->  0 "\xf3"; # start
+2  ->  0 "\xf4"; # start
+2  ->  0 "\xf5"; # start
+2  ->  0 "\xf6"; # start
+2  ->  0 "\xf7"; # start
+2  ->  0 "\xf8"; # start
+2  ->  0 "\xf9"; # start
+2  ->  0 "\xfa"; # start
+2  ->  0 "\xfb"; # start
+2  ->  0 "\xfc"; # start
+2  ->  0 "\xfd"; # start
+2  ->  0 "\xfe"; # start
+2  ->  0 "\xff"; # start
+3  ->  3 ?;
+
+start: 0;
+end:   3;

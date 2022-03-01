@@ -1,0 +1,5125 @@
+re -pl fsm '\[[ \t\r\n\f]*HRESULT[ \t\r\n\f]*=[ \t\r\n\f]*.*\]'
+0  ->  0 "\x00"; # e.g. "[HRESULT=a"
+0  ->  0 "\x01"; # e.g. "[HRESULT=a"
+0  ->  0 "\x02"; # e.g. "[HRESULT=a"
+0  ->  0 "\x03"; # e.g. "[HRESULT=a"
+0  ->  0 "\x04"; # e.g. "[HRESULT=a"
+0  ->  0 "\x05"; # e.g. "[HRESULT=a"
+0  ->  0 "\x06"; # e.g. "[HRESULT=a"
+0  ->  0 "\x07"; # e.g. "[HRESULT=a"
+0  ->  0 "\x08"; # e.g. "[HRESULT=a"
+0  ->  0 "\t"; # e.g. "[HRESULT=a"
+0  -> 12 "\n"; # start
+0  ->  0 "\v"; # e.g. "[HRESULT=a"
+0  ->  0 "\f"; # e.g. "[HRESULT=a"
+0  ->  0 "\r"; # e.g. "[HRESULT=a"
+0  ->  0 "\x0e"; # e.g. "[HRESULT=a"
+0  ->  0 "\x0f"; # e.g. "[HRESULT=a"
+0  ->  0 "\x10"; # e.g. "[HRESULT=a"
+0  ->  0 "\x11"; # e.g. "[HRESULT=a"
+0  ->  0 "\x12"; # e.g. "[HRESULT=a"
+0  ->  0 "\x13"; # e.g. "[HRESULT=a"
+0  ->  0 "\x14"; # e.g. "[HRESULT=a"
+0  ->  0 "\x15"; # e.g. "[HRESULT=a"
+0  ->  0 "\x16"; # e.g. "[HRESULT=a"
+0  ->  0 "\x17"; # e.g. "[HRESULT=a"
+0  ->  0 "\x18"; # e.g. "[HRESULT=a"
+0  ->  0 "\x19"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1a"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1b"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1c"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1d"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1e"; # e.g. "[HRESULT=a"
+0  ->  0 "\x1f"; # e.g. "[HRESULT=a"
+0  ->  0 " "; # e.g. "[HRESULT=a"
+0  ->  0 "!"; # e.g. "[HRESULT=a"
+0  ->  0 "\""; # e.g. "[HRESULT=a"
+0  ->  0 "#"; # e.g. "[HRESULT=a"
+0  ->  0 "$"; # e.g. "[HRESULT=a"
+0  ->  0 "%"; # e.g. "[HRESULT=a"
+0  ->  0 "&"; # e.g. "[HRESULT=a"
+0  ->  0 "'"; # e.g. "[HRESULT=a"
+0  ->  0 "("; # e.g. "[HRESULT=a"
+0  ->  0 ")"; # e.g. "[HRESULT=a"
+0  ->  0 "*"; # e.g. "[HRESULT=a"
+0  ->  0 "+"; # e.g. "[HRESULT=a"
+0  ->  0 ","; # e.g. "[HRESULT=a"
+0  ->  0 "-"; # e.g. "[HRESULT=a"
+0  ->  0 "."; # e.g. "[HRESULT=a"
+0  ->  0 "/"; # e.g. "[HRESULT=a"
+0  ->  0 "0"; # e.g. "[HRESULT=a"
+0  ->  0 "1"; # e.g. "[HRESULT=a"
+0  ->  0 "2"; # e.g. "[HRESULT=a"
+0  ->  0 "3"; # e.g. "[HRESULT=a"
+0  ->  0 "4"; # e.g. "[HRESULT=a"
+0  ->  0 "5"; # e.g. "[HRESULT=a"
+0  ->  0 "6"; # e.g. "[HRESULT=a"
+0  ->  0 "7"; # e.g. "[HRESULT=a"
+0  ->  0 "8"; # e.g. "[HRESULT=a"
+0  ->  0 "9"; # e.g. "[HRESULT=a"
+0  ->  0 ":"; # e.g. "[HRESULT=a"
+0  ->  0 ";"; # e.g. "[HRESULT=a"
+0  ->  0 "<"; # e.g. "[HRESULT=a"
+0  ->  0 "="; # e.g. "[HRESULT=a"
+0  ->  0 ">"; # e.g. "[HRESULT=a"
+0  ->  0 "?"; # e.g. "[HRESULT=a"
+0  ->  0 "@"; # e.g. "[HRESULT=a"
+0  ->  0 "A"; # e.g. "[HRESULT=a"
+0  ->  0 "B"; # e.g. "[HRESULT=a"
+0  ->  0 "C"; # e.g. "[HRESULT=a"
+0  ->  0 "D"; # e.g. "[HRESULT=a"
+0  ->  0 "E"; # e.g. "[HRESULT=a"
+0  ->  0 "F"; # e.g. "[HRESULT=a"
+0  ->  0 "G"; # e.g. "[HRESULT=a"
+0  ->  0 "H"; # e.g. "[HRESULT=a"
+0  ->  0 "I"; # e.g. "[HRESULT=a"
+0  ->  0 "J"; # e.g. "[HRESULT=a"
+0  ->  0 "K"; # e.g. "[HRESULT=a"
+0  ->  0 "L"; # e.g. "[HRESULT=a"
+0  ->  0 "M"; # e.g. "[HRESULT=a"
+0  ->  0 "N"; # e.g. "[HRESULT=a"
+0  ->  0 "O"; # e.g. "[HRESULT=a"
+0  ->  0 "P"; # e.g. "[HRESULT=a"
+0  ->  0 "Q"; # e.g. "[HRESULT=a"
+0  ->  0 "R"; # e.g. "[HRESULT=a"
+0  ->  0 "S"; # e.g. "[HRESULT=a"
+0  ->  0 "T"; # e.g. "[HRESULT=a"
+0  ->  0 "U"; # e.g. "[HRESULT=a"
+0  ->  0 "V"; # e.g. "[HRESULT=a"
+0  ->  0 "W"; # e.g. "[HRESULT=a"
+0  ->  0 "X"; # e.g. "[HRESULT=a"
+0  ->  0 "Y"; # e.g. "[HRESULT=a"
+0  ->  0 "Z"; # e.g. "[HRESULT=a"
+0  -> 14 "["; # e.g. "[HRESULT=["
+0  -> 10 "\\"; # e.g. "[HRESULT=\\"
+0  ->  0 "]"; # e.g. "[HRESULT=a"
+0  ->  0 "^"; # e.g. "[HRESULT=a"
+0  ->  0 "_"; # e.g. "[HRESULT=a"
+0  ->  0 "`"; # e.g. "[HRESULT=a"
+0  ->  0 "a"; # e.g. "[HRESULT=a"
+0  ->  0 "b"; # e.g. "[HRESULT=a"
+0  ->  0 "c"; # e.g. "[HRESULT=a"
+0  ->  0 "d"; # e.g. "[HRESULT=a"
+0  ->  0 "e"; # e.g. "[HRESULT=a"
+0  ->  0 "f"; # e.g. "[HRESULT=a"
+0  ->  0 "g"; # e.g. "[HRESULT=a"
+0  ->  0 "h"; # e.g. "[HRESULT=a"
+0  ->  0 "i"; # e.g. "[HRESULT=a"
+0  ->  0 "j"; # e.g. "[HRESULT=a"
+0  ->  0 "k"; # e.g. "[HRESULT=a"
+0  ->  0 "l"; # e.g. "[HRESULT=a"
+0  ->  0 "m"; # e.g. "[HRESULT=a"
+0  ->  0 "n"; # e.g. "[HRESULT=a"
+0  ->  0 "o"; # e.g. "[HRESULT=a"
+0  ->  0 "p"; # e.g. "[HRESULT=a"
+0  ->  0 "q"; # e.g. "[HRESULT=a"
+0  ->  0 "r"; # e.g. "[HRESULT=a"
+0  ->  0 "s"; # e.g. "[HRESULT=a"
+0  ->  0 "t"; # e.g. "[HRESULT=a"
+0  ->  0 "u"; # e.g. "[HRESULT=a"
+0  ->  0 "v"; # e.g. "[HRESULT=a"
+0  ->  0 "w"; # e.g. "[HRESULT=a"
+0  ->  0 "x"; # e.g. "[HRESULT=a"
+0  ->  0 "y"; # e.g. "[HRESULT=a"
+0  ->  0 "z"; # e.g. "[HRESULT=a"
+0  ->  0 "{"; # e.g. "[HRESULT=a"
+0  ->  0 "|"; # e.g. "[HRESULT=a"
+0  ->  0 "}"; # e.g. "[HRESULT=a"
+0  ->  0 "~"; # e.g. "[HRESULT=a"
+0  ->  0 "\x7f"; # e.g. "[HRESULT=a"
+0  ->  0 "\x80"; # e.g. "[HRESULT=a"
+0  ->  0 "\x81"; # e.g. "[HRESULT=a"
+0  ->  0 "\x82"; # e.g. "[HRESULT=a"
+0  ->  0 "\x83"; # e.g. "[HRESULT=a"
+0  ->  0 "\x84"; # e.g. "[HRESULT=a"
+0  ->  0 "\x85"; # e.g. "[HRESULT=a"
+0  ->  0 "\x86"; # e.g. "[HRESULT=a"
+0  ->  0 "\x87"; # e.g. "[HRESULT=a"
+0  ->  0 "\x88"; # e.g. "[HRESULT=a"
+0  ->  0 "\x89"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8a"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8b"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8c"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8d"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8e"; # e.g. "[HRESULT=a"
+0  ->  0 "\x8f"; # e.g. "[HRESULT=a"
+0  ->  0 "\x90"; # e.g. "[HRESULT=a"
+0  ->  0 "\x91"; # e.g. "[HRESULT=a"
+0  ->  0 "\x92"; # e.g. "[HRESULT=a"
+0  ->  0 "\x93"; # e.g. "[HRESULT=a"
+0  ->  0 "\x94"; # e.g. "[HRESULT=a"
+0  ->  0 "\x95"; # e.g. "[HRESULT=a"
+0  ->  0 "\x96"; # e.g. "[HRESULT=a"
+0  ->  0 "\x97"; # e.g. "[HRESULT=a"
+0  ->  0 "\x98"; # e.g. "[HRESULT=a"
+0  ->  0 "\x99"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9a"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9b"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9c"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9d"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9e"; # e.g. "[HRESULT=a"
+0  ->  0 "\x9f"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xa9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xaa"; # e.g. "[HRESULT=a"
+0  ->  0 "\xab"; # e.g. "[HRESULT=a"
+0  ->  0 "\xac"; # e.g. "[HRESULT=a"
+0  ->  0 "\xad"; # e.g. "[HRESULT=a"
+0  ->  0 "\xae"; # e.g. "[HRESULT=a"
+0  ->  0 "\xaf"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xb9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xba"; # e.g. "[HRESULT=a"
+0  ->  0 "\xbb"; # e.g. "[HRESULT=a"
+0  ->  0 "\xbc"; # e.g. "[HRESULT=a"
+0  ->  0 "\xbd"; # e.g. "[HRESULT=a"
+0  ->  0 "\xbe"; # e.g. "[HRESULT=a"
+0  ->  0 "\xbf"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xc9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xca"; # e.g. "[HRESULT=a"
+0  ->  0 "\xcb"; # e.g. "[HRESULT=a"
+0  ->  0 "\xcc"; # e.g. "[HRESULT=a"
+0  ->  0 "\xcd"; # e.g. "[HRESULT=a"
+0  ->  0 "\xce"; # e.g. "[HRESULT=a"
+0  ->  0 "\xcf"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xd9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xda"; # e.g. "[HRESULT=a"
+0  ->  0 "\xdb"; # e.g. "[HRESULT=a"
+0  ->  0 "\xdc"; # e.g. "[HRESULT=a"
+0  ->  0 "\xdd"; # e.g. "[HRESULT=a"
+0  ->  0 "\xde"; # e.g. "[HRESULT=a"
+0  ->  0 "\xdf"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xe9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xea"; # e.g. "[HRESULT=a"
+0  ->  0 "\xeb"; # e.g. "[HRESULT=a"
+0  ->  0 "\xec"; # e.g. "[HRESULT=a"
+0  ->  0 "\xed"; # e.g. "[HRESULT=a"
+0  ->  0 "\xee"; # e.g. "[HRESULT=a"
+0  ->  0 "\xef"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf0"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf1"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf2"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf3"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf4"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf5"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf6"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf7"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf8"; # e.g. "[HRESULT=a"
+0  ->  0 "\xf9"; # e.g. "[HRESULT=a"
+0  ->  0 "\xfa"; # e.g. "[HRESULT=a"
+0  ->  0 "\xfb"; # e.g. "[HRESULT=a"
+0  ->  0 "\xfc"; # e.g. "[HRESULT=a"
+0  ->  0 "\xfd"; # e.g. "[HRESULT=a"
+0  ->  0 "\xfe"; # e.g. "[HRESULT=a"
+0  ->  0 "\xff"; # e.g. "[HRESULT=a"
+1  ->  0 "\x00"; # e.g. "[HRESULT=a"
+1  ->  0 "\x01"; # e.g. "[HRESULT=a"
+1  ->  0 "\x02"; # e.g. "[HRESULT=a"
+1  ->  0 "\x03"; # e.g. "[HRESULT=a"
+1  ->  0 "\x04"; # e.g. "[HRESULT=a"
+1  ->  0 "\x05"; # e.g. "[HRESULT=a"
+1  ->  0 "\x06"; # e.g. "[HRESULT=a"
+1  ->  0 "\x07"; # e.g. "[HRESULT=a"
+1  ->  0 "\x08"; # e.g. "[HRESULT=a"
+1  ->  0 "\t"; # e.g. "[HRESULT=a"
+1  -> 12 "\n"; # start
+1  ->  0 "\v"; # e.g. "[HRESULT=a"
+1  ->  0 "\f"; # e.g. "[HRESULT=a"
+1  ->  0 "\r"; # e.g. "[HRESULT=a"
+1  ->  0 "\x0e"; # e.g. "[HRESULT=a"
+1  ->  0 "\x0f"; # e.g. "[HRESULT=a"
+1  ->  0 "\x10"; # e.g. "[HRESULT=a"
+1  ->  0 "\x11"; # e.g. "[HRESULT=a"
+1  ->  0 "\x12"; # e.g. "[HRESULT=a"
+1  ->  0 "\x13"; # e.g. "[HRESULT=a"
+1  ->  0 "\x14"; # e.g. "[HRESULT=a"
+1  ->  0 "\x15"; # e.g. "[HRESULT=a"
+1  ->  0 "\x16"; # e.g. "[HRESULT=a"
+1  ->  0 "\x17"; # e.g. "[HRESULT=a"
+1  ->  0 "\x18"; # e.g. "[HRESULT=a"
+1  ->  0 "\x19"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1a"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1b"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1c"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1d"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1e"; # e.g. "[HRESULT=a"
+1  ->  0 "\x1f"; # e.g. "[HRESULT=a"
+1  ->  0 " "; # e.g. "[HRESULT=a"
+1  ->  0 "!"; # e.g. "[HRESULT=a"
+1  ->  0 "\""; # e.g. "[HRESULT=a"
+1  ->  0 "#"; # e.g. "[HRESULT=a"
+1  ->  0 "$"; # e.g. "[HRESULT=a"
+1  ->  0 "%"; # e.g. "[HRESULT=a"
+1  ->  0 "&"; # e.g. "[HRESULT=a"
+1  ->  0 "'"; # e.g. "[HRESULT=a"
+1  ->  0 "("; # e.g. "[HRESULT=a"
+1  ->  0 ")"; # e.g. "[HRESULT=a"
+1  ->  0 "*"; # e.g. "[HRESULT=a"
+1  ->  0 "+"; # e.g. "[HRESULT=a"
+1  ->  0 ","; # e.g. "[HRESULT=a"
+1  ->  0 "-"; # e.g. "[HRESULT=a"
+1  ->  0 "."; # e.g. "[HRESULT=a"
+1  ->  0 "/"; # e.g. "[HRESULT=a"
+1  ->  0 "0"; # e.g. "[HRESULT=a"
+1  ->  0 "1"; # e.g. "[HRESULT=a"
+1  ->  0 "2"; # e.g. "[HRESULT=a"
+1  ->  0 "3"; # e.g. "[HRESULT=a"
+1  ->  0 "4"; # e.g. "[HRESULT=a"
+1  ->  0 "5"; # e.g. "[HRESULT=a"
+1  ->  0 "6"; # e.g. "[HRESULT=a"
+1  ->  0 "7"; # e.g. "[HRESULT=a"
+1  ->  0 "8"; # e.g. "[HRESULT=a"
+1  ->  0 "9"; # e.g. "[HRESULT=a"
+1  ->  0 ":"; # e.g. "[HRESULT=a"
+1  ->  0 ";"; # e.g. "[HRESULT=a"
+1  ->  0 "<"; # e.g. "[HRESULT=a"
+1  ->  0 "="; # e.g. "[HRESULT=a"
+1  ->  0 ">"; # e.g. "[HRESULT=a"
+1  ->  0 "?"; # e.g. "[HRESULT=a"
+1  ->  0 "@"; # e.g. "[HRESULT=a"
+1  ->  0 "A"; # e.g. "[HRESULT=a"
+1  ->  0 "B"; # e.g. "[HRESULT=a"
+1  ->  0 "C"; # e.g. "[HRESULT=a"
+1  ->  0 "D"; # e.g. "[HRESULT=a"
+1  ->  0 "E"; # e.g. "[HRESULT=a"
+1  ->  0 "F"; # e.g. "[HRESULT=a"
+1  ->  0 "G"; # e.g. "[HRESULT=a"
+1  ->  0 "H"; # e.g. "[HRESULT=a"
+1  ->  0 "I"; # e.g. "[HRESULT=a"
+1  ->  0 "J"; # e.g. "[HRESULT=a"
+1  ->  0 "K"; # e.g. "[HRESULT=a"
+1  ->  0 "L"; # e.g. "[HRESULT=a"
+1  ->  0 "M"; # e.g. "[HRESULT=a"
+1  ->  0 "N"; # e.g. "[HRESULT=a"
+1  ->  0 "O"; # e.g. "[HRESULT=a"
+1  ->  0 "P"; # e.g. "[HRESULT=a"
+1  ->  0 "Q"; # e.g. "[HRESULT=a"
+1  ->  0 "R"; # e.g. "[HRESULT=a"
+1  ->  0 "S"; # e.g. "[HRESULT=a"
+1  -> 13 "T"; # e.g. "[HRESULT=[HRESULT"
+1  ->  0 "U"; # e.g. "[HRESULT=a"
+1  ->  0 "V"; # e.g. "[HRESULT=a"
+1  ->  0 "W"; # e.g. "[HRESULT=a"
+1  ->  0 "X"; # e.g. "[HRESULT=a"
+1  ->  0 "Y"; # e.g. "[HRESULT=a"
+1  ->  0 "Z"; # e.g. "[HRESULT=a"
+1  -> 14 "["; # e.g. "[HRESULT=["
+1  -> 10 "\\"; # e.g. "[HRESULT=\\"
+1  ->  0 "]"; # e.g. "[HRESULT=a"
+1  ->  0 "^"; # e.g. "[HRESULT=a"
+1  ->  0 "_"; # e.g. "[HRESULT=a"
+1  ->  0 "`"; # e.g. "[HRESULT=a"
+1  ->  0 "a"; # e.g. "[HRESULT=a"
+1  ->  0 "b"; # e.g. "[HRESULT=a"
+1  ->  0 "c"; # e.g. "[HRESULT=a"
+1  ->  0 "d"; # e.g. "[HRESULT=a"
+1  ->  0 "e"; # e.g. "[HRESULT=a"
+1  ->  0 "f"; # e.g. "[HRESULT=a"
+1  ->  0 "g"; # e.g. "[HRESULT=a"
+1  ->  0 "h"; # e.g. "[HRESULT=a"
+1  ->  0 "i"; # e.g. "[HRESULT=a"
+1  ->  0 "j"; # e.g. "[HRESULT=a"
+1  ->  0 "k"; # e.g. "[HRESULT=a"
+1  ->  0 "l"; # e.g. "[HRESULT=a"
+1  ->  0 "m"; # e.g. "[HRESULT=a"
+1  ->  0 "n"; # e.g. "[HRESULT=a"
+1  ->  0 "o"; # e.g. "[HRESULT=a"
+1  ->  0 "p"; # e.g. "[HRESULT=a"
+1  ->  0 "q"; # e.g. "[HRESULT=a"
+1  ->  0 "r"; # e.g. "[HRESULT=a"
+1  ->  0 "s"; # e.g. "[HRESULT=a"
+1  ->  0 "t"; # e.g. "[HRESULT=a"
+1  ->  0 "u"; # e.g. "[HRESULT=a"
+1  ->  0 "v"; # e.g. "[HRESULT=a"
+1  ->  0 "w"; # e.g. "[HRESULT=a"
+1  ->  0 "x"; # e.g. "[HRESULT=a"
+1  ->  0 "y"; # e.g. "[HRESULT=a"
+1  ->  0 "z"; # e.g. "[HRESULT=a"
+1  ->  0 "{"; # e.g. "[HRESULT=a"
+1  ->  0 "|"; # e.g. "[HRESULT=a"
+1  ->  0 "}"; # e.g. "[HRESULT=a"
+1  ->  0 "~"; # e.g. "[HRESULT=a"
+1  ->  0 "\x7f"; # e.g. "[HRESULT=a"
+1  ->  0 "\x80"; # e.g. "[HRESULT=a"
+1  ->  0 "\x81"; # e.g. "[HRESULT=a"
+1  ->  0 "\x82"; # e.g. "[HRESULT=a"
+1  ->  0 "\x83"; # e.g. "[HRESULT=a"
+1  ->  0 "\x84"; # e.g. "[HRESULT=a"
+1  ->  0 "\x85"; # e.g. "[HRESULT=a"
+1  ->  0 "\x86"; # e.g. "[HRESULT=a"
+1  ->  0 "\x87"; # e.g. "[HRESULT=a"
+1  ->  0 "\x88"; # e.g. "[HRESULT=a"
+1  ->  0 "\x89"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8a"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8b"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8c"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8d"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8e"; # e.g. "[HRESULT=a"
+1  ->  0 "\x8f"; # e.g. "[HRESULT=a"
+1  ->  0 "\x90"; # e.g. "[HRESULT=a"
+1  ->  0 "\x91"; # e.g. "[HRESULT=a"
+1  ->  0 "\x92"; # e.g. "[HRESULT=a"
+1  ->  0 "\x93"; # e.g. "[HRESULT=a"
+1  ->  0 "\x94"; # e.g. "[HRESULT=a"
+1  ->  0 "\x95"; # e.g. "[HRESULT=a"
+1  ->  0 "\x96"; # e.g. "[HRESULT=a"
+1  ->  0 "\x97"; # e.g. "[HRESULT=a"
+1  ->  0 "\x98"; # e.g. "[HRESULT=a"
+1  ->  0 "\x99"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9a"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9b"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9c"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9d"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9e"; # e.g. "[HRESULT=a"
+1  ->  0 "\x9f"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xa9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xaa"; # e.g. "[HRESULT=a"
+1  ->  0 "\xab"; # e.g. "[HRESULT=a"
+1  ->  0 "\xac"; # e.g. "[HRESULT=a"
+1  ->  0 "\xad"; # e.g. "[HRESULT=a"
+1  ->  0 "\xae"; # e.g. "[HRESULT=a"
+1  ->  0 "\xaf"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xb9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xba"; # e.g. "[HRESULT=a"
+1  ->  0 "\xbb"; # e.g. "[HRESULT=a"
+1  ->  0 "\xbc"; # e.g. "[HRESULT=a"
+1  ->  0 "\xbd"; # e.g. "[HRESULT=a"
+1  ->  0 "\xbe"; # e.g. "[HRESULT=a"
+1  ->  0 "\xbf"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xc9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xca"; # e.g. "[HRESULT=a"
+1  ->  0 "\xcb"; # e.g. "[HRESULT=a"
+1  ->  0 "\xcc"; # e.g. "[HRESULT=a"
+1  ->  0 "\xcd"; # e.g. "[HRESULT=a"
+1  ->  0 "\xce"; # e.g. "[HRESULT=a"
+1  ->  0 "\xcf"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xd9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xda"; # e.g. "[HRESULT=a"
+1  ->  0 "\xdb"; # e.g. "[HRESULT=a"
+1  ->  0 "\xdc"; # e.g. "[HRESULT=a"
+1  ->  0 "\xdd"; # e.g. "[HRESULT=a"
+1  ->  0 "\xde"; # e.g. "[HRESULT=a"
+1  ->  0 "\xdf"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xe9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xea"; # e.g. "[HRESULT=a"
+1  ->  0 "\xeb"; # e.g. "[HRESULT=a"
+1  ->  0 "\xec"; # e.g. "[HRESULT=a"
+1  ->  0 "\xed"; # e.g. "[HRESULT=a"
+1  ->  0 "\xee"; # e.g. "[HRESULT=a"
+1  ->  0 "\xef"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf0"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf1"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf2"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf3"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf4"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf5"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf6"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf7"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf8"; # e.g. "[HRESULT=a"
+1  ->  0 "\xf9"; # e.g. "[HRESULT=a"
+1  ->  0 "\xfa"; # e.g. "[HRESULT=a"
+1  ->  0 "\xfb"; # e.g. "[HRESULT=a"
+1  ->  0 "\xfc"; # e.g. "[HRESULT=a"
+1  ->  0 "\xfd"; # e.g. "[HRESULT=a"
+1  ->  0 "\xfe"; # e.g. "[HRESULT=a"
+1  ->  0 "\xff"; # e.g. "[HRESULT=a"
+2  -> 12 "\x00"; # start
+2  -> 12 "\x01"; # start
+2  -> 12 "\x02"; # start
+2  -> 12 "\x03"; # start
+2  -> 12 "\x04"; # start
+2  -> 12 "\x05"; # start
+2  -> 12 "\x06"; # start
+2  -> 12 "\x07"; # start
+2  -> 12 "\x08"; # start
+2  ->  2 "\t"; # e.g. "["
+2  ->  2 "\n"; # e.g. "["
+2  -> 12 "\v"; # start
+2  ->  2 "\f"; # e.g. "["
+2  ->  2 "\r"; # e.g. "["
+2  -> 12 "\x0e"; # start
+2  -> 12 "\x0f"; # start
+2  -> 12 "\x10"; # start
+2  -> 12 "\x11"; # start
+2  -> 12 "\x12"; # start
+2  -> 12 "\x13"; # start
+2  -> 12 "\x14"; # start
+2  -> 12 "\x15"; # start
+2  -> 12 "\x16"; # start
+2  -> 12 "\x17"; # start
+2  -> 12 "\x18"; # start
+2  -> 12 "\x19"; # start
+2  -> 12 "\x1a"; # start
+2  -> 12 "\x1b"; # start
+2  -> 12 "\x1c"; # start
+2  -> 12 "\x1d"; # start
+2  -> 12 "\x1e"; # start
+2  -> 12 "\x1f"; # start
+2  ->  2 " "; # e.g. "["
+2  -> 12 "!"; # start
+2  -> 12 "\""; # start
+2  -> 12 "#"; # start
+2  -> 12 "$"; # start
+2  -> 12 "%"; # start
+2  -> 12 "&"; # start
+2  -> 12 "'"; # start
+2  -> 12 "("; # start
+2  -> 12 ")"; # start
+2  -> 12 "*"; # start
+2  -> 12 "+"; # start
+2  -> 12 ","; # start
+2  -> 12 "-"; # start
+2  -> 12 "."; # start
+2  -> 12 "/"; # start
+2  -> 12 "0"; # start
+2  -> 12 "1"; # start
+2  -> 12 "2"; # start
+2  -> 12 "3"; # start
+2  -> 12 "4"; # start
+2  -> 12 "5"; # start
+2  -> 12 "6"; # start
+2  -> 12 "7"; # start
+2  -> 12 "8"; # start
+2  -> 12 "9"; # start
+2  -> 12 ":"; # start
+2  -> 12 ";"; # start
+2  -> 12 "<"; # start
+2  -> 12 "="; # start
+2  -> 12 ">"; # start
+2  -> 12 "?"; # start
+2  -> 12 "@"; # start
+2  -> 12 "A"; # start
+2  -> 12 "B"; # start
+2  -> 12 "C"; # start
+2  -> 12 "D"; # start
+2  -> 12 "E"; # start
+2  -> 12 "F"; # start
+2  -> 12 "G"; # start
+2  ->  3 "H"; # e.g. "[H"
+2  -> 12 "I"; # start
+2  -> 12 "J"; # start
+2  -> 12 "K"; # start
+2  -> 12 "L"; # start
+2  -> 12 "M"; # start
+2  -> 12 "N"; # start
+2  -> 12 "O"; # start
+2  -> 12 "P"; # start
+2  -> 12 "Q"; # start
+2  -> 12 "R"; # start
+2  -> 12 "S"; # start
+2  -> 12 "T"; # start
+2  -> 12 "U"; # start
+2  -> 12 "V"; # start
+2  -> 12 "W"; # start
+2  -> 12 "X"; # start
+2  -> 12 "Y"; # start
+2  -> 12 "Z"; # start
+2  ->  2 "["; # e.g. "["
+2  -> 12 "\\"; # start
+2  -> 12 "]"; # start
+2  -> 12 "^"; # start
+2  -> 12 "_"; # start
+2  -> 12 "`"; # start
+2  -> 12 "a"; # start
+2  -> 12 "b"; # start
+2  -> 12 "c"; # start
+2  -> 12 "d"; # start
+2  -> 12 "e"; # start
+2  -> 12 "f"; # start
+2  -> 12 "g"; # start
+2  -> 12 "h"; # start
+2  -> 12 "i"; # start
+2  -> 12 "j"; # start
+2  -> 12 "k"; # start
+2  -> 12 "l"; # start
+2  -> 12 "m"; # start
+2  -> 12 "n"; # start
+2  -> 12 "o"; # start
+2  -> 12 "p"; # start
+2  -> 12 "q"; # start
+2  -> 12 "r"; # start
+2  -> 12 "s"; # start
+2  -> 12 "t"; # start
+2  -> 12 "u"; # start
+2  -> 12 "v"; # start
+2  -> 12 "w"; # start
+2  -> 12 "x"; # start
+2  -> 12 "y"; # start
+2  -> 12 "z"; # start
+2  -> 12 "{"; # start
+2  -> 12 "|"; # start
+2  -> 12 "}"; # start
+2  -> 12 "~"; # start
+2  -> 12 "\x7f"; # start
+2  -> 12 "\x80"; # start
+2  -> 12 "\x81"; # start
+2  -> 12 "\x82"; # start
+2  -> 12 "\x83"; # start
+2  -> 12 "\x84"; # start
+2  -> 12 "\x85"; # start
+2  -> 12 "\x86"; # start
+2  -> 12 "\x87"; # start
+2  -> 12 "\x88"; # start
+2  -> 12 "\x89"; # start
+2  -> 12 "\x8a"; # start
+2  -> 12 "\x8b"; # start
+2  -> 12 "\x8c"; # start
+2  -> 12 "\x8d"; # start
+2  -> 12 "\x8e"; # start
+2  -> 12 "\x8f"; # start
+2  -> 12 "\x90"; # start
+2  -> 12 "\x91"; # start
+2  -> 12 "\x92"; # start
+2  -> 12 "\x93"; # start
+2  -> 12 "\x94"; # start
+2  -> 12 "\x95"; # start
+2  -> 12 "\x96"; # start
+2  -> 12 "\x97"; # start
+2  -> 12 "\x98"; # start
+2  -> 12 "\x99"; # start
+2  -> 12 "\x9a"; # start
+2  -> 12 "\x9b"; # start
+2  -> 12 "\x9c"; # start
+2  -> 12 "\x9d"; # start
+2  -> 12 "\x9e"; # start
+2  -> 12 "\x9f"; # start
+2  -> 12 "\xa0"; # start
+2  -> 12 "\xa1"; # start
+2  -> 12 "\xa2"; # start
+2  -> 12 "\xa3"; # start
+2  -> 12 "\xa4"; # start
+2  -> 12 "\xa5"; # start
+2  -> 12 "\xa6"; # start
+2  -> 12 "\xa7"; # start
+2  -> 12 "\xa8"; # start
+2  -> 12 "\xa9"; # start
+2  -> 12 "\xaa"; # start
+2  -> 12 "\xab"; # start
+2  -> 12 "\xac"; # start
+2  -> 12 "\xad"; # start
+2  -> 12 "\xae"; # start
+2  -> 12 "\xaf"; # start
+2  -> 12 "\xb0"; # start
+2  -> 12 "\xb1"; # start
+2  -> 12 "\xb2"; # start
+2  -> 12 "\xb3"; # start
+2  -> 12 "\xb4"; # start
+2  -> 12 "\xb5"; # start
+2  -> 12 "\xb6"; # start
+2  -> 12 "\xb7"; # start
+2  -> 12 "\xb8"; # start
+2  -> 12 "\xb9"; # start
+2  -> 12 "\xba"; # start
+2  -> 12 "\xbb"; # start
+2  -> 12 "\xbc"; # start
+2  -> 12 "\xbd"; # start
+2  -> 12 "\xbe"; # start
+2  -> 12 "\xbf"; # start
+2  -> 12 "\xc0"; # start
+2  -> 12 "\xc1"; # start
+2  -> 12 "\xc2"; # start
+2  -> 12 "\xc3"; # start
+2  -> 12 "\xc4"; # start
+2  -> 12 "\xc5"; # start
+2  -> 12 "\xc6"; # start
+2  -> 12 "\xc7"; # start
+2  -> 12 "\xc8"; # start
+2  -> 12 "\xc9"; # start
+2  -> 12 "\xca"; # start
+2  -> 12 "\xcb"; # start
+2  -> 12 "\xcc"; # start
+2  -> 12 "\xcd"; # start
+2  -> 12 "\xce"; # start
+2  -> 12 "\xcf"; # start
+2  -> 12 "\xd0"; # start
+2  -> 12 "\xd1"; # start
+2  -> 12 "\xd2"; # start
+2  -> 12 "\xd3"; # start
+2  -> 12 "\xd4"; # start
+2  -> 12 "\xd5"; # start
+2  -> 12 "\xd6"; # start
+2  -> 12 "\xd7"; # start
+2  -> 12 "\xd8"; # start
+2  -> 12 "\xd9"; # start
+2  -> 12 "\xda"; # start
+2  -> 12 "\xdb"; # start
+2  -> 12 "\xdc"; # start
+2  -> 12 "\xdd"; # start
+2  -> 12 "\xde"; # start
+2  -> 12 "\xdf"; # start
+2  -> 12 "\xe0"; # start
+2  -> 12 "\xe1"; # start
+2  -> 12 "\xe2"; # start
+2  -> 12 "\xe3"; # start
+2  -> 12 "\xe4"; # start
+2  -> 12 "\xe5"; # start
+2  -> 12 "\xe6"; # start
+2  -> 12 "\xe7"; # start
+2  -> 12 "\xe8"; # start
+2  -> 12 "\xe9"; # start
+2  -> 12 "\xea"; # start
+2  -> 12 "\xeb"; # start
+2  -> 12 "\xec"; # start
+2  -> 12 "\xed"; # start
+2  -> 12 "\xee"; # start
+2  -> 12 "\xef"; # start
+2  -> 12 "\xf0"; # start
+2  -> 12 "\xf1"; # start
+2  -> 12 "\xf2"; # start
+2  -> 12 "\xf3"; # start
+2  -> 12 "\xf4"; # start
+2  -> 12 "\xf5"; # start
+2  -> 12 "\xf6"; # start
+2  -> 12 "\xf7"; # start
+2  -> 12 "\xf8"; # start
+2  -> 12 "\xf9"; # start
+2  -> 12 "\xfa"; # start
+2  -> 12 "\xfb"; # start
+2  -> 12 "\xfc"; # start
+2  -> 12 "\xfd"; # start
+2  -> 12 "\xfe"; # start
+2  -> 12 "\xff"; # start
+3  -> 12 "\x00"; # start
+3  -> 12 "\x01"; # start
+3  -> 12 "\x02"; # start
+3  -> 12 "\x03"; # start
+3  -> 12 "\x04"; # start
+3  -> 12 "\x05"; # start
+3  -> 12 "\x06"; # start
+3  -> 12 "\x07"; # start
+3  -> 12 "\x08"; # start
+3  -> 12 "\t"; # start
+3  -> 12 "\n"; # start
+3  -> 12 "\v"; # start
+3  -> 12 "\f"; # start
+3  -> 12 "\r"; # start
+3  -> 12 "\x0e"; # start
+3  -> 12 "\x0f"; # start
+3  -> 12 "\x10"; # start
+3  -> 12 "\x11"; # start
+3  -> 12 "\x12"; # start
+3  -> 12 "\x13"; # start
+3  -> 12 "\x14"; # start
+3  -> 12 "\x15"; # start
+3  -> 12 "\x16"; # start
+3  -> 12 "\x17"; # start
+3  -> 12 "\x18"; # start
+3  -> 12 "\x19"; # start
+3  -> 12 "\x1a"; # start
+3  -> 12 "\x1b"; # start
+3  -> 12 "\x1c"; # start
+3  -> 12 "\x1d"; # start
+3  -> 12 "\x1e"; # start
+3  -> 12 "\x1f"; # start
+3  -> 12 " "; # start
+3  -> 12 "!"; # start
+3  -> 12 "\""; # start
+3  -> 12 "#"; # start
+3  -> 12 "$"; # start
+3  -> 12 "%"; # start
+3  -> 12 "&"; # start
+3  -> 12 "'"; # start
+3  -> 12 "("; # start
+3  -> 12 ")"; # start
+3  -> 12 "*"; # start
+3  -> 12 "+"; # start
+3  -> 12 ","; # start
+3  -> 12 "-"; # start
+3  -> 12 "."; # start
+3  -> 12 "/"; # start
+3  -> 12 "0"; # start
+3  -> 12 "1"; # start
+3  -> 12 "2"; # start
+3  -> 12 "3"; # start
+3  -> 12 "4"; # start
+3  -> 12 "5"; # start
+3  -> 12 "6"; # start
+3  -> 12 "7"; # start
+3  -> 12 "8"; # start
+3  -> 12 "9"; # start
+3  -> 12 ":"; # start
+3  -> 12 ";"; # start
+3  -> 12 "<"; # start
+3  -> 12 "="; # start
+3  -> 12 ">"; # start
+3  -> 12 "?"; # start
+3  -> 12 "@"; # start
+3  -> 12 "A"; # start
+3  -> 12 "B"; # start
+3  -> 12 "C"; # start
+3  -> 12 "D"; # start
+3  -> 12 "E"; # start
+3  -> 12 "F"; # start
+3  -> 12 "G"; # start
+3  -> 12 "H"; # start
+3  -> 12 "I"; # start
+3  -> 12 "J"; # start
+3  -> 12 "K"; # start
+3  -> 12 "L"; # start
+3  -> 12 "M"; # start
+3  -> 12 "N"; # start
+3  -> 12 "O"; # start
+3  -> 12 "P"; # start
+3  -> 12 "Q"; # start
+3  ->  4 "R"; # e.g. "[HR"
+3  -> 12 "S"; # start
+3  -> 12 "T"; # start
+3  -> 12 "U"; # start
+3  -> 12 "V"; # start
+3  -> 12 "W"; # start
+3  -> 12 "X"; # start
+3  -> 12 "Y"; # start
+3  -> 12 "Z"; # start
+3  ->  2 "["; # e.g. "["
+3  -> 12 "\\"; # start
+3  -> 12 "]"; # start
+3  -> 12 "^"; # start
+3  -> 12 "_"; # start
+3  -> 12 "`"; # start
+3  -> 12 "a"; # start
+3  -> 12 "b"; # start
+3  -> 12 "c"; # start
+3  -> 12 "d"; # start
+3  -> 12 "e"; # start
+3  -> 12 "f"; # start
+3  -> 12 "g"; # start
+3  -> 12 "h"; # start
+3  -> 12 "i"; # start
+3  -> 12 "j"; # start
+3  -> 12 "k"; # start
+3  -> 12 "l"; # start
+3  -> 12 "m"; # start
+3  -> 12 "n"; # start
+3  -> 12 "o"; # start
+3  -> 12 "p"; # start
+3  -> 12 "q"; # start
+3  -> 12 "r"; # start
+3  -> 12 "s"; # start
+3  -> 12 "t"; # start
+3  -> 12 "u"; # start
+3  -> 12 "v"; # start
+3  -> 12 "w"; # start
+3  -> 12 "x"; # start
+3  -> 12 "y"; # start
+3  -> 12 "z"; # start
+3  -> 12 "{"; # start
+3  -> 12 "|"; # start
+3  -> 12 "}"; # start
+3  -> 12 "~"; # start
+3  -> 12 "\x7f"; # start
+3  -> 12 "\x80"; # start
+3  -> 12 "\x81"; # start
+3  -> 12 "\x82"; # start
+3  -> 12 "\x83"; # start
+3  -> 12 "\x84"; # start
+3  -> 12 "\x85"; # start
+3  -> 12 "\x86"; # start
+3  -> 12 "\x87"; # start
+3  -> 12 "\x88"; # start
+3  -> 12 "\x89"; # start
+3  -> 12 "\x8a"; # start
+3  -> 12 "\x8b"; # start
+3  -> 12 "\x8c"; # start
+3  -> 12 "\x8d"; # start
+3  -> 12 "\x8e"; # start
+3  -> 12 "\x8f"; # start
+3  -> 12 "\x90"; # start
+3  -> 12 "\x91"; # start
+3  -> 12 "\x92"; # start
+3  -> 12 "\x93"; # start
+3  -> 12 "\x94"; # start
+3  -> 12 "\x95"; # start
+3  -> 12 "\x96"; # start
+3  -> 12 "\x97"; # start
+3  -> 12 "\x98"; # start
+3  -> 12 "\x99"; # start
+3  -> 12 "\x9a"; # start
+3  -> 12 "\x9b"; # start
+3  -> 12 "\x9c"; # start
+3  -> 12 "\x9d"; # start
+3  -> 12 "\x9e"; # start
+3  -> 12 "\x9f"; # start
+3  -> 12 "\xa0"; # start
+3  -> 12 "\xa1"; # start
+3  -> 12 "\xa2"; # start
+3  -> 12 "\xa3"; # start
+3  -> 12 "\xa4"; # start
+3  -> 12 "\xa5"; # start
+3  -> 12 "\xa6"; # start
+3  -> 12 "\xa7"; # start
+3  -> 12 "\xa8"; # start
+3  -> 12 "\xa9"; # start
+3  -> 12 "\xaa"; # start
+3  -> 12 "\xab"; # start
+3  -> 12 "\xac"; # start
+3  -> 12 "\xad"; # start
+3  -> 12 "\xae"; # start
+3  -> 12 "\xaf"; # start
+3  -> 12 "\xb0"; # start
+3  -> 12 "\xb1"; # start
+3  -> 12 "\xb2"; # start
+3  -> 12 "\xb3"; # start
+3  -> 12 "\xb4"; # start
+3  -> 12 "\xb5"; # start
+3  -> 12 "\xb6"; # start
+3  -> 12 "\xb7"; # start
+3  -> 12 "\xb8"; # start
+3  -> 12 "\xb9"; # start
+3  -> 12 "\xba"; # start
+3  -> 12 "\xbb"; # start
+3  -> 12 "\xbc"; # start
+3  -> 12 "\xbd"; # start
+3  -> 12 "\xbe"; # start
+3  -> 12 "\xbf"; # start
+3  -> 12 "\xc0"; # start
+3  -> 12 "\xc1"; # start
+3  -> 12 "\xc2"; # start
+3  -> 12 "\xc3"; # start
+3  -> 12 "\xc4"; # start
+3  -> 12 "\xc5"; # start
+3  -> 12 "\xc6"; # start
+3  -> 12 "\xc7"; # start
+3  -> 12 "\xc8"; # start
+3  -> 12 "\xc9"; # start
+3  -> 12 "\xca"; # start
+3  -> 12 "\xcb"; # start
+3  -> 12 "\xcc"; # start
+3  -> 12 "\xcd"; # start
+3  -> 12 "\xce"; # start
+3  -> 12 "\xcf"; # start
+3  -> 12 "\xd0"; # start
+3  -> 12 "\xd1"; # start
+3  -> 12 "\xd2"; # start
+3  -> 12 "\xd3"; # start
+3  -> 12 "\xd4"; # start
+3  -> 12 "\xd5"; # start
+3  -> 12 "\xd6"; # start
+3  -> 12 "\xd7"; # start
+3  -> 12 "\xd8"; # start
+3  -> 12 "\xd9"; # start
+3  -> 12 "\xda"; # start
+3  -> 12 "\xdb"; # start
+3  -> 12 "\xdc"; # start
+3  -> 12 "\xdd"; # start
+3  -> 12 "\xde"; # start
+3  -> 12 "\xdf"; # start
+3  -> 12 "\xe0"; # start
+3  -> 12 "\xe1"; # start
+3  -> 12 "\xe2"; # start
+3  -> 12 "\xe3"; # start
+3  -> 12 "\xe4"; # start
+3  -> 12 "\xe5"; # start
+3  -> 12 "\xe6"; # start
+3  -> 12 "\xe7"; # start
+3  -> 12 "\xe8"; # start
+3  -> 12 "\xe9"; # start
+3  -> 12 "\xea"; # start
+3  -> 12 "\xeb"; # start
+3  -> 12 "\xec"; # start
+3  -> 12 "\xed"; # start
+3  -> 12 "\xee"; # start
+3  -> 12 "\xef"; # start
+3  -> 12 "\xf0"; # start
+3  -> 12 "\xf1"; # start
+3  -> 12 "\xf2"; # start
+3  -> 12 "\xf3"; # start
+3  -> 12 "\xf4"; # start
+3  -> 12 "\xf5"; # start
+3  -> 12 "\xf6"; # start
+3  -> 12 "\xf7"; # start
+3  -> 12 "\xf8"; # start
+3  -> 12 "\xf9"; # start
+3  -> 12 "\xfa"; # start
+3  -> 12 "\xfb"; # start
+3  -> 12 "\xfc"; # start
+3  -> 12 "\xfd"; # start
+3  -> 12 "\xfe"; # start
+3  -> 12 "\xff"; # start
+4  -> 12 "\x00"; # start
+4  -> 12 "\x01"; # start
+4  -> 12 "\x02"; # start
+4  -> 12 "\x03"; # start
+4  -> 12 "\x04"; # start
+4  -> 12 "\x05"; # start
+4  -> 12 "\x06"; # start
+4  -> 12 "\x07"; # start
+4  -> 12 "\x08"; # start
+4  -> 12 "\t"; # start
+4  -> 12 "\n"; # start
+4  -> 12 "\v"; # start
+4  -> 12 "\f"; # start
+4  -> 12 "\r"; # start
+4  -> 12 "\x0e"; # start
+4  -> 12 "\x0f"; # start
+4  -> 12 "\x10"; # start
+4  -> 12 "\x11"; # start
+4  -> 12 "\x12"; # start
+4  -> 12 "\x13"; # start
+4  -> 12 "\x14"; # start
+4  -> 12 "\x15"; # start
+4  -> 12 "\x16"; # start
+4  -> 12 "\x17"; # start
+4  -> 12 "\x18"; # start
+4  -> 12 "\x19"; # start
+4  -> 12 "\x1a"; # start
+4  -> 12 "\x1b"; # start
+4  -> 12 "\x1c"; # start
+4  -> 12 "\x1d"; # start
+4  -> 12 "\x1e"; # start
+4  -> 12 "\x1f"; # start
+4  -> 12 " "; # start
+4  -> 12 "!"; # start
+4  -> 12 "\""; # start
+4  -> 12 "#"; # start
+4  -> 12 "$"; # start
+4  -> 12 "%"; # start
+4  -> 12 "&"; # start
+4  -> 12 "'"; # start
+4  -> 12 "("; # start
+4  -> 12 ")"; # start
+4  -> 12 "*"; # start
+4  -> 12 "+"; # start
+4  -> 12 ","; # start
+4  -> 12 "-"; # start
+4  -> 12 "."; # start
+4  -> 12 "/"; # start
+4  -> 12 "0"; # start
+4  -> 12 "1"; # start
+4  -> 12 "2"; # start
+4  -> 12 "3"; # start
+4  -> 12 "4"; # start
+4  -> 12 "5"; # start
+4  -> 12 "6"; # start
+4  -> 12 "7"; # start
+4  -> 12 "8"; # start
+4  -> 12 "9"; # start
+4  -> 12 ":"; # start
+4  -> 12 ";"; # start
+4  -> 12 "<"; # start
+4  -> 12 "="; # start
+4  -> 12 ">"; # start
+4  -> 12 "?"; # start
+4  -> 12 "@"; # start
+4  -> 12 "A"; # start
+4  -> 12 "B"; # start
+4  -> 12 "C"; # start
+4  -> 12 "D"; # start
+4  ->  5 "E"; # e.g. "[HRE"
+4  -> 12 "F"; # start
+4  -> 12 "G"; # start
+4  -> 12 "H"; # start
+4  -> 12 "I"; # start
+4  -> 12 "J"; # start
+4  -> 12 "K"; # start
+4  -> 12 "L"; # start
+4  -> 12 "M"; # start
+4  -> 12 "N"; # start
+4  -> 12 "O"; # start
+4  -> 12 "P"; # start
+4  -> 12 "Q"; # start
+4  -> 12 "R"; # start
+4  -> 12 "S"; # start
+4  -> 12 "T"; # start
+4  -> 12 "U"; # start
+4  -> 12 "V"; # start
+4  -> 12 "W"; # start
+4  -> 12 "X"; # start
+4  -> 12 "Y"; # start
+4  -> 12 "Z"; # start
+4  ->  2 "["; # e.g. "["
+4  -> 12 "\\"; # start
+4  -> 12 "]"; # start
+4  -> 12 "^"; # start
+4  -> 12 "_"; # start
+4  -> 12 "`"; # start
+4  -> 12 "a"; # start
+4  -> 12 "b"; # start
+4  -> 12 "c"; # start
+4  -> 12 "d"; # start
+4  -> 12 "e"; # start
+4  -> 12 "f"; # start
+4  -> 12 "g"; # start
+4  -> 12 "h"; # start
+4  -> 12 "i"; # start
+4  -> 12 "j"; # start
+4  -> 12 "k"; # start
+4  -> 12 "l"; # start
+4  -> 12 "m"; # start
+4  -> 12 "n"; # start
+4  -> 12 "o"; # start
+4  -> 12 "p"; # start
+4  -> 12 "q"; # start
+4  -> 12 "r"; # start
+4  -> 12 "s"; # start
+4  -> 12 "t"; # start
+4  -> 12 "u"; # start
+4  -> 12 "v"; # start
+4  -> 12 "w"; # start
+4  -> 12 "x"; # start
+4  -> 12 "y"; # start
+4  -> 12 "z"; # start
+4  -> 12 "{"; # start
+4  -> 12 "|"; # start
+4  -> 12 "}"; # start
+4  -> 12 "~"; # start
+4  -> 12 "\x7f"; # start
+4  -> 12 "\x80"; # start
+4  -> 12 "\x81"; # start
+4  -> 12 "\x82"; # start
+4  -> 12 "\x83"; # start
+4  -> 12 "\x84"; # start
+4  -> 12 "\x85"; # start
+4  -> 12 "\x86"; # start
+4  -> 12 "\x87"; # start
+4  -> 12 "\x88"; # start
+4  -> 12 "\x89"; # start
+4  -> 12 "\x8a"; # start
+4  -> 12 "\x8b"; # start
+4  -> 12 "\x8c"; # start
+4  -> 12 "\x8d"; # start
+4  -> 12 "\x8e"; # start
+4  -> 12 "\x8f"; # start
+4  -> 12 "\x90"; # start
+4  -> 12 "\x91"; # start
+4  -> 12 "\x92"; # start
+4  -> 12 "\x93"; # start
+4  -> 12 "\x94"; # start
+4  -> 12 "\x95"; # start
+4  -> 12 "\x96"; # start
+4  -> 12 "\x97"; # start
+4  -> 12 "\x98"; # start
+4  -> 12 "\x99"; # start
+4  -> 12 "\x9a"; # start
+4  -> 12 "\x9b"; # start
+4  -> 12 "\x9c"; # start
+4  -> 12 "\x9d"; # start
+4  -> 12 "\x9e"; # start
+4  -> 12 "\x9f"; # start
+4  -> 12 "\xa0"; # start
+4  -> 12 "\xa1"; # start
+4  -> 12 "\xa2"; # start
+4  -> 12 "\xa3"; # start
+4  -> 12 "\xa4"; # start
+4  -> 12 "\xa5"; # start
+4  -> 12 "\xa6"; # start
+4  -> 12 "\xa7"; # start
+4  -> 12 "\xa8"; # start
+4  -> 12 "\xa9"; # start
+4  -> 12 "\xaa"; # start
+4  -> 12 "\xab"; # start
+4  -> 12 "\xac"; # start
+4  -> 12 "\xad"; # start
+4  -> 12 "\xae"; # start
+4  -> 12 "\xaf"; # start
+4  -> 12 "\xb0"; # start
+4  -> 12 "\xb1"; # start
+4  -> 12 "\xb2"; # start
+4  -> 12 "\xb3"; # start
+4  -> 12 "\xb4"; # start
+4  -> 12 "\xb5"; # start
+4  -> 12 "\xb6"; # start
+4  -> 12 "\xb7"; # start
+4  -> 12 "\xb8"; # start
+4  -> 12 "\xb9"; # start
+4  -> 12 "\xba"; # start
+4  -> 12 "\xbb"; # start
+4  -> 12 "\xbc"; # start
+4  -> 12 "\xbd"; # start
+4  -> 12 "\xbe"; # start
+4  -> 12 "\xbf"; # start
+4  -> 12 "\xc0"; # start
+4  -> 12 "\xc1"; # start
+4  -> 12 "\xc2"; # start
+4  -> 12 "\xc3"; # start
+4  -> 12 "\xc4"; # start
+4  -> 12 "\xc5"; # start
+4  -> 12 "\xc6"; # start
+4  -> 12 "\xc7"; # start
+4  -> 12 "\xc8"; # start
+4  -> 12 "\xc9"; # start
+4  -> 12 "\xca"; # start
+4  -> 12 "\xcb"; # start
+4  -> 12 "\xcc"; # start
+4  -> 12 "\xcd"; # start
+4  -> 12 "\xce"; # start
+4  -> 12 "\xcf"; # start
+4  -> 12 "\xd0"; # start
+4  -> 12 "\xd1"; # start
+4  -> 12 "\xd2"; # start
+4  -> 12 "\xd3"; # start
+4  -> 12 "\xd4"; # start
+4  -> 12 "\xd5"; # start
+4  -> 12 "\xd6"; # start
+4  -> 12 "\xd7"; # start
+4  -> 12 "\xd8"; # start
+4  -> 12 "\xd9"; # start
+4  -> 12 "\xda"; # start
+4  -> 12 "\xdb"; # start
+4  -> 12 "\xdc"; # start
+4  -> 12 "\xdd"; # start
+4  -> 12 "\xde"; # start
+4  -> 12 "\xdf"; # start
+4  -> 12 "\xe0"; # start
+4  -> 12 "\xe1"; # start
+4  -> 12 "\xe2"; # start
+4  -> 12 "\xe3"; # start
+4  -> 12 "\xe4"; # start
+4  -> 12 "\xe5"; # start
+4  -> 12 "\xe6"; # start
+4  -> 12 "\xe7"; # start
+4  -> 12 "\xe8"; # start
+4  -> 12 "\xe9"; # start
+4  -> 12 "\xea"; # start
+4  -> 12 "\xeb"; # start
+4  -> 12 "\xec"; # start
+4  -> 12 "\xed"; # start
+4  -> 12 "\xee"; # start
+4  -> 12 "\xef"; # start
+4  -> 12 "\xf0"; # start
+4  -> 12 "\xf1"; # start
+4  -> 12 "\xf2"; # start
+4  -> 12 "\xf3"; # start
+4  -> 12 "\xf4"; # start
+4  -> 12 "\xf5"; # start
+4  -> 12 "\xf6"; # start
+4  -> 12 "\xf7"; # start
+4  -> 12 "\xf8"; # start
+4  -> 12 "\xf9"; # start
+4  -> 12 "\xfa"; # start
+4  -> 12 "\xfb"; # start
+4  -> 12 "\xfc"; # start
+4  -> 12 "\xfd"; # start
+4  -> 12 "\xfe"; # start
+4  -> 12 "\xff"; # start
+5  -> 12 "\x00"; # start
+5  -> 12 "\x01"; # start
+5  -> 12 "\x02"; # start
+5  -> 12 "\x03"; # start
+5  -> 12 "\x04"; # start
+5  -> 12 "\x05"; # start
+5  -> 12 "\x06"; # start
+5  -> 12 "\x07"; # start
+5  -> 12 "\x08"; # start
+5  -> 12 "\t"; # start
+5  -> 12 "\n"; # start
+5  -> 12 "\v"; # start
+5  -> 12 "\f"; # start
+5  -> 12 "\r"; # start
+5  -> 12 "\x0e"; # start
+5  -> 12 "\x0f"; # start
+5  -> 12 "\x10"; # start
+5  -> 12 "\x11"; # start
+5  -> 12 "\x12"; # start
+5  -> 12 "\x13"; # start
+5  -> 12 "\x14"; # start
+5  -> 12 "\x15"; # start
+5  -> 12 "\x16"; # start
+5  -> 12 "\x17"; # start
+5  -> 12 "\x18"; # start
+5  -> 12 "\x19"; # start
+5  -> 12 "\x1a"; # start
+5  -> 12 "\x1b"; # start
+5  -> 12 "\x1c"; # start
+5  -> 12 "\x1d"; # start
+5  -> 12 "\x1e"; # start
+5  -> 12 "\x1f"; # start
+5  -> 12 " "; # start
+5  -> 12 "!"; # start
+5  -> 12 "\""; # start
+5  -> 12 "#"; # start
+5  -> 12 "$"; # start
+5  -> 12 "%"; # start
+5  -> 12 "&"; # start
+5  -> 12 "'"; # start
+5  -> 12 "("; # start
+5  -> 12 ")"; # start
+5  -> 12 "*"; # start
+5  -> 12 "+"; # start
+5  -> 12 ","; # start
+5  -> 12 "-"; # start
+5  -> 12 "."; # start
+5  -> 12 "/"; # start
+5  -> 12 "0"; # start
+5  -> 12 "1"; # start
+5  -> 12 "2"; # start
+5  -> 12 "3"; # start
+5  -> 12 "4"; # start
+5  -> 12 "5"; # start
+5  -> 12 "6"; # start
+5  -> 12 "7"; # start
+5  -> 12 "8"; # start
+5  -> 12 "9"; # start
+5  -> 12 ":"; # start
+5  -> 12 ";"; # start
+5  -> 12 "<"; # start
+5  -> 12 "="; # start
+5  -> 12 ">"; # start
+5  -> 12 "?"; # start
+5  -> 12 "@"; # start
+5  -> 12 "A"; # start
+5  -> 12 "B"; # start
+5  -> 12 "C"; # start
+5  -> 12 "D"; # start
+5  -> 12 "E"; # start
+5  -> 12 "F"; # start
+5  -> 12 "G"; # start
+5  -> 12 "H"; # start
+5  -> 12 "I"; # start
+5  -> 12 "J"; # start
+5  -> 12 "K"; # start
+5  -> 12 "L"; # start
+5  -> 12 "M"; # start
+5  -> 12 "N"; # start
+5  -> 12 "O"; # start
+5  -> 12 "P"; # start
+5  -> 12 "Q"; # start
+5  -> 12 "R"; # start
+5  ->  6 "S"; # e.g. "[HRES"
+5  -> 12 "T"; # start
+5  -> 12 "U"; # start
+5  -> 12 "V"; # start
+5  -> 12 "W"; # start
+5  -> 12 "X"; # start
+5  -> 12 "Y"; # start
+5  -> 12 "Z"; # start
+5  ->  2 "["; # e.g. "["
+5  -> 12 "\\"; # start
+5  -> 12 "]"; # start
+5  -> 12 "^"; # start
+5  -> 12 "_"; # start
+5  -> 12 "`"; # start
+5  -> 12 "a"; # start
+5  -> 12 "b"; # start
+5  -> 12 "c"; # start
+5  -> 12 "d"; # start
+5  -> 12 "e"; # start
+5  -> 12 "f"; # start
+5  -> 12 "g"; # start
+5  -> 12 "h"; # start
+5  -> 12 "i"; # start
+5  -> 12 "j"; # start
+5  -> 12 "k"; # start
+5  -> 12 "l"; # start
+5  -> 12 "m"; # start
+5  -> 12 "n"; # start
+5  -> 12 "o"; # start
+5  -> 12 "p"; # start
+5  -> 12 "q"; # start
+5  -> 12 "r"; # start
+5  -> 12 "s"; # start
+5  -> 12 "t"; # start
+5  -> 12 "u"; # start
+5  -> 12 "v"; # start
+5  -> 12 "w"; # start
+5  -> 12 "x"; # start
+5  -> 12 "y"; # start
+5  -> 12 "z"; # start
+5  -> 12 "{"; # start
+5  -> 12 "|"; # start
+5  -> 12 "}"; # start
+5  -> 12 "~"; # start
+5  -> 12 "\x7f"; # start
+5  -> 12 "\x80"; # start
+5  -> 12 "\x81"; # start
+5  -> 12 "\x82"; # start
+5  -> 12 "\x83"; # start
+5  -> 12 "\x84"; # start
+5  -> 12 "\x85"; # start
+5  -> 12 "\x86"; # start
+5  -> 12 "\x87"; # start
+5  -> 12 "\x88"; # start
+5  -> 12 "\x89"; # start
+5  -> 12 "\x8a"; # start
+5  -> 12 "\x8b"; # start
+5  -> 12 "\x8c"; # start
+5  -> 12 "\x8d"; # start
+5  -> 12 "\x8e"; # start
+5  -> 12 "\x8f"; # start
+5  -> 12 "\x90"; # start
+5  -> 12 "\x91"; # start
+5  -> 12 "\x92"; # start
+5  -> 12 "\x93"; # start
+5  -> 12 "\x94"; # start
+5  -> 12 "\x95"; # start
+5  -> 12 "\x96"; # start
+5  -> 12 "\x97"; # start
+5  -> 12 "\x98"; # start
+5  -> 12 "\x99"; # start
+5  -> 12 "\x9a"; # start
+5  -> 12 "\x9b"; # start
+5  -> 12 "\x9c"; # start
+5  -> 12 "\x9d"; # start
+5  -> 12 "\x9e"; # start
+5  -> 12 "\x9f"; # start
+5  -> 12 "\xa0"; # start
+5  -> 12 "\xa1"; # start
+5  -> 12 "\xa2"; # start
+5  -> 12 "\xa3"; # start
+5  -> 12 "\xa4"; # start
+5  -> 12 "\xa5"; # start
+5  -> 12 "\xa6"; # start
+5  -> 12 "\xa7"; # start
+5  -> 12 "\xa8"; # start
+5  -> 12 "\xa9"; # start
+5  -> 12 "\xaa"; # start
+5  -> 12 "\xab"; # start
+5  -> 12 "\xac"; # start
+5  -> 12 "\xad"; # start
+5  -> 12 "\xae"; # start
+5  -> 12 "\xaf"; # start
+5  -> 12 "\xb0"; # start
+5  -> 12 "\xb1"; # start
+5  -> 12 "\xb2"; # start
+5  -> 12 "\xb3"; # start
+5  -> 12 "\xb4"; # start
+5  -> 12 "\xb5"; # start
+5  -> 12 "\xb6"; # start
+5  -> 12 "\xb7"; # start
+5  -> 12 "\xb8"; # start
+5  -> 12 "\xb9"; # start
+5  -> 12 "\xba"; # start
+5  -> 12 "\xbb"; # start
+5  -> 12 "\xbc"; # start
+5  -> 12 "\xbd"; # start
+5  -> 12 "\xbe"; # start
+5  -> 12 "\xbf"; # start
+5  -> 12 "\xc0"; # start
+5  -> 12 "\xc1"; # start
+5  -> 12 "\xc2"; # start
+5  -> 12 "\xc3"; # start
+5  -> 12 "\xc4"; # start
+5  -> 12 "\xc5"; # start
+5  -> 12 "\xc6"; # start
+5  -> 12 "\xc7"; # start
+5  -> 12 "\xc8"; # start
+5  -> 12 "\xc9"; # start
+5  -> 12 "\xca"; # start
+5  -> 12 "\xcb"; # start
+5  -> 12 "\xcc"; # start
+5  -> 12 "\xcd"; # start
+5  -> 12 "\xce"; # start
+5  -> 12 "\xcf"; # start
+5  -> 12 "\xd0"; # start
+5  -> 12 "\xd1"; # start
+5  -> 12 "\xd2"; # start
+5  -> 12 "\xd3"; # start
+5  -> 12 "\xd4"; # start
+5  -> 12 "\xd5"; # start
+5  -> 12 "\xd6"; # start
+5  -> 12 "\xd7"; # start
+5  -> 12 "\xd8"; # start
+5  -> 12 "\xd9"; # start
+5  -> 12 "\xda"; # start
+5  -> 12 "\xdb"; # start
+5  -> 12 "\xdc"; # start
+5  -> 12 "\xdd"; # start
+5  -> 12 "\xde"; # start
+5  -> 12 "\xdf"; # start
+5  -> 12 "\xe0"; # start
+5  -> 12 "\xe1"; # start
+5  -> 12 "\xe2"; # start
+5  -> 12 "\xe3"; # start
+5  -> 12 "\xe4"; # start
+5  -> 12 "\xe5"; # start
+5  -> 12 "\xe6"; # start
+5  -> 12 "\xe7"; # start
+5  -> 12 "\xe8"; # start
+5  -> 12 "\xe9"; # start
+5  -> 12 "\xea"; # start
+5  -> 12 "\xeb"; # start
+5  -> 12 "\xec"; # start
+5  -> 12 "\xed"; # start
+5  -> 12 "\xee"; # start
+5  -> 12 "\xef"; # start
+5  -> 12 "\xf0"; # start
+5  -> 12 "\xf1"; # start
+5  -> 12 "\xf2"; # start
+5  -> 12 "\xf3"; # start
+5  -> 12 "\xf4"; # start
+5  -> 12 "\xf5"; # start
+5  -> 12 "\xf6"; # start
+5  -> 12 "\xf7"; # start
+5  -> 12 "\xf8"; # start
+5  -> 12 "\xf9"; # start
+5  -> 12 "\xfa"; # start
+5  -> 12 "\xfb"; # start
+5  -> 12 "\xfc"; # start
+5  -> 12 "\xfd"; # start
+5  -> 12 "\xfe"; # start
+5  -> 12 "\xff"; # start
+6  -> 12 "\x00"; # start
+6  -> 12 "\x01"; # start
+6  -> 12 "\x02"; # start
+6  -> 12 "\x03"; # start
+6  -> 12 "\x04"; # start
+6  -> 12 "\x05"; # start
+6  -> 12 "\x06"; # start
+6  -> 12 "\x07"; # start
+6  -> 12 "\x08"; # start
+6  -> 12 "\t"; # start
+6  -> 12 "\n"; # start
+6  -> 12 "\v"; # start
+6  -> 12 "\f"; # start
+6  -> 12 "\r"; # start
+6  -> 12 "\x0e"; # start
+6  -> 12 "\x0f"; # start
+6  -> 12 "\x10"; # start
+6  -> 12 "\x11"; # start
+6  -> 12 "\x12"; # start
+6  -> 12 "\x13"; # start
+6  -> 12 "\x14"; # start
+6  -> 12 "\x15"; # start
+6  -> 12 "\x16"; # start
+6  -> 12 "\x17"; # start
+6  -> 12 "\x18"; # start
+6  -> 12 "\x19"; # start
+6  -> 12 "\x1a"; # start
+6  -> 12 "\x1b"; # start
+6  -> 12 "\x1c"; # start
+6  -> 12 "\x1d"; # start
+6  -> 12 "\x1e"; # start
+6  -> 12 "\x1f"; # start
+6  -> 12 " "; # start
+6  -> 12 "!"; # start
+6  -> 12 "\""; # start
+6  -> 12 "#"; # start
+6  -> 12 "$"; # start
+6  -> 12 "%"; # start
+6  -> 12 "&"; # start
+6  -> 12 "'"; # start
+6  -> 12 "("; # start
+6  -> 12 ")"; # start
+6  -> 12 "*"; # start
+6  -> 12 "+"; # start
+6  -> 12 ","; # start
+6  -> 12 "-"; # start
+6  -> 12 "."; # start
+6  -> 12 "/"; # start
+6  -> 12 "0"; # start
+6  -> 12 "1"; # start
+6  -> 12 "2"; # start
+6  -> 12 "3"; # start
+6  -> 12 "4"; # start
+6  -> 12 "5"; # start
+6  -> 12 "6"; # start
+6  -> 12 "7"; # start
+6  -> 12 "8"; # start
+6  -> 12 "9"; # start
+6  -> 12 ":"; # start
+6  -> 12 ";"; # start
+6  -> 12 "<"; # start
+6  -> 12 "="; # start
+6  -> 12 ">"; # start
+6  -> 12 "?"; # start
+6  -> 12 "@"; # start
+6  -> 12 "A"; # start
+6  -> 12 "B"; # start
+6  -> 12 "C"; # start
+6  -> 12 "D"; # start
+6  -> 12 "E"; # start
+6  -> 12 "F"; # start
+6  -> 12 "G"; # start
+6  -> 12 "H"; # start
+6  -> 12 "I"; # start
+6  -> 12 "J"; # start
+6  -> 12 "K"; # start
+6  -> 12 "L"; # start
+6  -> 12 "M"; # start
+6  -> 12 "N"; # start
+6  -> 12 "O"; # start
+6  -> 12 "P"; # start
+6  -> 12 "Q"; # start
+6  -> 12 "R"; # start
+6  -> 12 "S"; # start
+6  -> 12 "T"; # start
+6  ->  7 "U"; # e.g. "[HRESU"
+6  -> 12 "V"; # start
+6  -> 12 "W"; # start
+6  -> 12 "X"; # start
+6  -> 12 "Y"; # start
+6  -> 12 "Z"; # start
+6  ->  2 "["; # e.g. "["
+6  -> 12 "\\"; # start
+6  -> 12 "]"; # start
+6  -> 12 "^"; # start
+6  -> 12 "_"; # start
+6  -> 12 "`"; # start
+6  -> 12 "a"; # start
+6  -> 12 "b"; # start
+6  -> 12 "c"; # start
+6  -> 12 "d"; # start
+6  -> 12 "e"; # start
+6  -> 12 "f"; # start
+6  -> 12 "g"; # start
+6  -> 12 "h"; # start
+6  -> 12 "i"; # start
+6  -> 12 "j"; # start
+6  -> 12 "k"; # start
+6  -> 12 "l"; # start
+6  -> 12 "m"; # start
+6  -> 12 "n"; # start
+6  -> 12 "o"; # start
+6  -> 12 "p"; # start
+6  -> 12 "q"; # start
+6  -> 12 "r"; # start
+6  -> 12 "s"; # start
+6  -> 12 "t"; # start
+6  -> 12 "u"; # start
+6  -> 12 "v"; # start
+6  -> 12 "w"; # start
+6  -> 12 "x"; # start
+6  -> 12 "y"; # start
+6  -> 12 "z"; # start
+6  -> 12 "{"; # start
+6  -> 12 "|"; # start
+6  -> 12 "}"; # start
+6  -> 12 "~"; # start
+6  -> 12 "\x7f"; # start
+6  -> 12 "\x80"; # start
+6  -> 12 "\x81"; # start
+6  -> 12 "\x82"; # start
+6  -> 12 "\x83"; # start
+6  -> 12 "\x84"; # start
+6  -> 12 "\x85"; # start
+6  -> 12 "\x86"; # start
+6  -> 12 "\x87"; # start
+6  -> 12 "\x88"; # start
+6  -> 12 "\x89"; # start
+6  -> 12 "\x8a"; # start
+6  -> 12 "\x8b"; # start
+6  -> 12 "\x8c"; # start
+6  -> 12 "\x8d"; # start
+6  -> 12 "\x8e"; # start
+6  -> 12 "\x8f"; # start
+6  -> 12 "\x90"; # start
+6  -> 12 "\x91"; # start
+6  -> 12 "\x92"; # start
+6  -> 12 "\x93"; # start
+6  -> 12 "\x94"; # start
+6  -> 12 "\x95"; # start
+6  -> 12 "\x96"; # start
+6  -> 12 "\x97"; # start
+6  -> 12 "\x98"; # start
+6  -> 12 "\x99"; # start
+6  -> 12 "\x9a"; # start
+6  -> 12 "\x9b"; # start
+6  -> 12 "\x9c"; # start
+6  -> 12 "\x9d"; # start
+6  -> 12 "\x9e"; # start
+6  -> 12 "\x9f"; # start
+6  -> 12 "\xa0"; # start
+6  -> 12 "\xa1"; # start
+6  -> 12 "\xa2"; # start
+6  -> 12 "\xa3"; # start
+6  -> 12 "\xa4"; # start
+6  -> 12 "\xa5"; # start
+6  -> 12 "\xa6"; # start
+6  -> 12 "\xa7"; # start
+6  -> 12 "\xa8"; # start
+6  -> 12 "\xa9"; # start
+6  -> 12 "\xaa"; # start
+6  -> 12 "\xab"; # start
+6  -> 12 "\xac"; # start
+6  -> 12 "\xad"; # start
+6  -> 12 "\xae"; # start
+6  -> 12 "\xaf"; # start
+6  -> 12 "\xb0"; # start
+6  -> 12 "\xb1"; # start
+6  -> 12 "\xb2"; # start
+6  -> 12 "\xb3"; # start
+6  -> 12 "\xb4"; # start
+6  -> 12 "\xb5"; # start
+6  -> 12 "\xb6"; # start
+6  -> 12 "\xb7"; # start
+6  -> 12 "\xb8"; # start
+6  -> 12 "\xb9"; # start
+6  -> 12 "\xba"; # start
+6  -> 12 "\xbb"; # start
+6  -> 12 "\xbc"; # start
+6  -> 12 "\xbd"; # start
+6  -> 12 "\xbe"; # start
+6  -> 12 "\xbf"; # start
+6  -> 12 "\xc0"; # start
+6  -> 12 "\xc1"; # start
+6  -> 12 "\xc2"; # start
+6  -> 12 "\xc3"; # start
+6  -> 12 "\xc4"; # start
+6  -> 12 "\xc5"; # start
+6  -> 12 "\xc6"; # start
+6  -> 12 "\xc7"; # start
+6  -> 12 "\xc8"; # start
+6  -> 12 "\xc9"; # start
+6  -> 12 "\xca"; # start
+6  -> 12 "\xcb"; # start
+6  -> 12 "\xcc"; # start
+6  -> 12 "\xcd"; # start
+6  -> 12 "\xce"; # start
+6  -> 12 "\xcf"; # start
+6  -> 12 "\xd0"; # start
+6  -> 12 "\xd1"; # start
+6  -> 12 "\xd2"; # start
+6  -> 12 "\xd3"; # start
+6  -> 12 "\xd4"; # start
+6  -> 12 "\xd5"; # start
+6  -> 12 "\xd6"; # start
+6  -> 12 "\xd7"; # start
+6  -> 12 "\xd8"; # start
+6  -> 12 "\xd9"; # start
+6  -> 12 "\xda"; # start
+6  -> 12 "\xdb"; # start
+6  -> 12 "\xdc"; # start
+6  -> 12 "\xdd"; # start
+6  -> 12 "\xde"; # start
+6  -> 12 "\xdf"; # start
+6  -> 12 "\xe0"; # start
+6  -> 12 "\xe1"; # start
+6  -> 12 "\xe2"; # start
+6  -> 12 "\xe3"; # start
+6  -> 12 "\xe4"; # start
+6  -> 12 "\xe5"; # start
+6  -> 12 "\xe6"; # start
+6  -> 12 "\xe7"; # start
+6  -> 12 "\xe8"; # start
+6  -> 12 "\xe9"; # start
+6  -> 12 "\xea"; # start
+6  -> 12 "\xeb"; # start
+6  -> 12 "\xec"; # start
+6  -> 12 "\xed"; # start
+6  -> 12 "\xee"; # start
+6  -> 12 "\xef"; # start
+6  -> 12 "\xf0"; # start
+6  -> 12 "\xf1"; # start
+6  -> 12 "\xf2"; # start
+6  -> 12 "\xf3"; # start
+6  -> 12 "\xf4"; # start
+6  -> 12 "\xf5"; # start
+6  -> 12 "\xf6"; # start
+6  -> 12 "\xf7"; # start
+6  -> 12 "\xf8"; # start
+6  -> 12 "\xf9"; # start
+6  -> 12 "\xfa"; # start
+6  -> 12 "\xfb"; # start
+6  -> 12 "\xfc"; # start
+6  -> 12 "\xfd"; # start
+6  -> 12 "\xfe"; # start
+6  -> 12 "\xff"; # start
+7  -> 12 "\x00"; # start
+7  -> 12 "\x01"; # start
+7  -> 12 "\x02"; # start
+7  -> 12 "\x03"; # start
+7  -> 12 "\x04"; # start
+7  -> 12 "\x05"; # start
+7  -> 12 "\x06"; # start
+7  -> 12 "\x07"; # start
+7  -> 12 "\x08"; # start
+7  -> 12 "\t"; # start
+7  -> 12 "\n"; # start
+7  -> 12 "\v"; # start
+7  -> 12 "\f"; # start
+7  -> 12 "\r"; # start
+7  -> 12 "\x0e"; # start
+7  -> 12 "\x0f"; # start
+7  -> 12 "\x10"; # start
+7  -> 12 "\x11"; # start
+7  -> 12 "\x12"; # start
+7  -> 12 "\x13"; # start
+7  -> 12 "\x14"; # start
+7  -> 12 "\x15"; # start
+7  -> 12 "\x16"; # start
+7  -> 12 "\x17"; # start
+7  -> 12 "\x18"; # start
+7  -> 12 "\x19"; # start
+7  -> 12 "\x1a"; # start
+7  -> 12 "\x1b"; # start
+7  -> 12 "\x1c"; # start
+7  -> 12 "\x1d"; # start
+7  -> 12 "\x1e"; # start
+7  -> 12 "\x1f"; # start
+7  -> 12 " "; # start
+7  -> 12 "!"; # start
+7  -> 12 "\""; # start
+7  -> 12 "#"; # start
+7  -> 12 "$"; # start
+7  -> 12 "%"; # start
+7  -> 12 "&"; # start
+7  -> 12 "'"; # start
+7  -> 12 "("; # start
+7  -> 12 ")"; # start
+7  -> 12 "*"; # start
+7  -> 12 "+"; # start
+7  -> 12 ","; # start
+7  -> 12 "-"; # start
+7  -> 12 "."; # start
+7  -> 12 "/"; # start
+7  -> 12 "0"; # start
+7  -> 12 "1"; # start
+7  -> 12 "2"; # start
+7  -> 12 "3"; # start
+7  -> 12 "4"; # start
+7  -> 12 "5"; # start
+7  -> 12 "6"; # start
+7  -> 12 "7"; # start
+7  -> 12 "8"; # start
+7  -> 12 "9"; # start
+7  -> 12 ":"; # start
+7  -> 12 ";"; # start
+7  -> 12 "<"; # start
+7  -> 12 "="; # start
+7  -> 12 ">"; # start
+7  -> 12 "?"; # start
+7  -> 12 "@"; # start
+7  -> 12 "A"; # start
+7  -> 12 "B"; # start
+7  -> 12 "C"; # start
+7  -> 12 "D"; # start
+7  -> 12 "E"; # start
+7  -> 12 "F"; # start
+7  -> 12 "G"; # start
+7  -> 12 "H"; # start
+7  -> 12 "I"; # start
+7  -> 12 "J"; # start
+7  -> 12 "K"; # start
+7  ->  8 "L"; # e.g. "[HRESUL"
+7  -> 12 "M"; # start
+7  -> 12 "N"; # start
+7  -> 12 "O"; # start
+7  -> 12 "P"; # start
+7  -> 12 "Q"; # start
+7  -> 12 "R"; # start
+7  -> 12 "S"; # start
+7  -> 12 "T"; # start
+7  -> 12 "U"; # start
+7  -> 12 "V"; # start
+7  -> 12 "W"; # start
+7  -> 12 "X"; # start
+7  -> 12 "Y"; # start
+7  -> 12 "Z"; # start
+7  ->  2 "["; # e.g. "["
+7  -> 12 "\\"; # start
+7  -> 12 "]"; # start
+7  -> 12 "^"; # start
+7  -> 12 "_"; # start
+7  -> 12 "`"; # start
+7  -> 12 "a"; # start
+7  -> 12 "b"; # start
+7  -> 12 "c"; # start
+7  -> 12 "d"; # start
+7  -> 12 "e"; # start
+7  -> 12 "f"; # start
+7  -> 12 "g"; # start
+7  -> 12 "h"; # start
+7  -> 12 "i"; # start
+7  -> 12 "j"; # start
+7  -> 12 "k"; # start
+7  -> 12 "l"; # start
+7  -> 12 "m"; # start
+7  -> 12 "n"; # start
+7  -> 12 "o"; # start
+7  -> 12 "p"; # start
+7  -> 12 "q"; # start
+7  -> 12 "r"; # start
+7  -> 12 "s"; # start
+7  -> 12 "t"; # start
+7  -> 12 "u"; # start
+7  -> 12 "v"; # start
+7  -> 12 "w"; # start
+7  -> 12 "x"; # start
+7  -> 12 "y"; # start
+7  -> 12 "z"; # start
+7  -> 12 "{"; # start
+7  -> 12 "|"; # start
+7  -> 12 "}"; # start
+7  -> 12 "~"; # start
+7  -> 12 "\x7f"; # start
+7  -> 12 "\x80"; # start
+7  -> 12 "\x81"; # start
+7  -> 12 "\x82"; # start
+7  -> 12 "\x83"; # start
+7  -> 12 "\x84"; # start
+7  -> 12 "\x85"; # start
+7  -> 12 "\x86"; # start
+7  -> 12 "\x87"; # start
+7  -> 12 "\x88"; # start
+7  -> 12 "\x89"; # start
+7  -> 12 "\x8a"; # start
+7  -> 12 "\x8b"; # start
+7  -> 12 "\x8c"; # start
+7  -> 12 "\x8d"; # start
+7  -> 12 "\x8e"; # start
+7  -> 12 "\x8f"; # start
+7  -> 12 "\x90"; # start
+7  -> 12 "\x91"; # start
+7  -> 12 "\x92"; # start
+7  -> 12 "\x93"; # start
+7  -> 12 "\x94"; # start
+7  -> 12 "\x95"; # start
+7  -> 12 "\x96"; # start
+7  -> 12 "\x97"; # start
+7  -> 12 "\x98"; # start
+7  -> 12 "\x99"; # start
+7  -> 12 "\x9a"; # start
+7  -> 12 "\x9b"; # start
+7  -> 12 "\x9c"; # start
+7  -> 12 "\x9d"; # start
+7  -> 12 "\x9e"; # start
+7  -> 12 "\x9f"; # start
+7  -> 12 "\xa0"; # start
+7  -> 12 "\xa1"; # start
+7  -> 12 "\xa2"; # start
+7  -> 12 "\xa3"; # start
+7  -> 12 "\xa4"; # start
+7  -> 12 "\xa5"; # start
+7  -> 12 "\xa6"; # start
+7  -> 12 "\xa7"; # start
+7  -> 12 "\xa8"; # start
+7  -> 12 "\xa9"; # start
+7  -> 12 "\xaa"; # start
+7  -> 12 "\xab"; # start
+7  -> 12 "\xac"; # start
+7  -> 12 "\xad"; # start
+7  -> 12 "\xae"; # start
+7  -> 12 "\xaf"; # start
+7  -> 12 "\xb0"; # start
+7  -> 12 "\xb1"; # start
+7  -> 12 "\xb2"; # start
+7  -> 12 "\xb3"; # start
+7  -> 12 "\xb4"; # start
+7  -> 12 "\xb5"; # start
+7  -> 12 "\xb6"; # start
+7  -> 12 "\xb7"; # start
+7  -> 12 "\xb8"; # start
+7  -> 12 "\xb9"; # start
+7  -> 12 "\xba"; # start
+7  -> 12 "\xbb"; # start
+7  -> 12 "\xbc"; # start
+7  -> 12 "\xbd"; # start
+7  -> 12 "\xbe"; # start
+7  -> 12 "\xbf"; # start
+7  -> 12 "\xc0"; # start
+7  -> 12 "\xc1"; # start
+7  -> 12 "\xc2"; # start
+7  -> 12 "\xc3"; # start
+7  -> 12 "\xc4"; # start
+7  -> 12 "\xc5"; # start
+7  -> 12 "\xc6"; # start
+7  -> 12 "\xc7"; # start
+7  -> 12 "\xc8"; # start
+7  -> 12 "\xc9"; # start
+7  -> 12 "\xca"; # start
+7  -> 12 "\xcb"; # start
+7  -> 12 "\xcc"; # start
+7  -> 12 "\xcd"; # start
+7  -> 12 "\xce"; # start
+7  -> 12 "\xcf"; # start
+7  -> 12 "\xd0"; # start
+7  -> 12 "\xd1"; # start
+7  -> 12 "\xd2"; # start
+7  -> 12 "\xd3"; # start
+7  -> 12 "\xd4"; # start
+7  -> 12 "\xd5"; # start
+7  -> 12 "\xd6"; # start
+7  -> 12 "\xd7"; # start
+7  -> 12 "\xd8"; # start
+7  -> 12 "\xd9"; # start
+7  -> 12 "\xda"; # start
+7  -> 12 "\xdb"; # start
+7  -> 12 "\xdc"; # start
+7  -> 12 "\xdd"; # start
+7  -> 12 "\xde"; # start
+7  -> 12 "\xdf"; # start
+7  -> 12 "\xe0"; # start
+7  -> 12 "\xe1"; # start
+7  -> 12 "\xe2"; # start
+7  -> 12 "\xe3"; # start
+7  -> 12 "\xe4"; # start
+7  -> 12 "\xe5"; # start
+7  -> 12 "\xe6"; # start
+7  -> 12 "\xe7"; # start
+7  -> 12 "\xe8"; # start
+7  -> 12 "\xe9"; # start
+7  -> 12 "\xea"; # start
+7  -> 12 "\xeb"; # start
+7  -> 12 "\xec"; # start
+7  -> 12 "\xed"; # start
+7  -> 12 "\xee"; # start
+7  -> 12 "\xef"; # start
+7  -> 12 "\xf0"; # start
+7  -> 12 "\xf1"; # start
+7  -> 12 "\xf2"; # start
+7  -> 12 "\xf3"; # start
+7  -> 12 "\xf4"; # start
+7  -> 12 "\xf5"; # start
+7  -> 12 "\xf6"; # start
+7  -> 12 "\xf7"; # start
+7  -> 12 "\xf8"; # start
+7  -> 12 "\xf9"; # start
+7  -> 12 "\xfa"; # start
+7  -> 12 "\xfb"; # start
+7  -> 12 "\xfc"; # start
+7  -> 12 "\xfd"; # start
+7  -> 12 "\xfe"; # start
+7  -> 12 "\xff"; # start
+8  -> 12 "\x00"; # start
+8  -> 12 "\x01"; # start
+8  -> 12 "\x02"; # start
+8  -> 12 "\x03"; # start
+8  -> 12 "\x04"; # start
+8  -> 12 "\x05"; # start
+8  -> 12 "\x06"; # start
+8  -> 12 "\x07"; # start
+8  -> 12 "\x08"; # start
+8  -> 12 "\t"; # start
+8  -> 12 "\n"; # start
+8  -> 12 "\v"; # start
+8  -> 12 "\f"; # start
+8  -> 12 "\r"; # start
+8  -> 12 "\x0e"; # start
+8  -> 12 "\x0f"; # start
+8  -> 12 "\x10"; # start
+8  -> 12 "\x11"; # start
+8  -> 12 "\x12"; # start
+8  -> 12 "\x13"; # start
+8  -> 12 "\x14"; # start
+8  -> 12 "\x15"; # start
+8  -> 12 "\x16"; # start
+8  -> 12 "\x17"; # start
+8  -> 12 "\x18"; # start
+8  -> 12 "\x19"; # start
+8  -> 12 "\x1a"; # start
+8  -> 12 "\x1b"; # start
+8  -> 12 "\x1c"; # start
+8  -> 12 "\x1d"; # start
+8  -> 12 "\x1e"; # start
+8  -> 12 "\x1f"; # start
+8  -> 12 " "; # start
+8  -> 12 "!"; # start
+8  -> 12 "\""; # start
+8  -> 12 "#"; # start
+8  -> 12 "$"; # start
+8  -> 12 "%"; # start
+8  -> 12 "&"; # start
+8  -> 12 "'"; # start
+8  -> 12 "("; # start
+8  -> 12 ")"; # start
+8  -> 12 "*"; # start
+8  -> 12 "+"; # start
+8  -> 12 ","; # start
+8  -> 12 "-"; # start
+8  -> 12 "."; # start
+8  -> 12 "/"; # start
+8  -> 12 "0"; # start
+8  -> 12 "1"; # start
+8  -> 12 "2"; # start
+8  -> 12 "3"; # start
+8  -> 12 "4"; # start
+8  -> 12 "5"; # start
+8  -> 12 "6"; # start
+8  -> 12 "7"; # start
+8  -> 12 "8"; # start
+8  -> 12 "9"; # start
+8  -> 12 ":"; # start
+8  -> 12 ";"; # start
+8  -> 12 "<"; # start
+8  -> 12 "="; # start
+8  -> 12 ">"; # start
+8  -> 12 "?"; # start
+8  -> 12 "@"; # start
+8  -> 12 "A"; # start
+8  -> 12 "B"; # start
+8  -> 12 "C"; # start
+8  -> 12 "D"; # start
+8  -> 12 "E"; # start
+8  -> 12 "F"; # start
+8  -> 12 "G"; # start
+8  -> 12 "H"; # start
+8  -> 12 "I"; # start
+8  -> 12 "J"; # start
+8  -> 12 "K"; # start
+8  -> 12 "L"; # start
+8  -> 12 "M"; # start
+8  -> 12 "N"; # start
+8  -> 12 "O"; # start
+8  -> 12 "P"; # start
+8  -> 12 "Q"; # start
+8  -> 12 "R"; # start
+8  -> 12 "S"; # start
+8  ->  9 "T"; # e.g. "[HRESULT"
+8  -> 12 "U"; # start
+8  -> 12 "V"; # start
+8  -> 12 "W"; # start
+8  -> 12 "X"; # start
+8  -> 12 "Y"; # start
+8  -> 12 "Z"; # start
+8  ->  2 "["; # e.g. "["
+8  -> 12 "\\"; # start
+8  -> 12 "]"; # start
+8  -> 12 "^"; # start
+8  -> 12 "_"; # start
+8  -> 12 "`"; # start
+8  -> 12 "a"; # start
+8  -> 12 "b"; # start
+8  -> 12 "c"; # start
+8  -> 12 "d"; # start
+8  -> 12 "e"; # start
+8  -> 12 "f"; # start
+8  -> 12 "g"; # start
+8  -> 12 "h"; # start
+8  -> 12 "i"; # start
+8  -> 12 "j"; # start
+8  -> 12 "k"; # start
+8  -> 12 "l"; # start
+8  -> 12 "m"; # start
+8  -> 12 "n"; # start
+8  -> 12 "o"; # start
+8  -> 12 "p"; # start
+8  -> 12 "q"; # start
+8  -> 12 "r"; # start
+8  -> 12 "s"; # start
+8  -> 12 "t"; # start
+8  -> 12 "u"; # start
+8  -> 12 "v"; # start
+8  -> 12 "w"; # start
+8  -> 12 "x"; # start
+8  -> 12 "y"; # start
+8  -> 12 "z"; # start
+8  -> 12 "{"; # start
+8  -> 12 "|"; # start
+8  -> 12 "}"; # start
+8  -> 12 "~"; # start
+8  -> 12 "\x7f"; # start
+8  -> 12 "\x80"; # start
+8  -> 12 "\x81"; # start
+8  -> 12 "\x82"; # start
+8  -> 12 "\x83"; # start
+8  -> 12 "\x84"; # start
+8  -> 12 "\x85"; # start
+8  -> 12 "\x86"; # start
+8  -> 12 "\x87"; # start
+8  -> 12 "\x88"; # start
+8  -> 12 "\x89"; # start
+8  -> 12 "\x8a"; # start
+8  -> 12 "\x8b"; # start
+8  -> 12 "\x8c"; # start
+8  -> 12 "\x8d"; # start
+8  -> 12 "\x8e"; # start
+8  -> 12 "\x8f"; # start
+8  -> 12 "\x90"; # start
+8  -> 12 "\x91"; # start
+8  -> 12 "\x92"; # start
+8  -> 12 "\x93"; # start
+8  -> 12 "\x94"; # start
+8  -> 12 "\x95"; # start
+8  -> 12 "\x96"; # start
+8  -> 12 "\x97"; # start
+8  -> 12 "\x98"; # start
+8  -> 12 "\x99"; # start
+8  -> 12 "\x9a"; # start
+8  -> 12 "\x9b"; # start
+8  -> 12 "\x9c"; # start
+8  -> 12 "\x9d"; # start
+8  -> 12 "\x9e"; # start
+8  -> 12 "\x9f"; # start
+8  -> 12 "\xa0"; # start
+8  -> 12 "\xa1"; # start
+8  -> 12 "\xa2"; # start
+8  -> 12 "\xa3"; # start
+8  -> 12 "\xa4"; # start
+8  -> 12 "\xa5"; # start
+8  -> 12 "\xa6"; # start
+8  -> 12 "\xa7"; # start
+8  -> 12 "\xa8"; # start
+8  -> 12 "\xa9"; # start
+8  -> 12 "\xaa"; # start
+8  -> 12 "\xab"; # start
+8  -> 12 "\xac"; # start
+8  -> 12 "\xad"; # start
+8  -> 12 "\xae"; # start
+8  -> 12 "\xaf"; # start
+8  -> 12 "\xb0"; # start
+8  -> 12 "\xb1"; # start
+8  -> 12 "\xb2"; # start
+8  -> 12 "\xb3"; # start
+8  -> 12 "\xb4"; # start
+8  -> 12 "\xb5"; # start
+8  -> 12 "\xb6"; # start
+8  -> 12 "\xb7"; # start
+8  -> 12 "\xb8"; # start
+8  -> 12 "\xb9"; # start
+8  -> 12 "\xba"; # start
+8  -> 12 "\xbb"; # start
+8  -> 12 "\xbc"; # start
+8  -> 12 "\xbd"; # start
+8  -> 12 "\xbe"; # start
+8  -> 12 "\xbf"; # start
+8  -> 12 "\xc0"; # start
+8  -> 12 "\xc1"; # start
+8  -> 12 "\xc2"; # start
+8  -> 12 "\xc3"; # start
+8  -> 12 "\xc4"; # start
+8  -> 12 "\xc5"; # start
+8  -> 12 "\xc6"; # start
+8  -> 12 "\xc7"; # start
+8  -> 12 "\xc8"; # start
+8  -> 12 "\xc9"; # start
+8  -> 12 "\xca"; # start
+8  -> 12 "\xcb"; # start
+8  -> 12 "\xcc"; # start
+8  -> 12 "\xcd"; # start
+8  -> 12 "\xce"; # start
+8  -> 12 "\xcf"; # start
+8  -> 12 "\xd0"; # start
+8  -> 12 "\xd1"; # start
+8  -> 12 "\xd2"; # start
+8  -> 12 "\xd3"; # start
+8  -> 12 "\xd4"; # start
+8  -> 12 "\xd5"; # start
+8  -> 12 "\xd6"; # start
+8  -> 12 "\xd7"; # start
+8  -> 12 "\xd8"; # start
+8  -> 12 "\xd9"; # start
+8  -> 12 "\xda"; # start
+8  -> 12 "\xdb"; # start
+8  -> 12 "\xdc"; # start
+8  -> 12 "\xdd"; # start
+8  -> 12 "\xde"; # start
+8  -> 12 "\xdf"; # start
+8  -> 12 "\xe0"; # start
+8  -> 12 "\xe1"; # start
+8  -> 12 "\xe2"; # start
+8  -> 12 "\xe3"; # start
+8  -> 12 "\xe4"; # start
+8  -> 12 "\xe5"; # start
+8  -> 12 "\xe6"; # start
+8  -> 12 "\xe7"; # start
+8  -> 12 "\xe8"; # start
+8  -> 12 "\xe9"; # start
+8  -> 12 "\xea"; # start
+8  -> 12 "\xeb"; # start
+8  -> 12 "\xec"; # start
+8  -> 12 "\xed"; # start
+8  -> 12 "\xee"; # start
+8  -> 12 "\xef"; # start
+8  -> 12 "\xf0"; # start
+8  -> 12 "\xf1"; # start
+8  -> 12 "\xf2"; # start
+8  -> 12 "\xf3"; # start
+8  -> 12 "\xf4"; # start
+8  -> 12 "\xf5"; # start
+8  -> 12 "\xf6"; # start
+8  -> 12 "\xf7"; # start
+8  -> 12 "\xf8"; # start
+8  -> 12 "\xf9"; # start
+8  -> 12 "\xfa"; # start
+8  -> 12 "\xfb"; # start
+8  -> 12 "\xfc"; # start
+8  -> 12 "\xfd"; # start
+8  -> 12 "\xfe"; # start
+8  -> 12 "\xff"; # start
+9  -> 12 "\x00"; # start
+9  -> 12 "\x01"; # start
+9  -> 12 "\x02"; # start
+9  -> 12 "\x03"; # start
+9  -> 12 "\x04"; # start
+9  -> 12 "\x05"; # start
+9  -> 12 "\x06"; # start
+9  -> 12 "\x07"; # start
+9  -> 12 "\x08"; # start
+9  ->  9 "\t"; # e.g. "[HRESULT"
+9  ->  9 "\n"; # e.g. "[HRESULT"
+9  -> 12 "\v"; # start
+9  ->  9 "\f"; # e.g. "[HRESULT"
+9  ->  9 "\r"; # e.g. "[HRESULT"
+9  -> 12 "\x0e"; # start
+9  -> 12 "\x0f"; # start
+9  -> 12 "\x10"; # start
+9  -> 12 "\x11"; # start
+9  -> 12 "\x12"; # start
+9  -> 12 "\x13"; # start
+9  -> 12 "\x14"; # start
+9  -> 12 "\x15"; # start
+9  -> 12 "\x16"; # start
+9  -> 12 "\x17"; # start
+9  -> 12 "\x18"; # start
+9  -> 12 "\x19"; # start
+9  -> 12 "\x1a"; # start
+9  -> 12 "\x1b"; # start
+9  -> 12 "\x1c"; # start
+9  -> 12 "\x1d"; # start
+9  -> 12 "\x1e"; # start
+9  -> 12 "\x1f"; # start
+9  ->  9 " "; # e.g. "[HRESULT"
+9  -> 12 "!"; # start
+9  -> 12 "\""; # start
+9  -> 12 "#"; # start
+9  -> 12 "$"; # start
+9  -> 12 "%"; # start
+9  -> 12 "&"; # start
+9  -> 12 "'"; # start
+9  -> 12 "("; # start
+9  -> 12 ")"; # start
+9  -> 12 "*"; # start
+9  -> 12 "+"; # start
+9  -> 12 ","; # start
+9  -> 12 "-"; # start
+9  -> 12 "."; # start
+9  -> 12 "/"; # start
+9  -> 12 "0"; # start
+9  -> 12 "1"; # start
+9  -> 12 "2"; # start
+9  -> 12 "3"; # start
+9  -> 12 "4"; # start
+9  -> 12 "5"; # start
+9  -> 12 "6"; # start
+9  -> 12 "7"; # start
+9  -> 12 "8"; # start
+9  -> 12 "9"; # start
+9  -> 12 ":"; # start
+9  -> 12 ";"; # start
+9  -> 12 "<"; # start
+9  -> 15 "="; # e.g. "[HRESULT="
+9  -> 12 ">"; # start
+9  -> 12 "?"; # start
+9  -> 12 "@"; # start
+9  -> 12 "A"; # start
+9  -> 12 "B"; # start
+9  -> 12 "C"; # start
+9  -> 12 "D"; # start
+9  -> 12 "E"; # start
+9  -> 12 "F"; # start
+9  -> 12 "G"; # start
+9  -> 12 "H"; # start
+9  -> 12 "I"; # start
+9  -> 12 "J"; # start
+9  -> 12 "K"; # start
+9  -> 12 "L"; # start
+9  -> 12 "M"; # start
+9  -> 12 "N"; # start
+9  -> 12 "O"; # start
+9  -> 12 "P"; # start
+9  -> 12 "Q"; # start
+9  -> 12 "R"; # start
+9  -> 12 "S"; # start
+9  -> 12 "T"; # start
+9  -> 12 "U"; # start
+9  -> 12 "V"; # start
+9  -> 12 "W"; # start
+9  -> 12 "X"; # start
+9  -> 12 "Y"; # start
+9  -> 12 "Z"; # start
+9  ->  2 "["; # e.g. "["
+9  -> 12 "\\"; # start
+9  -> 12 "]"; # start
+9  -> 12 "^"; # start
+9  -> 12 "_"; # start
+9  -> 12 "`"; # start
+9  -> 12 "a"; # start
+9  -> 12 "b"; # start
+9  -> 12 "c"; # start
+9  -> 12 "d"; # start
+9  -> 12 "e"; # start
+9  -> 12 "f"; # start
+9  -> 12 "g"; # start
+9  -> 12 "h"; # start
+9  -> 12 "i"; # start
+9  -> 12 "j"; # start
+9  -> 12 "k"; # start
+9  -> 12 "l"; # start
+9  -> 12 "m"; # start
+9  -> 12 "n"; # start
+9  -> 12 "o"; # start
+9  -> 12 "p"; # start
+9  -> 12 "q"; # start
+9  -> 12 "r"; # start
+9  -> 12 "s"; # start
+9  -> 12 "t"; # start
+9  -> 12 "u"; # start
+9  -> 12 "v"; # start
+9  -> 12 "w"; # start
+9  -> 12 "x"; # start
+9  -> 12 "y"; # start
+9  -> 12 "z"; # start
+9  -> 12 "{"; # start
+9  -> 12 "|"; # start
+9  -> 12 "}"; # start
+9  -> 12 "~"; # start
+9  -> 12 "\x7f"; # start
+9  -> 12 "\x80"; # start
+9  -> 12 "\x81"; # start
+9  -> 12 "\x82"; # start
+9  -> 12 "\x83"; # start
+9  -> 12 "\x84"; # start
+9  -> 12 "\x85"; # start
+9  -> 12 "\x86"; # start
+9  -> 12 "\x87"; # start
+9  -> 12 "\x88"; # start
+9  -> 12 "\x89"; # start
+9  -> 12 "\x8a"; # start
+9  -> 12 "\x8b"; # start
+9  -> 12 "\x8c"; # start
+9  -> 12 "\x8d"; # start
+9  -> 12 "\x8e"; # start
+9  -> 12 "\x8f"; # start
+9  -> 12 "\x90"; # start
+9  -> 12 "\x91"; # start
+9  -> 12 "\x92"; # start
+9  -> 12 "\x93"; # start
+9  -> 12 "\x94"; # start
+9  -> 12 "\x95"; # start
+9  -> 12 "\x96"; # start
+9  -> 12 "\x97"; # start
+9  -> 12 "\x98"; # start
+9  -> 12 "\x99"; # start
+9  -> 12 "\x9a"; # start
+9  -> 12 "\x9b"; # start
+9  -> 12 "\x9c"; # start
+9  -> 12 "\x9d"; # start
+9  -> 12 "\x9e"; # start
+9  -> 12 "\x9f"; # start
+9  -> 12 "\xa0"; # start
+9  -> 12 "\xa1"; # start
+9  -> 12 "\xa2"; # start
+9  -> 12 "\xa3"; # start
+9  -> 12 "\xa4"; # start
+9  -> 12 "\xa5"; # start
+9  -> 12 "\xa6"; # start
+9  -> 12 "\xa7"; # start
+9  -> 12 "\xa8"; # start
+9  -> 12 "\xa9"; # start
+9  -> 12 "\xaa"; # start
+9  -> 12 "\xab"; # start
+9  -> 12 "\xac"; # start
+9  -> 12 "\xad"; # start
+9  -> 12 "\xae"; # start
+9  -> 12 "\xaf"; # start
+9  -> 12 "\xb0"; # start
+9  -> 12 "\xb1"; # start
+9  -> 12 "\xb2"; # start
+9  -> 12 "\xb3"; # start
+9  -> 12 "\xb4"; # start
+9  -> 12 "\xb5"; # start
+9  -> 12 "\xb6"; # start
+9  -> 12 "\xb7"; # start
+9  -> 12 "\xb8"; # start
+9  -> 12 "\xb9"; # start
+9  -> 12 "\xba"; # start
+9  -> 12 "\xbb"; # start
+9  -> 12 "\xbc"; # start
+9  -> 12 "\xbd"; # start
+9  -> 12 "\xbe"; # start
+9  -> 12 "\xbf"; # start
+9  -> 12 "\xc0"; # start
+9  -> 12 "\xc1"; # start
+9  -> 12 "\xc2"; # start
+9  -> 12 "\xc3"; # start
+9  -> 12 "\xc4"; # start
+9  -> 12 "\xc5"; # start
+9  -> 12 "\xc6"; # start
+9  -> 12 "\xc7"; # start
+9  -> 12 "\xc8"; # start
+9  -> 12 "\xc9"; # start
+9  -> 12 "\xca"; # start
+9  -> 12 "\xcb"; # start
+9  -> 12 "\xcc"; # start
+9  -> 12 "\xcd"; # start
+9  -> 12 "\xce"; # start
+9  -> 12 "\xcf"; # start
+9  -> 12 "\xd0"; # start
+9  -> 12 "\xd1"; # start
+9  -> 12 "\xd2"; # start
+9  -> 12 "\xd3"; # start
+9  -> 12 "\xd4"; # start
+9  -> 12 "\xd5"; # start
+9  -> 12 "\xd6"; # start
+9  -> 12 "\xd7"; # start
+9  -> 12 "\xd8"; # start
+9  -> 12 "\xd9"; # start
+9  -> 12 "\xda"; # start
+9  -> 12 "\xdb"; # start
+9  -> 12 "\xdc"; # start
+9  -> 12 "\xdd"; # start
+9  -> 12 "\xde"; # start
+9  -> 12 "\xdf"; # start
+9  -> 12 "\xe0"; # start
+9  -> 12 "\xe1"; # start
+9  -> 12 "\xe2"; # start
+9  -> 12 "\xe3"; # start
+9  -> 12 "\xe4"; # start
+9  -> 12 "\xe5"; # start
+9  -> 12 "\xe6"; # start
+9  -> 12 "\xe7"; # start
+9  -> 12 "\xe8"; # start
+9  -> 12 "\xe9"; # start
+9  -> 12 "\xea"; # start
+9  -> 12 "\xeb"; # start
+9  -> 12 "\xec"; # start
+9  -> 12 "\xed"; # start
+9  -> 12 "\xee"; # start
+9  -> 12 "\xef"; # start
+9  -> 12 "\xf0"; # start
+9  -> 12 "\xf1"; # start
+9  -> 12 "\xf2"; # start
+9  -> 12 "\xf3"; # start
+9  -> 12 "\xf4"; # start
+9  -> 12 "\xf5"; # start
+9  -> 12 "\xf6"; # start
+9  -> 12 "\xf7"; # start
+9  -> 12 "\xf8"; # start
+9  -> 12 "\xf9"; # start
+9  -> 12 "\xfa"; # start
+9  -> 12 "\xfb"; # start
+9  -> 12 "\xfc"; # start
+9  -> 12 "\xfd"; # start
+9  -> 12 "\xfe"; # start
+9  -> 12 "\xff"; # start
+10 ->  0 "\x00"; # e.g. "[HRESULT=a"
+10 ->  0 "\x01"; # e.g. "[HRESULT=a"
+10 ->  0 "\x02"; # e.g. "[HRESULT=a"
+10 ->  0 "\x03"; # e.g. "[HRESULT=a"
+10 ->  0 "\x04"; # e.g. "[HRESULT=a"
+10 ->  0 "\x05"; # e.g. "[HRESULT=a"
+10 ->  0 "\x06"; # e.g. "[HRESULT=a"
+10 ->  0 "\x07"; # e.g. "[HRESULT=a"
+10 ->  0 "\x08"; # e.g. "[HRESULT=a"
+10 ->  0 "\t"; # e.g. "[HRESULT=a"
+10 -> 12 "\n"; # start
+10 ->  0 "\v"; # e.g. "[HRESULT=a"
+10 ->  0 "\f"; # e.g. "[HRESULT=a"
+10 ->  0 "\r"; # e.g. "[HRESULT=a"
+10 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+10 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+10 ->  0 "\x10"; # e.g. "[HRESULT=a"
+10 ->  0 "\x11"; # e.g. "[HRESULT=a"
+10 ->  0 "\x12"; # e.g. "[HRESULT=a"
+10 ->  0 "\x13"; # e.g. "[HRESULT=a"
+10 ->  0 "\x14"; # e.g. "[HRESULT=a"
+10 ->  0 "\x15"; # e.g. "[HRESULT=a"
+10 ->  0 "\x16"; # e.g. "[HRESULT=a"
+10 ->  0 "\x17"; # e.g. "[HRESULT=a"
+10 ->  0 "\x18"; # e.g. "[HRESULT=a"
+10 ->  0 "\x19"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+10 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+10 ->  0 " "; # e.g. "[HRESULT=a"
+10 ->  0 "!"; # e.g. "[HRESULT=a"
+10 ->  0 "\""; # e.g. "[HRESULT=a"
+10 ->  0 "#"; # e.g. "[HRESULT=a"
+10 ->  0 "$"; # e.g. "[HRESULT=a"
+10 ->  0 "%"; # e.g. "[HRESULT=a"
+10 ->  0 "&"; # e.g. "[HRESULT=a"
+10 ->  0 "'"; # e.g. "[HRESULT=a"
+10 ->  0 "("; # e.g. "[HRESULT=a"
+10 ->  0 ")"; # e.g. "[HRESULT=a"
+10 ->  0 "*"; # e.g. "[HRESULT=a"
+10 ->  0 "+"; # e.g. "[HRESULT=a"
+10 ->  0 ","; # e.g. "[HRESULT=a"
+10 ->  0 "-"; # e.g. "[HRESULT=a"
+10 ->  0 "."; # e.g. "[HRESULT=a"
+10 ->  0 "/"; # e.g. "[HRESULT=a"
+10 ->  0 "0"; # e.g. "[HRESULT=a"
+10 ->  0 "1"; # e.g. "[HRESULT=a"
+10 ->  0 "2"; # e.g. "[HRESULT=a"
+10 ->  0 "3"; # e.g. "[HRESULT=a"
+10 ->  0 "4"; # e.g. "[HRESULT=a"
+10 ->  0 "5"; # e.g. "[HRESULT=a"
+10 ->  0 "6"; # e.g. "[HRESULT=a"
+10 ->  0 "7"; # e.g. "[HRESULT=a"
+10 ->  0 "8"; # e.g. "[HRESULT=a"
+10 ->  0 "9"; # e.g. "[HRESULT=a"
+10 ->  0 ":"; # e.g. "[HRESULT=a"
+10 ->  0 ";"; # e.g. "[HRESULT=a"
+10 ->  0 "<"; # e.g. "[HRESULT=a"
+10 ->  0 "="; # e.g. "[HRESULT=a"
+10 ->  0 ">"; # e.g. "[HRESULT=a"
+10 ->  0 "?"; # e.g. "[HRESULT=a"
+10 ->  0 "@"; # e.g. "[HRESULT=a"
+10 ->  0 "A"; # e.g. "[HRESULT=a"
+10 ->  0 "B"; # e.g. "[HRESULT=a"
+10 ->  0 "C"; # e.g. "[HRESULT=a"
+10 ->  0 "D"; # e.g. "[HRESULT=a"
+10 ->  0 "E"; # e.g. "[HRESULT=a"
+10 ->  0 "F"; # e.g. "[HRESULT=a"
+10 ->  0 "G"; # e.g. "[HRESULT=a"
+10 ->  0 "H"; # e.g. "[HRESULT=a"
+10 ->  0 "I"; # e.g. "[HRESULT=a"
+10 ->  0 "J"; # e.g. "[HRESULT=a"
+10 ->  0 "K"; # e.g. "[HRESULT=a"
+10 ->  0 "L"; # e.g. "[HRESULT=a"
+10 ->  0 "M"; # e.g. "[HRESULT=a"
+10 ->  0 "N"; # e.g. "[HRESULT=a"
+10 ->  0 "O"; # e.g. "[HRESULT=a"
+10 ->  0 "P"; # e.g. "[HRESULT=a"
+10 ->  0 "Q"; # e.g. "[HRESULT=a"
+10 ->  0 "R"; # e.g. "[HRESULT=a"
+10 ->  0 "S"; # e.g. "[HRESULT=a"
+10 ->  0 "T"; # e.g. "[HRESULT=a"
+10 ->  0 "U"; # e.g. "[HRESULT=a"
+10 ->  0 "V"; # e.g. "[HRESULT=a"
+10 ->  0 "W"; # e.g. "[HRESULT=a"
+10 ->  0 "X"; # e.g. "[HRESULT=a"
+10 ->  0 "Y"; # e.g. "[HRESULT=a"
+10 ->  0 "Z"; # e.g. "[HRESULT=a"
+10 -> 14 "["; # e.g. "[HRESULT=["
+10 -> 10 "\\"; # e.g. "[HRESULT=\\"
+10 -> 11 "]"; # e.g. "[HRESULT=\\]"
+10 ->  0 "^"; # e.g. "[HRESULT=a"
+10 ->  0 "_"; # e.g. "[HRESULT=a"
+10 ->  0 "`"; # e.g. "[HRESULT=a"
+10 ->  0 "a"; # e.g. "[HRESULT=a"
+10 ->  0 "b"; # e.g. "[HRESULT=a"
+10 ->  0 "c"; # e.g. "[HRESULT=a"
+10 ->  0 "d"; # e.g. "[HRESULT=a"
+10 ->  0 "e"; # e.g. "[HRESULT=a"
+10 ->  0 "f"; # e.g. "[HRESULT=a"
+10 ->  0 "g"; # e.g. "[HRESULT=a"
+10 ->  0 "h"; # e.g. "[HRESULT=a"
+10 ->  0 "i"; # e.g. "[HRESULT=a"
+10 ->  0 "j"; # e.g. "[HRESULT=a"
+10 ->  0 "k"; # e.g. "[HRESULT=a"
+10 ->  0 "l"; # e.g. "[HRESULT=a"
+10 ->  0 "m"; # e.g. "[HRESULT=a"
+10 ->  0 "n"; # e.g. "[HRESULT=a"
+10 ->  0 "o"; # e.g. "[HRESULT=a"
+10 ->  0 "p"; # e.g. "[HRESULT=a"
+10 ->  0 "q"; # e.g. "[HRESULT=a"
+10 ->  0 "r"; # e.g. "[HRESULT=a"
+10 ->  0 "s"; # e.g. "[HRESULT=a"
+10 ->  0 "t"; # e.g. "[HRESULT=a"
+10 ->  0 "u"; # e.g. "[HRESULT=a"
+10 ->  0 "v"; # e.g. "[HRESULT=a"
+10 ->  0 "w"; # e.g. "[HRESULT=a"
+10 ->  0 "x"; # e.g. "[HRESULT=a"
+10 ->  0 "y"; # e.g. "[HRESULT=a"
+10 ->  0 "z"; # e.g. "[HRESULT=a"
+10 ->  0 "{"; # e.g. "[HRESULT=a"
+10 ->  0 "|"; # e.g. "[HRESULT=a"
+10 ->  0 "}"; # e.g. "[HRESULT=a"
+10 ->  0 "~"; # e.g. "[HRESULT=a"
+10 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+10 ->  0 "\x80"; # e.g. "[HRESULT=a"
+10 ->  0 "\x81"; # e.g. "[HRESULT=a"
+10 ->  0 "\x82"; # e.g. "[HRESULT=a"
+10 ->  0 "\x83"; # e.g. "[HRESULT=a"
+10 ->  0 "\x84"; # e.g. "[HRESULT=a"
+10 ->  0 "\x85"; # e.g. "[HRESULT=a"
+10 ->  0 "\x86"; # e.g. "[HRESULT=a"
+10 ->  0 "\x87"; # e.g. "[HRESULT=a"
+10 ->  0 "\x88"; # e.g. "[HRESULT=a"
+10 ->  0 "\x89"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+10 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+10 ->  0 "\x90"; # e.g. "[HRESULT=a"
+10 ->  0 "\x91"; # e.g. "[HRESULT=a"
+10 ->  0 "\x92"; # e.g. "[HRESULT=a"
+10 ->  0 "\x93"; # e.g. "[HRESULT=a"
+10 ->  0 "\x94"; # e.g. "[HRESULT=a"
+10 ->  0 "\x95"; # e.g. "[HRESULT=a"
+10 ->  0 "\x96"; # e.g. "[HRESULT=a"
+10 ->  0 "\x97"; # e.g. "[HRESULT=a"
+10 ->  0 "\x98"; # e.g. "[HRESULT=a"
+10 ->  0 "\x99"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+10 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+10 ->  0 "\xab"; # e.g. "[HRESULT=a"
+10 ->  0 "\xac"; # e.g. "[HRESULT=a"
+10 ->  0 "\xad"; # e.g. "[HRESULT=a"
+10 ->  0 "\xae"; # e.g. "[HRESULT=a"
+10 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xba"; # e.g. "[HRESULT=a"
+10 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+10 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+10 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+10 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+10 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xca"; # e.g. "[HRESULT=a"
+10 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+10 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+10 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+10 ->  0 "\xce"; # e.g. "[HRESULT=a"
+10 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xda"; # e.g. "[HRESULT=a"
+10 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+10 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+10 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+10 ->  0 "\xde"; # e.g. "[HRESULT=a"
+10 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xea"; # e.g. "[HRESULT=a"
+10 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+10 ->  0 "\xec"; # e.g. "[HRESULT=a"
+10 ->  0 "\xed"; # e.g. "[HRESULT=a"
+10 ->  0 "\xee"; # e.g. "[HRESULT=a"
+10 ->  0 "\xef"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+10 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+10 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+10 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+10 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+10 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+10 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+10 ->  0 "\xff"; # e.g. "[HRESULT=a"
+11 -> 11 ?;
+12 -> 12 "\x00"; # start
+12 -> 12 "\x01"; # start
+12 -> 12 "\x02"; # start
+12 -> 12 "\x03"; # start
+12 -> 12 "\x04"; # start
+12 -> 12 "\x05"; # start
+12 -> 12 "\x06"; # start
+12 -> 12 "\x07"; # start
+12 -> 12 "\x08"; # start
+12 -> 12 "\t"; # start
+12 -> 12 "\n"; # start
+12 -> 12 "\v"; # start
+12 -> 12 "\f"; # start
+12 -> 12 "\r"; # start
+12 -> 12 "\x0e"; # start
+12 -> 12 "\x0f"; # start
+12 -> 12 "\x10"; # start
+12 -> 12 "\x11"; # start
+12 -> 12 "\x12"; # start
+12 -> 12 "\x13"; # start
+12 -> 12 "\x14"; # start
+12 -> 12 "\x15"; # start
+12 -> 12 "\x16"; # start
+12 -> 12 "\x17"; # start
+12 -> 12 "\x18"; # start
+12 -> 12 "\x19"; # start
+12 -> 12 "\x1a"; # start
+12 -> 12 "\x1b"; # start
+12 -> 12 "\x1c"; # start
+12 -> 12 "\x1d"; # start
+12 -> 12 "\x1e"; # start
+12 -> 12 "\x1f"; # start
+12 -> 12 " "; # start
+12 -> 12 "!"; # start
+12 -> 12 "\""; # start
+12 -> 12 "#"; # start
+12 -> 12 "$"; # start
+12 -> 12 "%"; # start
+12 -> 12 "&"; # start
+12 -> 12 "'"; # start
+12 -> 12 "("; # start
+12 -> 12 ")"; # start
+12 -> 12 "*"; # start
+12 -> 12 "+"; # start
+12 -> 12 ","; # start
+12 -> 12 "-"; # start
+12 -> 12 "."; # start
+12 -> 12 "/"; # start
+12 -> 12 "0"; # start
+12 -> 12 "1"; # start
+12 -> 12 "2"; # start
+12 -> 12 "3"; # start
+12 -> 12 "4"; # start
+12 -> 12 "5"; # start
+12 -> 12 "6"; # start
+12 -> 12 "7"; # start
+12 -> 12 "8"; # start
+12 -> 12 "9"; # start
+12 -> 12 ":"; # start
+12 -> 12 ";"; # start
+12 -> 12 "<"; # start
+12 -> 12 "="; # start
+12 -> 12 ">"; # start
+12 -> 12 "?"; # start
+12 -> 12 "@"; # start
+12 -> 12 "A"; # start
+12 -> 12 "B"; # start
+12 -> 12 "C"; # start
+12 -> 12 "D"; # start
+12 -> 12 "E"; # start
+12 -> 12 "F"; # start
+12 -> 12 "G"; # start
+12 -> 12 "H"; # start
+12 -> 12 "I"; # start
+12 -> 12 "J"; # start
+12 -> 12 "K"; # start
+12 -> 12 "L"; # start
+12 -> 12 "M"; # start
+12 -> 12 "N"; # start
+12 -> 12 "O"; # start
+12 -> 12 "P"; # start
+12 -> 12 "Q"; # start
+12 -> 12 "R"; # start
+12 -> 12 "S"; # start
+12 -> 12 "T"; # start
+12 -> 12 "U"; # start
+12 -> 12 "V"; # start
+12 -> 12 "W"; # start
+12 -> 12 "X"; # start
+12 -> 12 "Y"; # start
+12 -> 12 "Z"; # start
+12 ->  2 "["; # e.g. "["
+12 -> 12 "\\"; # start
+12 -> 12 "]"; # start
+12 -> 12 "^"; # start
+12 -> 12 "_"; # start
+12 -> 12 "`"; # start
+12 -> 12 "a"; # start
+12 -> 12 "b"; # start
+12 -> 12 "c"; # start
+12 -> 12 "d"; # start
+12 -> 12 "e"; # start
+12 -> 12 "f"; # start
+12 -> 12 "g"; # start
+12 -> 12 "h"; # start
+12 -> 12 "i"; # start
+12 -> 12 "j"; # start
+12 -> 12 "k"; # start
+12 -> 12 "l"; # start
+12 -> 12 "m"; # start
+12 -> 12 "n"; # start
+12 -> 12 "o"; # start
+12 -> 12 "p"; # start
+12 -> 12 "q"; # start
+12 -> 12 "r"; # start
+12 -> 12 "s"; # start
+12 -> 12 "t"; # start
+12 -> 12 "u"; # start
+12 -> 12 "v"; # start
+12 -> 12 "w"; # start
+12 -> 12 "x"; # start
+12 -> 12 "y"; # start
+12 -> 12 "z"; # start
+12 -> 12 "{"; # start
+12 -> 12 "|"; # start
+12 -> 12 "}"; # start
+12 -> 12 "~"; # start
+12 -> 12 "\x7f"; # start
+12 -> 12 "\x80"; # start
+12 -> 12 "\x81"; # start
+12 -> 12 "\x82"; # start
+12 -> 12 "\x83"; # start
+12 -> 12 "\x84"; # start
+12 -> 12 "\x85"; # start
+12 -> 12 "\x86"; # start
+12 -> 12 "\x87"; # start
+12 -> 12 "\x88"; # start
+12 -> 12 "\x89"; # start
+12 -> 12 "\x8a"; # start
+12 -> 12 "\x8b"; # start
+12 -> 12 "\x8c"; # start
+12 -> 12 "\x8d"; # start
+12 -> 12 "\x8e"; # start
+12 -> 12 "\x8f"; # start
+12 -> 12 "\x90"; # start
+12 -> 12 "\x91"; # start
+12 -> 12 "\x92"; # start
+12 -> 12 "\x93"; # start
+12 -> 12 "\x94"; # start
+12 -> 12 "\x95"; # start
+12 -> 12 "\x96"; # start
+12 -> 12 "\x97"; # start
+12 -> 12 "\x98"; # start
+12 -> 12 "\x99"; # start
+12 -> 12 "\x9a"; # start
+12 -> 12 "\x9b"; # start
+12 -> 12 "\x9c"; # start
+12 -> 12 "\x9d"; # start
+12 -> 12 "\x9e"; # start
+12 -> 12 "\x9f"; # start
+12 -> 12 "\xa0"; # start
+12 -> 12 "\xa1"; # start
+12 -> 12 "\xa2"; # start
+12 -> 12 "\xa3"; # start
+12 -> 12 "\xa4"; # start
+12 -> 12 "\xa5"; # start
+12 -> 12 "\xa6"; # start
+12 -> 12 "\xa7"; # start
+12 -> 12 "\xa8"; # start
+12 -> 12 "\xa9"; # start
+12 -> 12 "\xaa"; # start
+12 -> 12 "\xab"; # start
+12 -> 12 "\xac"; # start
+12 -> 12 "\xad"; # start
+12 -> 12 "\xae"; # start
+12 -> 12 "\xaf"; # start
+12 -> 12 "\xb0"; # start
+12 -> 12 "\xb1"; # start
+12 -> 12 "\xb2"; # start
+12 -> 12 "\xb3"; # start
+12 -> 12 "\xb4"; # start
+12 -> 12 "\xb5"; # start
+12 -> 12 "\xb6"; # start
+12 -> 12 "\xb7"; # start
+12 -> 12 "\xb8"; # start
+12 -> 12 "\xb9"; # start
+12 -> 12 "\xba"; # start
+12 -> 12 "\xbb"; # start
+12 -> 12 "\xbc"; # start
+12 -> 12 "\xbd"; # start
+12 -> 12 "\xbe"; # start
+12 -> 12 "\xbf"; # start
+12 -> 12 "\xc0"; # start
+12 -> 12 "\xc1"; # start
+12 -> 12 "\xc2"; # start
+12 -> 12 "\xc3"; # start
+12 -> 12 "\xc4"; # start
+12 -> 12 "\xc5"; # start
+12 -> 12 "\xc6"; # start
+12 -> 12 "\xc7"; # start
+12 -> 12 "\xc8"; # start
+12 -> 12 "\xc9"; # start
+12 -> 12 "\xca"; # start
+12 -> 12 "\xcb"; # start
+12 -> 12 "\xcc"; # start
+12 -> 12 "\xcd"; # start
+12 -> 12 "\xce"; # start
+12 -> 12 "\xcf"; # start
+12 -> 12 "\xd0"; # start
+12 -> 12 "\xd1"; # start
+12 -> 12 "\xd2"; # start
+12 -> 12 "\xd3"; # start
+12 -> 12 "\xd4"; # start
+12 -> 12 "\xd5"; # start
+12 -> 12 "\xd6"; # start
+12 -> 12 "\xd7"; # start
+12 -> 12 "\xd8"; # start
+12 -> 12 "\xd9"; # start
+12 -> 12 "\xda"; # start
+12 -> 12 "\xdb"; # start
+12 -> 12 "\xdc"; # start
+12 -> 12 "\xdd"; # start
+12 -> 12 "\xde"; # start
+12 -> 12 "\xdf"; # start
+12 -> 12 "\xe0"; # start
+12 -> 12 "\xe1"; # start
+12 -> 12 "\xe2"; # start
+12 -> 12 "\xe3"; # start
+12 -> 12 "\xe4"; # start
+12 -> 12 "\xe5"; # start
+12 -> 12 "\xe6"; # start
+12 -> 12 "\xe7"; # start
+12 -> 12 "\xe8"; # start
+12 -> 12 "\xe9"; # start
+12 -> 12 "\xea"; # start
+12 -> 12 "\xeb"; # start
+12 -> 12 "\xec"; # start
+12 -> 12 "\xed"; # start
+12 -> 12 "\xee"; # start
+12 -> 12 "\xef"; # start
+12 -> 12 "\xf0"; # start
+12 -> 12 "\xf1"; # start
+12 -> 12 "\xf2"; # start
+12 -> 12 "\xf3"; # start
+12 -> 12 "\xf4"; # start
+12 -> 12 "\xf5"; # start
+12 -> 12 "\xf6"; # start
+12 -> 12 "\xf7"; # start
+12 -> 12 "\xf8"; # start
+12 -> 12 "\xf9"; # start
+12 -> 12 "\xfa"; # start
+12 -> 12 "\xfb"; # start
+12 -> 12 "\xfc"; # start
+12 -> 12 "\xfd"; # start
+12 -> 12 "\xfe"; # start
+12 -> 12 "\xff"; # start
+13 ->  0 "\x00"; # e.g. "[HRESULT=a"
+13 ->  0 "\x01"; # e.g. "[HRESULT=a"
+13 ->  0 "\x02"; # e.g. "[HRESULT=a"
+13 ->  0 "\x03"; # e.g. "[HRESULT=a"
+13 ->  0 "\x04"; # e.g. "[HRESULT=a"
+13 ->  0 "\x05"; # e.g. "[HRESULT=a"
+13 ->  0 "\x06"; # e.g. "[HRESULT=a"
+13 ->  0 "\x07"; # e.g. "[HRESULT=a"
+13 ->  0 "\x08"; # e.g. "[HRESULT=a"
+13 -> 13 "\t"; # e.g. "[HRESULT=[HRESULT"
+13 ->  9 "\n"; # e.g. "[HRESULT"
+13 ->  0 "\v"; # e.g. "[HRESULT=a"
+13 -> 13 "\f"; # e.g. "[HRESULT=[HRESULT"
+13 -> 13 "\r"; # e.g. "[HRESULT=[HRESULT"
+13 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+13 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+13 ->  0 "\x10"; # e.g. "[HRESULT=a"
+13 ->  0 "\x11"; # e.g. "[HRESULT=a"
+13 ->  0 "\x12"; # e.g. "[HRESULT=a"
+13 ->  0 "\x13"; # e.g. "[HRESULT=a"
+13 ->  0 "\x14"; # e.g. "[HRESULT=a"
+13 ->  0 "\x15"; # e.g. "[HRESULT=a"
+13 ->  0 "\x16"; # e.g. "[HRESULT=a"
+13 ->  0 "\x17"; # e.g. "[HRESULT=a"
+13 ->  0 "\x18"; # e.g. "[HRESULT=a"
+13 ->  0 "\x19"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+13 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+13 -> 13 " "; # e.g. "[HRESULT=[HRESULT"
+13 ->  0 "!"; # e.g. "[HRESULT=a"
+13 ->  0 "\""; # e.g. "[HRESULT=a"
+13 ->  0 "#"; # e.g. "[HRESULT=a"
+13 ->  0 "$"; # e.g. "[HRESULT=a"
+13 ->  0 "%"; # e.g. "[HRESULT=a"
+13 ->  0 "&"; # e.g. "[HRESULT=a"
+13 ->  0 "'"; # e.g. "[HRESULT=a"
+13 ->  0 "("; # e.g. "[HRESULT=a"
+13 ->  0 ")"; # e.g. "[HRESULT=a"
+13 ->  0 "*"; # e.g. "[HRESULT=a"
+13 ->  0 "+"; # e.g. "[HRESULT=a"
+13 ->  0 ","; # e.g. "[HRESULT=a"
+13 ->  0 "-"; # e.g. "[HRESULT=a"
+13 ->  0 "."; # e.g. "[HRESULT=a"
+13 ->  0 "/"; # e.g. "[HRESULT=a"
+13 ->  0 "0"; # e.g. "[HRESULT=a"
+13 ->  0 "1"; # e.g. "[HRESULT=a"
+13 ->  0 "2"; # e.g. "[HRESULT=a"
+13 ->  0 "3"; # e.g. "[HRESULT=a"
+13 ->  0 "4"; # e.g. "[HRESULT=a"
+13 ->  0 "5"; # e.g. "[HRESULT=a"
+13 ->  0 "6"; # e.g. "[HRESULT=a"
+13 ->  0 "7"; # e.g. "[HRESULT=a"
+13 ->  0 "8"; # e.g. "[HRESULT=a"
+13 ->  0 "9"; # e.g. "[HRESULT=a"
+13 ->  0 ":"; # e.g. "[HRESULT=a"
+13 ->  0 ";"; # e.g. "[HRESULT=a"
+13 ->  0 "<"; # e.g. "[HRESULT=a"
+13 -> 15 "="; # e.g. "[HRESULT="
+13 ->  0 ">"; # e.g. "[HRESULT=a"
+13 ->  0 "?"; # e.g. "[HRESULT=a"
+13 ->  0 "@"; # e.g. "[HRESULT=a"
+13 ->  0 "A"; # e.g. "[HRESULT=a"
+13 ->  0 "B"; # e.g. "[HRESULT=a"
+13 ->  0 "C"; # e.g. "[HRESULT=a"
+13 ->  0 "D"; # e.g. "[HRESULT=a"
+13 ->  0 "E"; # e.g. "[HRESULT=a"
+13 ->  0 "F"; # e.g. "[HRESULT=a"
+13 ->  0 "G"; # e.g. "[HRESULT=a"
+13 ->  0 "H"; # e.g. "[HRESULT=a"
+13 ->  0 "I"; # e.g. "[HRESULT=a"
+13 ->  0 "J"; # e.g. "[HRESULT=a"
+13 ->  0 "K"; # e.g. "[HRESULT=a"
+13 ->  0 "L"; # e.g. "[HRESULT=a"
+13 ->  0 "M"; # e.g. "[HRESULT=a"
+13 ->  0 "N"; # e.g. "[HRESULT=a"
+13 ->  0 "O"; # e.g. "[HRESULT=a"
+13 ->  0 "P"; # e.g. "[HRESULT=a"
+13 ->  0 "Q"; # e.g. "[HRESULT=a"
+13 ->  0 "R"; # e.g. "[HRESULT=a"
+13 ->  0 "S"; # e.g. "[HRESULT=a"
+13 ->  0 "T"; # e.g. "[HRESULT=a"
+13 ->  0 "U"; # e.g. "[HRESULT=a"
+13 ->  0 "V"; # e.g. "[HRESULT=a"
+13 ->  0 "W"; # e.g. "[HRESULT=a"
+13 ->  0 "X"; # e.g. "[HRESULT=a"
+13 ->  0 "Y"; # e.g. "[HRESULT=a"
+13 ->  0 "Z"; # e.g. "[HRESULT=a"
+13 -> 14 "["; # e.g. "[HRESULT=["
+13 -> 10 "\\"; # e.g. "[HRESULT=\\"
+13 ->  0 "]"; # e.g. "[HRESULT=a"
+13 ->  0 "^"; # e.g. "[HRESULT=a"
+13 ->  0 "_"; # e.g. "[HRESULT=a"
+13 ->  0 "`"; # e.g. "[HRESULT=a"
+13 ->  0 "a"; # e.g. "[HRESULT=a"
+13 ->  0 "b"; # e.g. "[HRESULT=a"
+13 ->  0 "c"; # e.g. "[HRESULT=a"
+13 ->  0 "d"; # e.g. "[HRESULT=a"
+13 ->  0 "e"; # e.g. "[HRESULT=a"
+13 ->  0 "f"; # e.g. "[HRESULT=a"
+13 ->  0 "g"; # e.g. "[HRESULT=a"
+13 ->  0 "h"; # e.g. "[HRESULT=a"
+13 ->  0 "i"; # e.g. "[HRESULT=a"
+13 ->  0 "j"; # e.g. "[HRESULT=a"
+13 ->  0 "k"; # e.g. "[HRESULT=a"
+13 ->  0 "l"; # e.g. "[HRESULT=a"
+13 ->  0 "m"; # e.g. "[HRESULT=a"
+13 ->  0 "n"; # e.g. "[HRESULT=a"
+13 ->  0 "o"; # e.g. "[HRESULT=a"
+13 ->  0 "p"; # e.g. "[HRESULT=a"
+13 ->  0 "q"; # e.g. "[HRESULT=a"
+13 ->  0 "r"; # e.g. "[HRESULT=a"
+13 ->  0 "s"; # e.g. "[HRESULT=a"
+13 ->  0 "t"; # e.g. "[HRESULT=a"
+13 ->  0 "u"; # e.g. "[HRESULT=a"
+13 ->  0 "v"; # e.g. "[HRESULT=a"
+13 ->  0 "w"; # e.g. "[HRESULT=a"
+13 ->  0 "x"; # e.g. "[HRESULT=a"
+13 ->  0 "y"; # e.g. "[HRESULT=a"
+13 ->  0 "z"; # e.g. "[HRESULT=a"
+13 ->  0 "{"; # e.g. "[HRESULT=a"
+13 ->  0 "|"; # e.g. "[HRESULT=a"
+13 ->  0 "}"; # e.g. "[HRESULT=a"
+13 ->  0 "~"; # e.g. "[HRESULT=a"
+13 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+13 ->  0 "\x80"; # e.g. "[HRESULT=a"
+13 ->  0 "\x81"; # e.g. "[HRESULT=a"
+13 ->  0 "\x82"; # e.g. "[HRESULT=a"
+13 ->  0 "\x83"; # e.g. "[HRESULT=a"
+13 ->  0 "\x84"; # e.g. "[HRESULT=a"
+13 ->  0 "\x85"; # e.g. "[HRESULT=a"
+13 ->  0 "\x86"; # e.g. "[HRESULT=a"
+13 ->  0 "\x87"; # e.g. "[HRESULT=a"
+13 ->  0 "\x88"; # e.g. "[HRESULT=a"
+13 ->  0 "\x89"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+13 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+13 ->  0 "\x90"; # e.g. "[HRESULT=a"
+13 ->  0 "\x91"; # e.g. "[HRESULT=a"
+13 ->  0 "\x92"; # e.g. "[HRESULT=a"
+13 ->  0 "\x93"; # e.g. "[HRESULT=a"
+13 ->  0 "\x94"; # e.g. "[HRESULT=a"
+13 ->  0 "\x95"; # e.g. "[HRESULT=a"
+13 ->  0 "\x96"; # e.g. "[HRESULT=a"
+13 ->  0 "\x97"; # e.g. "[HRESULT=a"
+13 ->  0 "\x98"; # e.g. "[HRESULT=a"
+13 ->  0 "\x99"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+13 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+13 ->  0 "\xab"; # e.g. "[HRESULT=a"
+13 ->  0 "\xac"; # e.g. "[HRESULT=a"
+13 ->  0 "\xad"; # e.g. "[HRESULT=a"
+13 ->  0 "\xae"; # e.g. "[HRESULT=a"
+13 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xba"; # e.g. "[HRESULT=a"
+13 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+13 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+13 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+13 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+13 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xca"; # e.g. "[HRESULT=a"
+13 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+13 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+13 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+13 ->  0 "\xce"; # e.g. "[HRESULT=a"
+13 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xda"; # e.g. "[HRESULT=a"
+13 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+13 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+13 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+13 ->  0 "\xde"; # e.g. "[HRESULT=a"
+13 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xea"; # e.g. "[HRESULT=a"
+13 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+13 ->  0 "\xec"; # e.g. "[HRESULT=a"
+13 ->  0 "\xed"; # e.g. "[HRESULT=a"
+13 ->  0 "\xee"; # e.g. "[HRESULT=a"
+13 ->  0 "\xef"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+13 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+13 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+13 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+13 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+13 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+13 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+13 ->  0 "\xff"; # e.g. "[HRESULT=a"
+14 ->  0 "\x00"; # e.g. "[HRESULT=a"
+14 ->  0 "\x01"; # e.g. "[HRESULT=a"
+14 ->  0 "\x02"; # e.g. "[HRESULT=a"
+14 ->  0 "\x03"; # e.g. "[HRESULT=a"
+14 ->  0 "\x04"; # e.g. "[HRESULT=a"
+14 ->  0 "\x05"; # e.g. "[HRESULT=a"
+14 ->  0 "\x06"; # e.g. "[HRESULT=a"
+14 ->  0 "\x07"; # e.g. "[HRESULT=a"
+14 ->  0 "\x08"; # e.g. "[HRESULT=a"
+14 -> 14 "\t"; # e.g. "[HRESULT=["
+14 ->  2 "\n"; # e.g. "["
+14 ->  0 "\v"; # e.g. "[HRESULT=a"
+14 -> 14 "\f"; # e.g. "[HRESULT=["
+14 -> 14 "\r"; # e.g. "[HRESULT=["
+14 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+14 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+14 ->  0 "\x10"; # e.g. "[HRESULT=a"
+14 ->  0 "\x11"; # e.g. "[HRESULT=a"
+14 ->  0 "\x12"; # e.g. "[HRESULT=a"
+14 ->  0 "\x13"; # e.g. "[HRESULT=a"
+14 ->  0 "\x14"; # e.g. "[HRESULT=a"
+14 ->  0 "\x15"; # e.g. "[HRESULT=a"
+14 ->  0 "\x16"; # e.g. "[HRESULT=a"
+14 ->  0 "\x17"; # e.g. "[HRESULT=a"
+14 ->  0 "\x18"; # e.g. "[HRESULT=a"
+14 ->  0 "\x19"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+14 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+14 -> 14 " "; # e.g. "[HRESULT=["
+14 ->  0 "!"; # e.g. "[HRESULT=a"
+14 ->  0 "\""; # e.g. "[HRESULT=a"
+14 ->  0 "#"; # e.g. "[HRESULT=a"
+14 ->  0 "$"; # e.g. "[HRESULT=a"
+14 ->  0 "%"; # e.g. "[HRESULT=a"
+14 ->  0 "&"; # e.g. "[HRESULT=a"
+14 ->  0 "'"; # e.g. "[HRESULT=a"
+14 ->  0 "("; # e.g. "[HRESULT=a"
+14 ->  0 ")"; # e.g. "[HRESULT=a"
+14 ->  0 "*"; # e.g. "[HRESULT=a"
+14 ->  0 "+"; # e.g. "[HRESULT=a"
+14 ->  0 ","; # e.g. "[HRESULT=a"
+14 ->  0 "-"; # e.g. "[HRESULT=a"
+14 ->  0 "."; # e.g. "[HRESULT=a"
+14 ->  0 "/"; # e.g. "[HRESULT=a"
+14 ->  0 "0"; # e.g. "[HRESULT=a"
+14 ->  0 "1"; # e.g. "[HRESULT=a"
+14 ->  0 "2"; # e.g. "[HRESULT=a"
+14 ->  0 "3"; # e.g. "[HRESULT=a"
+14 ->  0 "4"; # e.g. "[HRESULT=a"
+14 ->  0 "5"; # e.g. "[HRESULT=a"
+14 ->  0 "6"; # e.g. "[HRESULT=a"
+14 ->  0 "7"; # e.g. "[HRESULT=a"
+14 ->  0 "8"; # e.g. "[HRESULT=a"
+14 ->  0 "9"; # e.g. "[HRESULT=a"
+14 ->  0 ":"; # e.g. "[HRESULT=a"
+14 ->  0 ";"; # e.g. "[HRESULT=a"
+14 ->  0 "<"; # e.g. "[HRESULT=a"
+14 ->  0 "="; # e.g. "[HRESULT=a"
+14 ->  0 ">"; # e.g. "[HRESULT=a"
+14 ->  0 "?"; # e.g. "[HRESULT=a"
+14 ->  0 "@"; # e.g. "[HRESULT=a"
+14 ->  0 "A"; # e.g. "[HRESULT=a"
+14 ->  0 "B"; # e.g. "[HRESULT=a"
+14 ->  0 "C"; # e.g. "[HRESULT=a"
+14 ->  0 "D"; # e.g. "[HRESULT=a"
+14 ->  0 "E"; # e.g. "[HRESULT=a"
+14 ->  0 "F"; # e.g. "[HRESULT=a"
+14 ->  0 "G"; # e.g. "[HRESULT=a"
+14 -> 20 "H"; # e.g. "[HRESULT=[H"
+14 ->  0 "I"; # e.g. "[HRESULT=a"
+14 ->  0 "J"; # e.g. "[HRESULT=a"
+14 ->  0 "K"; # e.g. "[HRESULT=a"
+14 ->  0 "L"; # e.g. "[HRESULT=a"
+14 ->  0 "M"; # e.g. "[HRESULT=a"
+14 ->  0 "N"; # e.g. "[HRESULT=a"
+14 ->  0 "O"; # e.g. "[HRESULT=a"
+14 ->  0 "P"; # e.g. "[HRESULT=a"
+14 ->  0 "Q"; # e.g. "[HRESULT=a"
+14 ->  0 "R"; # e.g. "[HRESULT=a"
+14 ->  0 "S"; # e.g. "[HRESULT=a"
+14 ->  0 "T"; # e.g. "[HRESULT=a"
+14 ->  0 "U"; # e.g. "[HRESULT=a"
+14 ->  0 "V"; # e.g. "[HRESULT=a"
+14 ->  0 "W"; # e.g. "[HRESULT=a"
+14 ->  0 "X"; # e.g. "[HRESULT=a"
+14 ->  0 "Y"; # e.g. "[HRESULT=a"
+14 ->  0 "Z"; # e.g. "[HRESULT=a"
+14 -> 14 "["; # e.g. "[HRESULT=["
+14 -> 10 "\\"; # e.g. "[HRESULT=\\"
+14 ->  0 "]"; # e.g. "[HRESULT=a"
+14 ->  0 "^"; # e.g. "[HRESULT=a"
+14 ->  0 "_"; # e.g. "[HRESULT=a"
+14 ->  0 "`"; # e.g. "[HRESULT=a"
+14 ->  0 "a"; # e.g. "[HRESULT=a"
+14 ->  0 "b"; # e.g. "[HRESULT=a"
+14 ->  0 "c"; # e.g. "[HRESULT=a"
+14 ->  0 "d"; # e.g. "[HRESULT=a"
+14 ->  0 "e"; # e.g. "[HRESULT=a"
+14 ->  0 "f"; # e.g. "[HRESULT=a"
+14 ->  0 "g"; # e.g. "[HRESULT=a"
+14 ->  0 "h"; # e.g. "[HRESULT=a"
+14 ->  0 "i"; # e.g. "[HRESULT=a"
+14 ->  0 "j"; # e.g. "[HRESULT=a"
+14 ->  0 "k"; # e.g. "[HRESULT=a"
+14 ->  0 "l"; # e.g. "[HRESULT=a"
+14 ->  0 "m"; # e.g. "[HRESULT=a"
+14 ->  0 "n"; # e.g. "[HRESULT=a"
+14 ->  0 "o"; # e.g. "[HRESULT=a"
+14 ->  0 "p"; # e.g. "[HRESULT=a"
+14 ->  0 "q"; # e.g. "[HRESULT=a"
+14 ->  0 "r"; # e.g. "[HRESULT=a"
+14 ->  0 "s"; # e.g. "[HRESULT=a"
+14 ->  0 "t"; # e.g. "[HRESULT=a"
+14 ->  0 "u"; # e.g. "[HRESULT=a"
+14 ->  0 "v"; # e.g. "[HRESULT=a"
+14 ->  0 "w"; # e.g. "[HRESULT=a"
+14 ->  0 "x"; # e.g. "[HRESULT=a"
+14 ->  0 "y"; # e.g. "[HRESULT=a"
+14 ->  0 "z"; # e.g. "[HRESULT=a"
+14 ->  0 "{"; # e.g. "[HRESULT=a"
+14 ->  0 "|"; # e.g. "[HRESULT=a"
+14 ->  0 "}"; # e.g. "[HRESULT=a"
+14 ->  0 "~"; # e.g. "[HRESULT=a"
+14 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+14 ->  0 "\x80"; # e.g. "[HRESULT=a"
+14 ->  0 "\x81"; # e.g. "[HRESULT=a"
+14 ->  0 "\x82"; # e.g. "[HRESULT=a"
+14 ->  0 "\x83"; # e.g. "[HRESULT=a"
+14 ->  0 "\x84"; # e.g. "[HRESULT=a"
+14 ->  0 "\x85"; # e.g. "[HRESULT=a"
+14 ->  0 "\x86"; # e.g. "[HRESULT=a"
+14 ->  0 "\x87"; # e.g. "[HRESULT=a"
+14 ->  0 "\x88"; # e.g. "[HRESULT=a"
+14 ->  0 "\x89"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+14 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+14 ->  0 "\x90"; # e.g. "[HRESULT=a"
+14 ->  0 "\x91"; # e.g. "[HRESULT=a"
+14 ->  0 "\x92"; # e.g. "[HRESULT=a"
+14 ->  0 "\x93"; # e.g. "[HRESULT=a"
+14 ->  0 "\x94"; # e.g. "[HRESULT=a"
+14 ->  0 "\x95"; # e.g. "[HRESULT=a"
+14 ->  0 "\x96"; # e.g. "[HRESULT=a"
+14 ->  0 "\x97"; # e.g. "[HRESULT=a"
+14 ->  0 "\x98"; # e.g. "[HRESULT=a"
+14 ->  0 "\x99"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+14 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+14 ->  0 "\xab"; # e.g. "[HRESULT=a"
+14 ->  0 "\xac"; # e.g. "[HRESULT=a"
+14 ->  0 "\xad"; # e.g. "[HRESULT=a"
+14 ->  0 "\xae"; # e.g. "[HRESULT=a"
+14 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xba"; # e.g. "[HRESULT=a"
+14 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+14 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+14 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+14 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+14 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xca"; # e.g. "[HRESULT=a"
+14 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+14 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+14 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+14 ->  0 "\xce"; # e.g. "[HRESULT=a"
+14 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xda"; # e.g. "[HRESULT=a"
+14 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+14 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+14 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+14 ->  0 "\xde"; # e.g. "[HRESULT=a"
+14 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xea"; # e.g. "[HRESULT=a"
+14 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+14 ->  0 "\xec"; # e.g. "[HRESULT=a"
+14 ->  0 "\xed"; # e.g. "[HRESULT=a"
+14 ->  0 "\xee"; # e.g. "[HRESULT=a"
+14 ->  0 "\xef"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+14 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+14 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+14 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+14 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+14 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+14 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+14 ->  0 "\xff"; # e.g. "[HRESULT=a"
+15 ->  0 "\x00"; # e.g. "[HRESULT=a"
+15 ->  0 "\x01"; # e.g. "[HRESULT=a"
+15 ->  0 "\x02"; # e.g. "[HRESULT=a"
+15 ->  0 "\x03"; # e.g. "[HRESULT=a"
+15 ->  0 "\x04"; # e.g. "[HRESULT=a"
+15 ->  0 "\x05"; # e.g. "[HRESULT=a"
+15 ->  0 "\x06"; # e.g. "[HRESULT=a"
+15 ->  0 "\x07"; # e.g. "[HRESULT=a"
+15 ->  0 "\x08"; # e.g. "[HRESULT=a"
+15 -> 15 "\t"; # e.g. "[HRESULT="
+15 -> 15 "\n"; # e.g. "[HRESULT="
+15 ->  0 "\v"; # e.g. "[HRESULT=a"
+15 -> 15 "\f"; # e.g. "[HRESULT="
+15 -> 15 "\r"; # e.g. "[HRESULT="
+15 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+15 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+15 ->  0 "\x10"; # e.g. "[HRESULT=a"
+15 ->  0 "\x11"; # e.g. "[HRESULT=a"
+15 ->  0 "\x12"; # e.g. "[HRESULT=a"
+15 ->  0 "\x13"; # e.g. "[HRESULT=a"
+15 ->  0 "\x14"; # e.g. "[HRESULT=a"
+15 ->  0 "\x15"; # e.g. "[HRESULT=a"
+15 ->  0 "\x16"; # e.g. "[HRESULT=a"
+15 ->  0 "\x17"; # e.g. "[HRESULT=a"
+15 ->  0 "\x18"; # e.g. "[HRESULT=a"
+15 ->  0 "\x19"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+15 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+15 -> 15 " "; # e.g. "[HRESULT="
+15 ->  0 "!"; # e.g. "[HRESULT=a"
+15 ->  0 "\""; # e.g. "[HRESULT=a"
+15 ->  0 "#"; # e.g. "[HRESULT=a"
+15 ->  0 "$"; # e.g. "[HRESULT=a"
+15 ->  0 "%"; # e.g. "[HRESULT=a"
+15 ->  0 "&"; # e.g. "[HRESULT=a"
+15 ->  0 "'"; # e.g. "[HRESULT=a"
+15 ->  0 "("; # e.g. "[HRESULT=a"
+15 ->  0 ")"; # e.g. "[HRESULT=a"
+15 ->  0 "*"; # e.g. "[HRESULT=a"
+15 ->  0 "+"; # e.g. "[HRESULT=a"
+15 ->  0 ","; # e.g. "[HRESULT=a"
+15 ->  0 "-"; # e.g. "[HRESULT=a"
+15 ->  0 "."; # e.g. "[HRESULT=a"
+15 ->  0 "/"; # e.g. "[HRESULT=a"
+15 ->  0 "0"; # e.g. "[HRESULT=a"
+15 ->  0 "1"; # e.g. "[HRESULT=a"
+15 ->  0 "2"; # e.g. "[HRESULT=a"
+15 ->  0 "3"; # e.g. "[HRESULT=a"
+15 ->  0 "4"; # e.g. "[HRESULT=a"
+15 ->  0 "5"; # e.g. "[HRESULT=a"
+15 ->  0 "6"; # e.g. "[HRESULT=a"
+15 ->  0 "7"; # e.g. "[HRESULT=a"
+15 ->  0 "8"; # e.g. "[HRESULT=a"
+15 ->  0 "9"; # e.g. "[HRESULT=a"
+15 ->  0 ":"; # e.g. "[HRESULT=a"
+15 ->  0 ";"; # e.g. "[HRESULT=a"
+15 ->  0 "<"; # e.g. "[HRESULT=a"
+15 ->  0 "="; # e.g. "[HRESULT=a"
+15 ->  0 ">"; # e.g. "[HRESULT=a"
+15 ->  0 "?"; # e.g. "[HRESULT=a"
+15 ->  0 "@"; # e.g. "[HRESULT=a"
+15 ->  0 "A"; # e.g. "[HRESULT=a"
+15 ->  0 "B"; # e.g. "[HRESULT=a"
+15 ->  0 "C"; # e.g. "[HRESULT=a"
+15 ->  0 "D"; # e.g. "[HRESULT=a"
+15 ->  0 "E"; # e.g. "[HRESULT=a"
+15 ->  0 "F"; # e.g. "[HRESULT=a"
+15 ->  0 "G"; # e.g. "[HRESULT=a"
+15 ->  0 "H"; # e.g. "[HRESULT=a"
+15 ->  0 "I"; # e.g. "[HRESULT=a"
+15 ->  0 "J"; # e.g. "[HRESULT=a"
+15 ->  0 "K"; # e.g. "[HRESULT=a"
+15 ->  0 "L"; # e.g. "[HRESULT=a"
+15 ->  0 "M"; # e.g. "[HRESULT=a"
+15 ->  0 "N"; # e.g. "[HRESULT=a"
+15 ->  0 "O"; # e.g. "[HRESULT=a"
+15 ->  0 "P"; # e.g. "[HRESULT=a"
+15 ->  0 "Q"; # e.g. "[HRESULT=a"
+15 ->  0 "R"; # e.g. "[HRESULT=a"
+15 ->  0 "S"; # e.g. "[HRESULT=a"
+15 ->  0 "T"; # e.g. "[HRESULT=a"
+15 ->  0 "U"; # e.g. "[HRESULT=a"
+15 ->  0 "V"; # e.g. "[HRESULT=a"
+15 ->  0 "W"; # e.g. "[HRESULT=a"
+15 ->  0 "X"; # e.g. "[HRESULT=a"
+15 ->  0 "Y"; # e.g. "[HRESULT=a"
+15 ->  0 "Z"; # e.g. "[HRESULT=a"
+15 -> 14 "["; # e.g. "[HRESULT=["
+15 -> 10 "\\"; # e.g. "[HRESULT=\\"
+15 ->  0 "]"; # e.g. "[HRESULT=a"
+15 ->  0 "^"; # e.g. "[HRESULT=a"
+15 ->  0 "_"; # e.g. "[HRESULT=a"
+15 ->  0 "`"; # e.g. "[HRESULT=a"
+15 ->  0 "a"; # e.g. "[HRESULT=a"
+15 ->  0 "b"; # e.g. "[HRESULT=a"
+15 ->  0 "c"; # e.g. "[HRESULT=a"
+15 ->  0 "d"; # e.g. "[HRESULT=a"
+15 ->  0 "e"; # e.g. "[HRESULT=a"
+15 ->  0 "f"; # e.g. "[HRESULT=a"
+15 ->  0 "g"; # e.g. "[HRESULT=a"
+15 ->  0 "h"; # e.g. "[HRESULT=a"
+15 ->  0 "i"; # e.g. "[HRESULT=a"
+15 ->  0 "j"; # e.g. "[HRESULT=a"
+15 ->  0 "k"; # e.g. "[HRESULT=a"
+15 ->  0 "l"; # e.g. "[HRESULT=a"
+15 ->  0 "m"; # e.g. "[HRESULT=a"
+15 ->  0 "n"; # e.g. "[HRESULT=a"
+15 ->  0 "o"; # e.g. "[HRESULT=a"
+15 ->  0 "p"; # e.g. "[HRESULT=a"
+15 ->  0 "q"; # e.g. "[HRESULT=a"
+15 ->  0 "r"; # e.g. "[HRESULT=a"
+15 ->  0 "s"; # e.g. "[HRESULT=a"
+15 ->  0 "t"; # e.g. "[HRESULT=a"
+15 ->  0 "u"; # e.g. "[HRESULT=a"
+15 ->  0 "v"; # e.g. "[HRESULT=a"
+15 ->  0 "w"; # e.g. "[HRESULT=a"
+15 ->  0 "x"; # e.g. "[HRESULT=a"
+15 ->  0 "y"; # e.g. "[HRESULT=a"
+15 ->  0 "z"; # e.g. "[HRESULT=a"
+15 ->  0 "{"; # e.g. "[HRESULT=a"
+15 ->  0 "|"; # e.g. "[HRESULT=a"
+15 ->  0 "}"; # e.g. "[HRESULT=a"
+15 ->  0 "~"; # e.g. "[HRESULT=a"
+15 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+15 ->  0 "\x80"; # e.g. "[HRESULT=a"
+15 ->  0 "\x81"; # e.g. "[HRESULT=a"
+15 ->  0 "\x82"; # e.g. "[HRESULT=a"
+15 ->  0 "\x83"; # e.g. "[HRESULT=a"
+15 ->  0 "\x84"; # e.g. "[HRESULT=a"
+15 ->  0 "\x85"; # e.g. "[HRESULT=a"
+15 ->  0 "\x86"; # e.g. "[HRESULT=a"
+15 ->  0 "\x87"; # e.g. "[HRESULT=a"
+15 ->  0 "\x88"; # e.g. "[HRESULT=a"
+15 ->  0 "\x89"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+15 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+15 ->  0 "\x90"; # e.g. "[HRESULT=a"
+15 ->  0 "\x91"; # e.g. "[HRESULT=a"
+15 ->  0 "\x92"; # e.g. "[HRESULT=a"
+15 ->  0 "\x93"; # e.g. "[HRESULT=a"
+15 ->  0 "\x94"; # e.g. "[HRESULT=a"
+15 ->  0 "\x95"; # e.g. "[HRESULT=a"
+15 ->  0 "\x96"; # e.g. "[HRESULT=a"
+15 ->  0 "\x97"; # e.g. "[HRESULT=a"
+15 ->  0 "\x98"; # e.g. "[HRESULT=a"
+15 ->  0 "\x99"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+15 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+15 ->  0 "\xab"; # e.g. "[HRESULT=a"
+15 ->  0 "\xac"; # e.g. "[HRESULT=a"
+15 ->  0 "\xad"; # e.g. "[HRESULT=a"
+15 ->  0 "\xae"; # e.g. "[HRESULT=a"
+15 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xba"; # e.g. "[HRESULT=a"
+15 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+15 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+15 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+15 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+15 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xca"; # e.g. "[HRESULT=a"
+15 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+15 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+15 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+15 ->  0 "\xce"; # e.g. "[HRESULT=a"
+15 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xda"; # e.g. "[HRESULT=a"
+15 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+15 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+15 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+15 ->  0 "\xde"; # e.g. "[HRESULT=a"
+15 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xea"; # e.g. "[HRESULT=a"
+15 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+15 ->  0 "\xec"; # e.g. "[HRESULT=a"
+15 ->  0 "\xed"; # e.g. "[HRESULT=a"
+15 ->  0 "\xee"; # e.g. "[HRESULT=a"
+15 ->  0 "\xef"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+15 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+15 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+15 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+15 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+15 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+15 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+15 ->  0 "\xff"; # e.g. "[HRESULT=a"
+16 ->  0 "\x00"; # e.g. "[HRESULT=a"
+16 ->  0 "\x01"; # e.g. "[HRESULT=a"
+16 ->  0 "\x02"; # e.g. "[HRESULT=a"
+16 ->  0 "\x03"; # e.g. "[HRESULT=a"
+16 ->  0 "\x04"; # e.g. "[HRESULT=a"
+16 ->  0 "\x05"; # e.g. "[HRESULT=a"
+16 ->  0 "\x06"; # e.g. "[HRESULT=a"
+16 ->  0 "\x07"; # e.g. "[HRESULT=a"
+16 ->  0 "\x08"; # e.g. "[HRESULT=a"
+16 ->  0 "\t"; # e.g. "[HRESULT=a"
+16 -> 12 "\n"; # start
+16 ->  0 "\v"; # e.g. "[HRESULT=a"
+16 ->  0 "\f"; # e.g. "[HRESULT=a"
+16 ->  0 "\r"; # e.g. "[HRESULT=a"
+16 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+16 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+16 ->  0 "\x10"; # e.g. "[HRESULT=a"
+16 ->  0 "\x11"; # e.g. "[HRESULT=a"
+16 ->  0 "\x12"; # e.g. "[HRESULT=a"
+16 ->  0 "\x13"; # e.g. "[HRESULT=a"
+16 ->  0 "\x14"; # e.g. "[HRESULT=a"
+16 ->  0 "\x15"; # e.g. "[HRESULT=a"
+16 ->  0 "\x16"; # e.g. "[HRESULT=a"
+16 ->  0 "\x17"; # e.g. "[HRESULT=a"
+16 ->  0 "\x18"; # e.g. "[HRESULT=a"
+16 ->  0 "\x19"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+16 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+16 ->  0 " "; # e.g. "[HRESULT=a"
+16 ->  0 "!"; # e.g. "[HRESULT=a"
+16 ->  0 "\""; # e.g. "[HRESULT=a"
+16 ->  0 "#"; # e.g. "[HRESULT=a"
+16 ->  0 "$"; # e.g. "[HRESULT=a"
+16 ->  0 "%"; # e.g. "[HRESULT=a"
+16 ->  0 "&"; # e.g. "[HRESULT=a"
+16 ->  0 "'"; # e.g. "[HRESULT=a"
+16 ->  0 "("; # e.g. "[HRESULT=a"
+16 ->  0 ")"; # e.g. "[HRESULT=a"
+16 ->  0 "*"; # e.g. "[HRESULT=a"
+16 ->  0 "+"; # e.g. "[HRESULT=a"
+16 ->  0 ","; # e.g. "[HRESULT=a"
+16 ->  0 "-"; # e.g. "[HRESULT=a"
+16 ->  0 "."; # e.g. "[HRESULT=a"
+16 ->  0 "/"; # e.g. "[HRESULT=a"
+16 ->  0 "0"; # e.g. "[HRESULT=a"
+16 ->  0 "1"; # e.g. "[HRESULT=a"
+16 ->  0 "2"; # e.g. "[HRESULT=a"
+16 ->  0 "3"; # e.g. "[HRESULT=a"
+16 ->  0 "4"; # e.g. "[HRESULT=a"
+16 ->  0 "5"; # e.g. "[HRESULT=a"
+16 ->  0 "6"; # e.g. "[HRESULT=a"
+16 ->  0 "7"; # e.g. "[HRESULT=a"
+16 ->  0 "8"; # e.g. "[HRESULT=a"
+16 ->  0 "9"; # e.g. "[HRESULT=a"
+16 ->  0 ":"; # e.g. "[HRESULT=a"
+16 ->  0 ";"; # e.g. "[HRESULT=a"
+16 ->  0 "<"; # e.g. "[HRESULT=a"
+16 ->  0 "="; # e.g. "[HRESULT=a"
+16 ->  0 ">"; # e.g. "[HRESULT=a"
+16 ->  0 "?"; # e.g. "[HRESULT=a"
+16 ->  0 "@"; # e.g. "[HRESULT=a"
+16 ->  0 "A"; # e.g. "[HRESULT=a"
+16 ->  0 "B"; # e.g. "[HRESULT=a"
+16 ->  0 "C"; # e.g. "[HRESULT=a"
+16 ->  0 "D"; # e.g. "[HRESULT=a"
+16 ->  0 "E"; # e.g. "[HRESULT=a"
+16 ->  0 "F"; # e.g. "[HRESULT=a"
+16 ->  0 "G"; # e.g. "[HRESULT=a"
+16 ->  0 "H"; # e.g. "[HRESULT=a"
+16 ->  0 "I"; # e.g. "[HRESULT=a"
+16 ->  0 "J"; # e.g. "[HRESULT=a"
+16 ->  0 "K"; # e.g. "[HRESULT=a"
+16 ->  1 "L"; # e.g. "[HRESULT=[HRESUL"
+16 ->  0 "M"; # e.g. "[HRESULT=a"
+16 ->  0 "N"; # e.g. "[HRESULT=a"
+16 ->  0 "O"; # e.g. "[HRESULT=a"
+16 ->  0 "P"; # e.g. "[HRESULT=a"
+16 ->  0 "Q"; # e.g. "[HRESULT=a"
+16 ->  0 "R"; # e.g. "[HRESULT=a"
+16 ->  0 "S"; # e.g. "[HRESULT=a"
+16 ->  0 "T"; # e.g. "[HRESULT=a"
+16 ->  0 "U"; # e.g. "[HRESULT=a"
+16 ->  0 "V"; # e.g. "[HRESULT=a"
+16 ->  0 "W"; # e.g. "[HRESULT=a"
+16 ->  0 "X"; # e.g. "[HRESULT=a"
+16 ->  0 "Y"; # e.g. "[HRESULT=a"
+16 ->  0 "Z"; # e.g. "[HRESULT=a"
+16 -> 14 "["; # e.g. "[HRESULT=["
+16 -> 10 "\\"; # e.g. "[HRESULT=\\"
+16 ->  0 "]"; # e.g. "[HRESULT=a"
+16 ->  0 "^"; # e.g. "[HRESULT=a"
+16 ->  0 "_"; # e.g. "[HRESULT=a"
+16 ->  0 "`"; # e.g. "[HRESULT=a"
+16 ->  0 "a"; # e.g. "[HRESULT=a"
+16 ->  0 "b"; # e.g. "[HRESULT=a"
+16 ->  0 "c"; # e.g. "[HRESULT=a"
+16 ->  0 "d"; # e.g. "[HRESULT=a"
+16 ->  0 "e"; # e.g. "[HRESULT=a"
+16 ->  0 "f"; # e.g. "[HRESULT=a"
+16 ->  0 "g"; # e.g. "[HRESULT=a"
+16 ->  0 "h"; # e.g. "[HRESULT=a"
+16 ->  0 "i"; # e.g. "[HRESULT=a"
+16 ->  0 "j"; # e.g. "[HRESULT=a"
+16 ->  0 "k"; # e.g. "[HRESULT=a"
+16 ->  0 "l"; # e.g. "[HRESULT=a"
+16 ->  0 "m"; # e.g. "[HRESULT=a"
+16 ->  0 "n"; # e.g. "[HRESULT=a"
+16 ->  0 "o"; # e.g. "[HRESULT=a"
+16 ->  0 "p"; # e.g. "[HRESULT=a"
+16 ->  0 "q"; # e.g. "[HRESULT=a"
+16 ->  0 "r"; # e.g. "[HRESULT=a"
+16 ->  0 "s"; # e.g. "[HRESULT=a"
+16 ->  0 "t"; # e.g. "[HRESULT=a"
+16 ->  0 "u"; # e.g. "[HRESULT=a"
+16 ->  0 "v"; # e.g. "[HRESULT=a"
+16 ->  0 "w"; # e.g. "[HRESULT=a"
+16 ->  0 "x"; # e.g. "[HRESULT=a"
+16 ->  0 "y"; # e.g. "[HRESULT=a"
+16 ->  0 "z"; # e.g. "[HRESULT=a"
+16 ->  0 "{"; # e.g. "[HRESULT=a"
+16 ->  0 "|"; # e.g. "[HRESULT=a"
+16 ->  0 "}"; # e.g. "[HRESULT=a"
+16 ->  0 "~"; # e.g. "[HRESULT=a"
+16 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+16 ->  0 "\x80"; # e.g. "[HRESULT=a"
+16 ->  0 "\x81"; # e.g. "[HRESULT=a"
+16 ->  0 "\x82"; # e.g. "[HRESULT=a"
+16 ->  0 "\x83"; # e.g. "[HRESULT=a"
+16 ->  0 "\x84"; # e.g. "[HRESULT=a"
+16 ->  0 "\x85"; # e.g. "[HRESULT=a"
+16 ->  0 "\x86"; # e.g. "[HRESULT=a"
+16 ->  0 "\x87"; # e.g. "[HRESULT=a"
+16 ->  0 "\x88"; # e.g. "[HRESULT=a"
+16 ->  0 "\x89"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+16 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+16 ->  0 "\x90"; # e.g. "[HRESULT=a"
+16 ->  0 "\x91"; # e.g. "[HRESULT=a"
+16 ->  0 "\x92"; # e.g. "[HRESULT=a"
+16 ->  0 "\x93"; # e.g. "[HRESULT=a"
+16 ->  0 "\x94"; # e.g. "[HRESULT=a"
+16 ->  0 "\x95"; # e.g. "[HRESULT=a"
+16 ->  0 "\x96"; # e.g. "[HRESULT=a"
+16 ->  0 "\x97"; # e.g. "[HRESULT=a"
+16 ->  0 "\x98"; # e.g. "[HRESULT=a"
+16 ->  0 "\x99"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+16 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+16 ->  0 "\xab"; # e.g. "[HRESULT=a"
+16 ->  0 "\xac"; # e.g. "[HRESULT=a"
+16 ->  0 "\xad"; # e.g. "[HRESULT=a"
+16 ->  0 "\xae"; # e.g. "[HRESULT=a"
+16 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xba"; # e.g. "[HRESULT=a"
+16 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+16 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+16 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+16 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+16 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xca"; # e.g. "[HRESULT=a"
+16 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+16 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+16 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+16 ->  0 "\xce"; # e.g. "[HRESULT=a"
+16 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xda"; # e.g. "[HRESULT=a"
+16 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+16 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+16 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+16 ->  0 "\xde"; # e.g. "[HRESULT=a"
+16 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xea"; # e.g. "[HRESULT=a"
+16 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+16 ->  0 "\xec"; # e.g. "[HRESULT=a"
+16 ->  0 "\xed"; # e.g. "[HRESULT=a"
+16 ->  0 "\xee"; # e.g. "[HRESULT=a"
+16 ->  0 "\xef"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+16 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+16 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+16 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+16 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+16 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+16 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+16 ->  0 "\xff"; # e.g. "[HRESULT=a"
+17 ->  0 "\x00"; # e.g. "[HRESULT=a"
+17 ->  0 "\x01"; # e.g. "[HRESULT=a"
+17 ->  0 "\x02"; # e.g. "[HRESULT=a"
+17 ->  0 "\x03"; # e.g. "[HRESULT=a"
+17 ->  0 "\x04"; # e.g. "[HRESULT=a"
+17 ->  0 "\x05"; # e.g. "[HRESULT=a"
+17 ->  0 "\x06"; # e.g. "[HRESULT=a"
+17 ->  0 "\x07"; # e.g. "[HRESULT=a"
+17 ->  0 "\x08"; # e.g. "[HRESULT=a"
+17 ->  0 "\t"; # e.g. "[HRESULT=a"
+17 -> 12 "\n"; # start
+17 ->  0 "\v"; # e.g. "[HRESULT=a"
+17 ->  0 "\f"; # e.g. "[HRESULT=a"
+17 ->  0 "\r"; # e.g. "[HRESULT=a"
+17 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+17 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+17 ->  0 "\x10"; # e.g. "[HRESULT=a"
+17 ->  0 "\x11"; # e.g. "[HRESULT=a"
+17 ->  0 "\x12"; # e.g. "[HRESULT=a"
+17 ->  0 "\x13"; # e.g. "[HRESULT=a"
+17 ->  0 "\x14"; # e.g. "[HRESULT=a"
+17 ->  0 "\x15"; # e.g. "[HRESULT=a"
+17 ->  0 "\x16"; # e.g. "[HRESULT=a"
+17 ->  0 "\x17"; # e.g. "[HRESULT=a"
+17 ->  0 "\x18"; # e.g. "[HRESULT=a"
+17 ->  0 "\x19"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+17 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+17 ->  0 " "; # e.g. "[HRESULT=a"
+17 ->  0 "!"; # e.g. "[HRESULT=a"
+17 ->  0 "\""; # e.g. "[HRESULT=a"
+17 ->  0 "#"; # e.g. "[HRESULT=a"
+17 ->  0 "$"; # e.g. "[HRESULT=a"
+17 ->  0 "%"; # e.g. "[HRESULT=a"
+17 ->  0 "&"; # e.g. "[HRESULT=a"
+17 ->  0 "'"; # e.g. "[HRESULT=a"
+17 ->  0 "("; # e.g. "[HRESULT=a"
+17 ->  0 ")"; # e.g. "[HRESULT=a"
+17 ->  0 "*"; # e.g. "[HRESULT=a"
+17 ->  0 "+"; # e.g. "[HRESULT=a"
+17 ->  0 ","; # e.g. "[HRESULT=a"
+17 ->  0 "-"; # e.g. "[HRESULT=a"
+17 ->  0 "."; # e.g. "[HRESULT=a"
+17 ->  0 "/"; # e.g. "[HRESULT=a"
+17 ->  0 "0"; # e.g. "[HRESULT=a"
+17 ->  0 "1"; # e.g. "[HRESULT=a"
+17 ->  0 "2"; # e.g. "[HRESULT=a"
+17 ->  0 "3"; # e.g. "[HRESULT=a"
+17 ->  0 "4"; # e.g. "[HRESULT=a"
+17 ->  0 "5"; # e.g. "[HRESULT=a"
+17 ->  0 "6"; # e.g. "[HRESULT=a"
+17 ->  0 "7"; # e.g. "[HRESULT=a"
+17 ->  0 "8"; # e.g. "[HRESULT=a"
+17 ->  0 "9"; # e.g. "[HRESULT=a"
+17 ->  0 ":"; # e.g. "[HRESULT=a"
+17 ->  0 ";"; # e.g. "[HRESULT=a"
+17 ->  0 "<"; # e.g. "[HRESULT=a"
+17 ->  0 "="; # e.g. "[HRESULT=a"
+17 ->  0 ">"; # e.g. "[HRESULT=a"
+17 ->  0 "?"; # e.g. "[HRESULT=a"
+17 ->  0 "@"; # e.g. "[HRESULT=a"
+17 ->  0 "A"; # e.g. "[HRESULT=a"
+17 ->  0 "B"; # e.g. "[HRESULT=a"
+17 ->  0 "C"; # e.g. "[HRESULT=a"
+17 ->  0 "D"; # e.g. "[HRESULT=a"
+17 ->  0 "E"; # e.g. "[HRESULT=a"
+17 ->  0 "F"; # e.g. "[HRESULT=a"
+17 ->  0 "G"; # e.g. "[HRESULT=a"
+17 ->  0 "H"; # e.g. "[HRESULT=a"
+17 ->  0 "I"; # e.g. "[HRESULT=a"
+17 ->  0 "J"; # e.g. "[HRESULT=a"
+17 ->  0 "K"; # e.g. "[HRESULT=a"
+17 ->  0 "L"; # e.g. "[HRESULT=a"
+17 ->  0 "M"; # e.g. "[HRESULT=a"
+17 ->  0 "N"; # e.g. "[HRESULT=a"
+17 ->  0 "O"; # e.g. "[HRESULT=a"
+17 ->  0 "P"; # e.g. "[HRESULT=a"
+17 ->  0 "Q"; # e.g. "[HRESULT=a"
+17 ->  0 "R"; # e.g. "[HRESULT=a"
+17 ->  0 "S"; # e.g. "[HRESULT=a"
+17 ->  0 "T"; # e.g. "[HRESULT=a"
+17 -> 16 "U"; # e.g. "[HRESULT=[HRESU"
+17 ->  0 "V"; # e.g. "[HRESULT=a"
+17 ->  0 "W"; # e.g. "[HRESULT=a"
+17 ->  0 "X"; # e.g. "[HRESULT=a"
+17 ->  0 "Y"; # e.g. "[HRESULT=a"
+17 ->  0 "Z"; # e.g. "[HRESULT=a"
+17 -> 14 "["; # e.g. "[HRESULT=["
+17 -> 10 "\\"; # e.g. "[HRESULT=\\"
+17 ->  0 "]"; # e.g. "[HRESULT=a"
+17 ->  0 "^"; # e.g. "[HRESULT=a"
+17 ->  0 "_"; # e.g. "[HRESULT=a"
+17 ->  0 "`"; # e.g. "[HRESULT=a"
+17 ->  0 "a"; # e.g. "[HRESULT=a"
+17 ->  0 "b"; # e.g. "[HRESULT=a"
+17 ->  0 "c"; # e.g. "[HRESULT=a"
+17 ->  0 "d"; # e.g. "[HRESULT=a"
+17 ->  0 "e"; # e.g. "[HRESULT=a"
+17 ->  0 "f"; # e.g. "[HRESULT=a"
+17 ->  0 "g"; # e.g. "[HRESULT=a"
+17 ->  0 "h"; # e.g. "[HRESULT=a"
+17 ->  0 "i"; # e.g. "[HRESULT=a"
+17 ->  0 "j"; # e.g. "[HRESULT=a"
+17 ->  0 "k"; # e.g. "[HRESULT=a"
+17 ->  0 "l"; # e.g. "[HRESULT=a"
+17 ->  0 "m"; # e.g. "[HRESULT=a"
+17 ->  0 "n"; # e.g. "[HRESULT=a"
+17 ->  0 "o"; # e.g. "[HRESULT=a"
+17 ->  0 "p"; # e.g. "[HRESULT=a"
+17 ->  0 "q"; # e.g. "[HRESULT=a"
+17 ->  0 "r"; # e.g. "[HRESULT=a"
+17 ->  0 "s"; # e.g. "[HRESULT=a"
+17 ->  0 "t"; # e.g. "[HRESULT=a"
+17 ->  0 "u"; # e.g. "[HRESULT=a"
+17 ->  0 "v"; # e.g. "[HRESULT=a"
+17 ->  0 "w"; # e.g. "[HRESULT=a"
+17 ->  0 "x"; # e.g. "[HRESULT=a"
+17 ->  0 "y"; # e.g. "[HRESULT=a"
+17 ->  0 "z"; # e.g. "[HRESULT=a"
+17 ->  0 "{"; # e.g. "[HRESULT=a"
+17 ->  0 "|"; # e.g. "[HRESULT=a"
+17 ->  0 "}"; # e.g. "[HRESULT=a"
+17 ->  0 "~"; # e.g. "[HRESULT=a"
+17 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+17 ->  0 "\x80"; # e.g. "[HRESULT=a"
+17 ->  0 "\x81"; # e.g. "[HRESULT=a"
+17 ->  0 "\x82"; # e.g. "[HRESULT=a"
+17 ->  0 "\x83"; # e.g. "[HRESULT=a"
+17 ->  0 "\x84"; # e.g. "[HRESULT=a"
+17 ->  0 "\x85"; # e.g. "[HRESULT=a"
+17 ->  0 "\x86"; # e.g. "[HRESULT=a"
+17 ->  0 "\x87"; # e.g. "[HRESULT=a"
+17 ->  0 "\x88"; # e.g. "[HRESULT=a"
+17 ->  0 "\x89"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+17 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+17 ->  0 "\x90"; # e.g. "[HRESULT=a"
+17 ->  0 "\x91"; # e.g. "[HRESULT=a"
+17 ->  0 "\x92"; # e.g. "[HRESULT=a"
+17 ->  0 "\x93"; # e.g. "[HRESULT=a"
+17 ->  0 "\x94"; # e.g. "[HRESULT=a"
+17 ->  0 "\x95"; # e.g. "[HRESULT=a"
+17 ->  0 "\x96"; # e.g. "[HRESULT=a"
+17 ->  0 "\x97"; # e.g. "[HRESULT=a"
+17 ->  0 "\x98"; # e.g. "[HRESULT=a"
+17 ->  0 "\x99"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+17 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+17 ->  0 "\xab"; # e.g. "[HRESULT=a"
+17 ->  0 "\xac"; # e.g. "[HRESULT=a"
+17 ->  0 "\xad"; # e.g. "[HRESULT=a"
+17 ->  0 "\xae"; # e.g. "[HRESULT=a"
+17 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xba"; # e.g. "[HRESULT=a"
+17 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+17 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+17 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+17 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+17 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xca"; # e.g. "[HRESULT=a"
+17 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+17 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+17 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+17 ->  0 "\xce"; # e.g. "[HRESULT=a"
+17 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xda"; # e.g. "[HRESULT=a"
+17 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+17 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+17 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+17 ->  0 "\xde"; # e.g. "[HRESULT=a"
+17 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xea"; # e.g. "[HRESULT=a"
+17 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+17 ->  0 "\xec"; # e.g. "[HRESULT=a"
+17 ->  0 "\xed"; # e.g. "[HRESULT=a"
+17 ->  0 "\xee"; # e.g. "[HRESULT=a"
+17 ->  0 "\xef"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+17 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+17 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+17 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+17 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+17 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+17 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+17 ->  0 "\xff"; # e.g. "[HRESULT=a"
+18 ->  0 "\x00"; # e.g. "[HRESULT=a"
+18 ->  0 "\x01"; # e.g. "[HRESULT=a"
+18 ->  0 "\x02"; # e.g. "[HRESULT=a"
+18 ->  0 "\x03"; # e.g. "[HRESULT=a"
+18 ->  0 "\x04"; # e.g. "[HRESULT=a"
+18 ->  0 "\x05"; # e.g. "[HRESULT=a"
+18 ->  0 "\x06"; # e.g. "[HRESULT=a"
+18 ->  0 "\x07"; # e.g. "[HRESULT=a"
+18 ->  0 "\x08"; # e.g. "[HRESULT=a"
+18 ->  0 "\t"; # e.g. "[HRESULT=a"
+18 -> 12 "\n"; # start
+18 ->  0 "\v"; # e.g. "[HRESULT=a"
+18 ->  0 "\f"; # e.g. "[HRESULT=a"
+18 ->  0 "\r"; # e.g. "[HRESULT=a"
+18 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+18 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+18 ->  0 "\x10"; # e.g. "[HRESULT=a"
+18 ->  0 "\x11"; # e.g. "[HRESULT=a"
+18 ->  0 "\x12"; # e.g. "[HRESULT=a"
+18 ->  0 "\x13"; # e.g. "[HRESULT=a"
+18 ->  0 "\x14"; # e.g. "[HRESULT=a"
+18 ->  0 "\x15"; # e.g. "[HRESULT=a"
+18 ->  0 "\x16"; # e.g. "[HRESULT=a"
+18 ->  0 "\x17"; # e.g. "[HRESULT=a"
+18 ->  0 "\x18"; # e.g. "[HRESULT=a"
+18 ->  0 "\x19"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+18 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+18 ->  0 " "; # e.g. "[HRESULT=a"
+18 ->  0 "!"; # e.g. "[HRESULT=a"
+18 ->  0 "\""; # e.g. "[HRESULT=a"
+18 ->  0 "#"; # e.g. "[HRESULT=a"
+18 ->  0 "$"; # e.g. "[HRESULT=a"
+18 ->  0 "%"; # e.g. "[HRESULT=a"
+18 ->  0 "&"; # e.g. "[HRESULT=a"
+18 ->  0 "'"; # e.g. "[HRESULT=a"
+18 ->  0 "("; # e.g. "[HRESULT=a"
+18 ->  0 ")"; # e.g. "[HRESULT=a"
+18 ->  0 "*"; # e.g. "[HRESULT=a"
+18 ->  0 "+"; # e.g. "[HRESULT=a"
+18 ->  0 ","; # e.g. "[HRESULT=a"
+18 ->  0 "-"; # e.g. "[HRESULT=a"
+18 ->  0 "."; # e.g. "[HRESULT=a"
+18 ->  0 "/"; # e.g. "[HRESULT=a"
+18 ->  0 "0"; # e.g. "[HRESULT=a"
+18 ->  0 "1"; # e.g. "[HRESULT=a"
+18 ->  0 "2"; # e.g. "[HRESULT=a"
+18 ->  0 "3"; # e.g. "[HRESULT=a"
+18 ->  0 "4"; # e.g. "[HRESULT=a"
+18 ->  0 "5"; # e.g. "[HRESULT=a"
+18 ->  0 "6"; # e.g. "[HRESULT=a"
+18 ->  0 "7"; # e.g. "[HRESULT=a"
+18 ->  0 "8"; # e.g. "[HRESULT=a"
+18 ->  0 "9"; # e.g. "[HRESULT=a"
+18 ->  0 ":"; # e.g. "[HRESULT=a"
+18 ->  0 ";"; # e.g. "[HRESULT=a"
+18 ->  0 "<"; # e.g. "[HRESULT=a"
+18 ->  0 "="; # e.g. "[HRESULT=a"
+18 ->  0 ">"; # e.g. "[HRESULT=a"
+18 ->  0 "?"; # e.g. "[HRESULT=a"
+18 ->  0 "@"; # e.g. "[HRESULT=a"
+18 ->  0 "A"; # e.g. "[HRESULT=a"
+18 ->  0 "B"; # e.g. "[HRESULT=a"
+18 ->  0 "C"; # e.g. "[HRESULT=a"
+18 ->  0 "D"; # e.g. "[HRESULT=a"
+18 ->  0 "E"; # e.g. "[HRESULT=a"
+18 ->  0 "F"; # e.g. "[HRESULT=a"
+18 ->  0 "G"; # e.g. "[HRESULT=a"
+18 ->  0 "H"; # e.g. "[HRESULT=a"
+18 ->  0 "I"; # e.g. "[HRESULT=a"
+18 ->  0 "J"; # e.g. "[HRESULT=a"
+18 ->  0 "K"; # e.g. "[HRESULT=a"
+18 ->  0 "L"; # e.g. "[HRESULT=a"
+18 ->  0 "M"; # e.g. "[HRESULT=a"
+18 ->  0 "N"; # e.g. "[HRESULT=a"
+18 ->  0 "O"; # e.g. "[HRESULT=a"
+18 ->  0 "P"; # e.g. "[HRESULT=a"
+18 ->  0 "Q"; # e.g. "[HRESULT=a"
+18 ->  0 "R"; # e.g. "[HRESULT=a"
+18 -> 17 "S"; # e.g. "[HRESULT=[HRES"
+18 ->  0 "T"; # e.g. "[HRESULT=a"
+18 ->  0 "U"; # e.g. "[HRESULT=a"
+18 ->  0 "V"; # e.g. "[HRESULT=a"
+18 ->  0 "W"; # e.g. "[HRESULT=a"
+18 ->  0 "X"; # e.g. "[HRESULT=a"
+18 ->  0 "Y"; # e.g. "[HRESULT=a"
+18 ->  0 "Z"; # e.g. "[HRESULT=a"
+18 -> 14 "["; # e.g. "[HRESULT=["
+18 -> 10 "\\"; # e.g. "[HRESULT=\\"
+18 ->  0 "]"; # e.g. "[HRESULT=a"
+18 ->  0 "^"; # e.g. "[HRESULT=a"
+18 ->  0 "_"; # e.g. "[HRESULT=a"
+18 ->  0 "`"; # e.g. "[HRESULT=a"
+18 ->  0 "a"; # e.g. "[HRESULT=a"
+18 ->  0 "b"; # e.g. "[HRESULT=a"
+18 ->  0 "c"; # e.g. "[HRESULT=a"
+18 ->  0 "d"; # e.g. "[HRESULT=a"
+18 ->  0 "e"; # e.g. "[HRESULT=a"
+18 ->  0 "f"; # e.g. "[HRESULT=a"
+18 ->  0 "g"; # e.g. "[HRESULT=a"
+18 ->  0 "h"; # e.g. "[HRESULT=a"
+18 ->  0 "i"; # e.g. "[HRESULT=a"
+18 ->  0 "j"; # e.g. "[HRESULT=a"
+18 ->  0 "k"; # e.g. "[HRESULT=a"
+18 ->  0 "l"; # e.g. "[HRESULT=a"
+18 ->  0 "m"; # e.g. "[HRESULT=a"
+18 ->  0 "n"; # e.g. "[HRESULT=a"
+18 ->  0 "o"; # e.g. "[HRESULT=a"
+18 ->  0 "p"; # e.g. "[HRESULT=a"
+18 ->  0 "q"; # e.g. "[HRESULT=a"
+18 ->  0 "r"; # e.g. "[HRESULT=a"
+18 ->  0 "s"; # e.g. "[HRESULT=a"
+18 ->  0 "t"; # e.g. "[HRESULT=a"
+18 ->  0 "u"; # e.g. "[HRESULT=a"
+18 ->  0 "v"; # e.g. "[HRESULT=a"
+18 ->  0 "w"; # e.g. "[HRESULT=a"
+18 ->  0 "x"; # e.g. "[HRESULT=a"
+18 ->  0 "y"; # e.g. "[HRESULT=a"
+18 ->  0 "z"; # e.g. "[HRESULT=a"
+18 ->  0 "{"; # e.g. "[HRESULT=a"
+18 ->  0 "|"; # e.g. "[HRESULT=a"
+18 ->  0 "}"; # e.g. "[HRESULT=a"
+18 ->  0 "~"; # e.g. "[HRESULT=a"
+18 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+18 ->  0 "\x80"; # e.g. "[HRESULT=a"
+18 ->  0 "\x81"; # e.g. "[HRESULT=a"
+18 ->  0 "\x82"; # e.g. "[HRESULT=a"
+18 ->  0 "\x83"; # e.g. "[HRESULT=a"
+18 ->  0 "\x84"; # e.g. "[HRESULT=a"
+18 ->  0 "\x85"; # e.g. "[HRESULT=a"
+18 ->  0 "\x86"; # e.g. "[HRESULT=a"
+18 ->  0 "\x87"; # e.g. "[HRESULT=a"
+18 ->  0 "\x88"; # e.g. "[HRESULT=a"
+18 ->  0 "\x89"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+18 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+18 ->  0 "\x90"; # e.g. "[HRESULT=a"
+18 ->  0 "\x91"; # e.g. "[HRESULT=a"
+18 ->  0 "\x92"; # e.g. "[HRESULT=a"
+18 ->  0 "\x93"; # e.g. "[HRESULT=a"
+18 ->  0 "\x94"; # e.g. "[HRESULT=a"
+18 ->  0 "\x95"; # e.g. "[HRESULT=a"
+18 ->  0 "\x96"; # e.g. "[HRESULT=a"
+18 ->  0 "\x97"; # e.g. "[HRESULT=a"
+18 ->  0 "\x98"; # e.g. "[HRESULT=a"
+18 ->  0 "\x99"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+18 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+18 ->  0 "\xab"; # e.g. "[HRESULT=a"
+18 ->  0 "\xac"; # e.g. "[HRESULT=a"
+18 ->  0 "\xad"; # e.g. "[HRESULT=a"
+18 ->  0 "\xae"; # e.g. "[HRESULT=a"
+18 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xba"; # e.g. "[HRESULT=a"
+18 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+18 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+18 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+18 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+18 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xca"; # e.g. "[HRESULT=a"
+18 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+18 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+18 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+18 ->  0 "\xce"; # e.g. "[HRESULT=a"
+18 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xda"; # e.g. "[HRESULT=a"
+18 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+18 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+18 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+18 ->  0 "\xde"; # e.g. "[HRESULT=a"
+18 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xea"; # e.g. "[HRESULT=a"
+18 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+18 ->  0 "\xec"; # e.g. "[HRESULT=a"
+18 ->  0 "\xed"; # e.g. "[HRESULT=a"
+18 ->  0 "\xee"; # e.g. "[HRESULT=a"
+18 ->  0 "\xef"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+18 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+18 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+18 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+18 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+18 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+18 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+18 ->  0 "\xff"; # e.g. "[HRESULT=a"
+19 ->  0 "\x00"; # e.g. "[HRESULT=a"
+19 ->  0 "\x01"; # e.g. "[HRESULT=a"
+19 ->  0 "\x02"; # e.g. "[HRESULT=a"
+19 ->  0 "\x03"; # e.g. "[HRESULT=a"
+19 ->  0 "\x04"; # e.g. "[HRESULT=a"
+19 ->  0 "\x05"; # e.g. "[HRESULT=a"
+19 ->  0 "\x06"; # e.g. "[HRESULT=a"
+19 ->  0 "\x07"; # e.g. "[HRESULT=a"
+19 ->  0 "\x08"; # e.g. "[HRESULT=a"
+19 ->  0 "\t"; # e.g. "[HRESULT=a"
+19 -> 12 "\n"; # start
+19 ->  0 "\v"; # e.g. "[HRESULT=a"
+19 ->  0 "\f"; # e.g. "[HRESULT=a"
+19 ->  0 "\r"; # e.g. "[HRESULT=a"
+19 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+19 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+19 ->  0 "\x10"; # e.g. "[HRESULT=a"
+19 ->  0 "\x11"; # e.g. "[HRESULT=a"
+19 ->  0 "\x12"; # e.g. "[HRESULT=a"
+19 ->  0 "\x13"; # e.g. "[HRESULT=a"
+19 ->  0 "\x14"; # e.g. "[HRESULT=a"
+19 ->  0 "\x15"; # e.g. "[HRESULT=a"
+19 ->  0 "\x16"; # e.g. "[HRESULT=a"
+19 ->  0 "\x17"; # e.g. "[HRESULT=a"
+19 ->  0 "\x18"; # e.g. "[HRESULT=a"
+19 ->  0 "\x19"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+19 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+19 ->  0 " "; # e.g. "[HRESULT=a"
+19 ->  0 "!"; # e.g. "[HRESULT=a"
+19 ->  0 "\""; # e.g. "[HRESULT=a"
+19 ->  0 "#"; # e.g. "[HRESULT=a"
+19 ->  0 "$"; # e.g. "[HRESULT=a"
+19 ->  0 "%"; # e.g. "[HRESULT=a"
+19 ->  0 "&"; # e.g. "[HRESULT=a"
+19 ->  0 "'"; # e.g. "[HRESULT=a"
+19 ->  0 "("; # e.g. "[HRESULT=a"
+19 ->  0 ")"; # e.g. "[HRESULT=a"
+19 ->  0 "*"; # e.g. "[HRESULT=a"
+19 ->  0 "+"; # e.g. "[HRESULT=a"
+19 ->  0 ","; # e.g. "[HRESULT=a"
+19 ->  0 "-"; # e.g. "[HRESULT=a"
+19 ->  0 "."; # e.g. "[HRESULT=a"
+19 ->  0 "/"; # e.g. "[HRESULT=a"
+19 ->  0 "0"; # e.g. "[HRESULT=a"
+19 ->  0 "1"; # e.g. "[HRESULT=a"
+19 ->  0 "2"; # e.g. "[HRESULT=a"
+19 ->  0 "3"; # e.g. "[HRESULT=a"
+19 ->  0 "4"; # e.g. "[HRESULT=a"
+19 ->  0 "5"; # e.g. "[HRESULT=a"
+19 ->  0 "6"; # e.g. "[HRESULT=a"
+19 ->  0 "7"; # e.g. "[HRESULT=a"
+19 ->  0 "8"; # e.g. "[HRESULT=a"
+19 ->  0 "9"; # e.g. "[HRESULT=a"
+19 ->  0 ":"; # e.g. "[HRESULT=a"
+19 ->  0 ";"; # e.g. "[HRESULT=a"
+19 ->  0 "<"; # e.g. "[HRESULT=a"
+19 ->  0 "="; # e.g. "[HRESULT=a"
+19 ->  0 ">"; # e.g. "[HRESULT=a"
+19 ->  0 "?"; # e.g. "[HRESULT=a"
+19 ->  0 "@"; # e.g. "[HRESULT=a"
+19 ->  0 "A"; # e.g. "[HRESULT=a"
+19 ->  0 "B"; # e.g. "[HRESULT=a"
+19 ->  0 "C"; # e.g. "[HRESULT=a"
+19 ->  0 "D"; # e.g. "[HRESULT=a"
+19 -> 18 "E"; # e.g. "[HRESULT=[HRE"
+19 ->  0 "F"; # e.g. "[HRESULT=a"
+19 ->  0 "G"; # e.g. "[HRESULT=a"
+19 ->  0 "H"; # e.g. "[HRESULT=a"
+19 ->  0 "I"; # e.g. "[HRESULT=a"
+19 ->  0 "J"; # e.g. "[HRESULT=a"
+19 ->  0 "K"; # e.g. "[HRESULT=a"
+19 ->  0 "L"; # e.g. "[HRESULT=a"
+19 ->  0 "M"; # e.g. "[HRESULT=a"
+19 ->  0 "N"; # e.g. "[HRESULT=a"
+19 ->  0 "O"; # e.g. "[HRESULT=a"
+19 ->  0 "P"; # e.g. "[HRESULT=a"
+19 ->  0 "Q"; # e.g. "[HRESULT=a"
+19 ->  0 "R"; # e.g. "[HRESULT=a"
+19 ->  0 "S"; # e.g. "[HRESULT=a"
+19 ->  0 "T"; # e.g. "[HRESULT=a"
+19 ->  0 "U"; # e.g. "[HRESULT=a"
+19 ->  0 "V"; # e.g. "[HRESULT=a"
+19 ->  0 "W"; # e.g. "[HRESULT=a"
+19 ->  0 "X"; # e.g. "[HRESULT=a"
+19 ->  0 "Y"; # e.g. "[HRESULT=a"
+19 ->  0 "Z"; # e.g. "[HRESULT=a"
+19 -> 14 "["; # e.g. "[HRESULT=["
+19 -> 10 "\\"; # e.g. "[HRESULT=\\"
+19 ->  0 "]"; # e.g. "[HRESULT=a"
+19 ->  0 "^"; # e.g. "[HRESULT=a"
+19 ->  0 "_"; # e.g. "[HRESULT=a"
+19 ->  0 "`"; # e.g. "[HRESULT=a"
+19 ->  0 "a"; # e.g. "[HRESULT=a"
+19 ->  0 "b"; # e.g. "[HRESULT=a"
+19 ->  0 "c"; # e.g. "[HRESULT=a"
+19 ->  0 "d"; # e.g. "[HRESULT=a"
+19 ->  0 "e"; # e.g. "[HRESULT=a"
+19 ->  0 "f"; # e.g. "[HRESULT=a"
+19 ->  0 "g"; # e.g. "[HRESULT=a"
+19 ->  0 "h"; # e.g. "[HRESULT=a"
+19 ->  0 "i"; # e.g. "[HRESULT=a"
+19 ->  0 "j"; # e.g. "[HRESULT=a"
+19 ->  0 "k"; # e.g. "[HRESULT=a"
+19 ->  0 "l"; # e.g. "[HRESULT=a"
+19 ->  0 "m"; # e.g. "[HRESULT=a"
+19 ->  0 "n"; # e.g. "[HRESULT=a"
+19 ->  0 "o"; # e.g. "[HRESULT=a"
+19 ->  0 "p"; # e.g. "[HRESULT=a"
+19 ->  0 "q"; # e.g. "[HRESULT=a"
+19 ->  0 "r"; # e.g. "[HRESULT=a"
+19 ->  0 "s"; # e.g. "[HRESULT=a"
+19 ->  0 "t"; # e.g. "[HRESULT=a"
+19 ->  0 "u"; # e.g. "[HRESULT=a"
+19 ->  0 "v"; # e.g. "[HRESULT=a"
+19 ->  0 "w"; # e.g. "[HRESULT=a"
+19 ->  0 "x"; # e.g. "[HRESULT=a"
+19 ->  0 "y"; # e.g. "[HRESULT=a"
+19 ->  0 "z"; # e.g. "[HRESULT=a"
+19 ->  0 "{"; # e.g. "[HRESULT=a"
+19 ->  0 "|"; # e.g. "[HRESULT=a"
+19 ->  0 "}"; # e.g. "[HRESULT=a"
+19 ->  0 "~"; # e.g. "[HRESULT=a"
+19 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+19 ->  0 "\x80"; # e.g. "[HRESULT=a"
+19 ->  0 "\x81"; # e.g. "[HRESULT=a"
+19 ->  0 "\x82"; # e.g. "[HRESULT=a"
+19 ->  0 "\x83"; # e.g. "[HRESULT=a"
+19 ->  0 "\x84"; # e.g. "[HRESULT=a"
+19 ->  0 "\x85"; # e.g. "[HRESULT=a"
+19 ->  0 "\x86"; # e.g. "[HRESULT=a"
+19 ->  0 "\x87"; # e.g. "[HRESULT=a"
+19 ->  0 "\x88"; # e.g. "[HRESULT=a"
+19 ->  0 "\x89"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+19 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+19 ->  0 "\x90"; # e.g. "[HRESULT=a"
+19 ->  0 "\x91"; # e.g. "[HRESULT=a"
+19 ->  0 "\x92"; # e.g. "[HRESULT=a"
+19 ->  0 "\x93"; # e.g. "[HRESULT=a"
+19 ->  0 "\x94"; # e.g. "[HRESULT=a"
+19 ->  0 "\x95"; # e.g. "[HRESULT=a"
+19 ->  0 "\x96"; # e.g. "[HRESULT=a"
+19 ->  0 "\x97"; # e.g. "[HRESULT=a"
+19 ->  0 "\x98"; # e.g. "[HRESULT=a"
+19 ->  0 "\x99"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+19 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+19 ->  0 "\xab"; # e.g. "[HRESULT=a"
+19 ->  0 "\xac"; # e.g. "[HRESULT=a"
+19 ->  0 "\xad"; # e.g. "[HRESULT=a"
+19 ->  0 "\xae"; # e.g. "[HRESULT=a"
+19 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xba"; # e.g. "[HRESULT=a"
+19 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+19 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+19 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+19 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+19 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xca"; # e.g. "[HRESULT=a"
+19 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+19 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+19 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+19 ->  0 "\xce"; # e.g. "[HRESULT=a"
+19 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xda"; # e.g. "[HRESULT=a"
+19 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+19 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+19 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+19 ->  0 "\xde"; # e.g. "[HRESULT=a"
+19 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xea"; # e.g. "[HRESULT=a"
+19 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+19 ->  0 "\xec"; # e.g. "[HRESULT=a"
+19 ->  0 "\xed"; # e.g. "[HRESULT=a"
+19 ->  0 "\xee"; # e.g. "[HRESULT=a"
+19 ->  0 "\xef"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+19 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+19 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+19 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+19 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+19 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+19 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+19 ->  0 "\xff"; # e.g. "[HRESULT=a"
+20 ->  0 "\x00"; # e.g. "[HRESULT=a"
+20 ->  0 "\x01"; # e.g. "[HRESULT=a"
+20 ->  0 "\x02"; # e.g. "[HRESULT=a"
+20 ->  0 "\x03"; # e.g. "[HRESULT=a"
+20 ->  0 "\x04"; # e.g. "[HRESULT=a"
+20 ->  0 "\x05"; # e.g. "[HRESULT=a"
+20 ->  0 "\x06"; # e.g. "[HRESULT=a"
+20 ->  0 "\x07"; # e.g. "[HRESULT=a"
+20 ->  0 "\x08"; # e.g. "[HRESULT=a"
+20 ->  0 "\t"; # e.g. "[HRESULT=a"
+20 -> 12 "\n"; # start
+20 ->  0 "\v"; # e.g. "[HRESULT=a"
+20 ->  0 "\f"; # e.g. "[HRESULT=a"
+20 ->  0 "\r"; # e.g. "[HRESULT=a"
+20 ->  0 "\x0e"; # e.g. "[HRESULT=a"
+20 ->  0 "\x0f"; # e.g. "[HRESULT=a"
+20 ->  0 "\x10"; # e.g. "[HRESULT=a"
+20 ->  0 "\x11"; # e.g. "[HRESULT=a"
+20 ->  0 "\x12"; # e.g. "[HRESULT=a"
+20 ->  0 "\x13"; # e.g. "[HRESULT=a"
+20 ->  0 "\x14"; # e.g. "[HRESULT=a"
+20 ->  0 "\x15"; # e.g. "[HRESULT=a"
+20 ->  0 "\x16"; # e.g. "[HRESULT=a"
+20 ->  0 "\x17"; # e.g. "[HRESULT=a"
+20 ->  0 "\x18"; # e.g. "[HRESULT=a"
+20 ->  0 "\x19"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1a"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1b"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1c"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1d"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1e"; # e.g. "[HRESULT=a"
+20 ->  0 "\x1f"; # e.g. "[HRESULT=a"
+20 ->  0 " "; # e.g. "[HRESULT=a"
+20 ->  0 "!"; # e.g. "[HRESULT=a"
+20 ->  0 "\""; # e.g. "[HRESULT=a"
+20 ->  0 "#"; # e.g. "[HRESULT=a"
+20 ->  0 "$"; # e.g. "[HRESULT=a"
+20 ->  0 "%"; # e.g. "[HRESULT=a"
+20 ->  0 "&"; # e.g. "[HRESULT=a"
+20 ->  0 "'"; # e.g. "[HRESULT=a"
+20 ->  0 "("; # e.g. "[HRESULT=a"
+20 ->  0 ")"; # e.g. "[HRESULT=a"
+20 ->  0 "*"; # e.g. "[HRESULT=a"
+20 ->  0 "+"; # e.g. "[HRESULT=a"
+20 ->  0 ","; # e.g. "[HRESULT=a"
+20 ->  0 "-"; # e.g. "[HRESULT=a"
+20 ->  0 "."; # e.g. "[HRESULT=a"
+20 ->  0 "/"; # e.g. "[HRESULT=a"
+20 ->  0 "0"; # e.g. "[HRESULT=a"
+20 ->  0 "1"; # e.g. "[HRESULT=a"
+20 ->  0 "2"; # e.g. "[HRESULT=a"
+20 ->  0 "3"; # e.g. "[HRESULT=a"
+20 ->  0 "4"; # e.g. "[HRESULT=a"
+20 ->  0 "5"; # e.g. "[HRESULT=a"
+20 ->  0 "6"; # e.g. "[HRESULT=a"
+20 ->  0 "7"; # e.g. "[HRESULT=a"
+20 ->  0 "8"; # e.g. "[HRESULT=a"
+20 ->  0 "9"; # e.g. "[HRESULT=a"
+20 ->  0 ":"; # e.g. "[HRESULT=a"
+20 ->  0 ";"; # e.g. "[HRESULT=a"
+20 ->  0 "<"; # e.g. "[HRESULT=a"
+20 ->  0 "="; # e.g. "[HRESULT=a"
+20 ->  0 ">"; # e.g. "[HRESULT=a"
+20 ->  0 "?"; # e.g. "[HRESULT=a"
+20 ->  0 "@"; # e.g. "[HRESULT=a"
+20 ->  0 "A"; # e.g. "[HRESULT=a"
+20 ->  0 "B"; # e.g. "[HRESULT=a"
+20 ->  0 "C"; # e.g. "[HRESULT=a"
+20 ->  0 "D"; # e.g. "[HRESULT=a"
+20 ->  0 "E"; # e.g. "[HRESULT=a"
+20 ->  0 "F"; # e.g. "[HRESULT=a"
+20 ->  0 "G"; # e.g. "[HRESULT=a"
+20 ->  0 "H"; # e.g. "[HRESULT=a"
+20 ->  0 "I"; # e.g. "[HRESULT=a"
+20 ->  0 "J"; # e.g. "[HRESULT=a"
+20 ->  0 "K"; # e.g. "[HRESULT=a"
+20 ->  0 "L"; # e.g. "[HRESULT=a"
+20 ->  0 "M"; # e.g. "[HRESULT=a"
+20 ->  0 "N"; # e.g. "[HRESULT=a"
+20 ->  0 "O"; # e.g. "[HRESULT=a"
+20 ->  0 "P"; # e.g. "[HRESULT=a"
+20 ->  0 "Q"; # e.g. "[HRESULT=a"
+20 -> 19 "R"; # e.g. "[HRESULT=[HR"
+20 ->  0 "S"; # e.g. "[HRESULT=a"
+20 ->  0 "T"; # e.g. "[HRESULT=a"
+20 ->  0 "U"; # e.g. "[HRESULT=a"
+20 ->  0 "V"; # e.g. "[HRESULT=a"
+20 ->  0 "W"; # e.g. "[HRESULT=a"
+20 ->  0 "X"; # e.g. "[HRESULT=a"
+20 ->  0 "Y"; # e.g. "[HRESULT=a"
+20 ->  0 "Z"; # e.g. "[HRESULT=a"
+20 -> 14 "["; # e.g. "[HRESULT=["
+20 -> 10 "\\"; # e.g. "[HRESULT=\\"
+20 ->  0 "]"; # e.g. "[HRESULT=a"
+20 ->  0 "^"; # e.g. "[HRESULT=a"
+20 ->  0 "_"; # e.g. "[HRESULT=a"
+20 ->  0 "`"; # e.g. "[HRESULT=a"
+20 ->  0 "a"; # e.g. "[HRESULT=a"
+20 ->  0 "b"; # e.g. "[HRESULT=a"
+20 ->  0 "c"; # e.g. "[HRESULT=a"
+20 ->  0 "d"; # e.g. "[HRESULT=a"
+20 ->  0 "e"; # e.g. "[HRESULT=a"
+20 ->  0 "f"; # e.g. "[HRESULT=a"
+20 ->  0 "g"; # e.g. "[HRESULT=a"
+20 ->  0 "h"; # e.g. "[HRESULT=a"
+20 ->  0 "i"; # e.g. "[HRESULT=a"
+20 ->  0 "j"; # e.g. "[HRESULT=a"
+20 ->  0 "k"; # e.g. "[HRESULT=a"
+20 ->  0 "l"; # e.g. "[HRESULT=a"
+20 ->  0 "m"; # e.g. "[HRESULT=a"
+20 ->  0 "n"; # e.g. "[HRESULT=a"
+20 ->  0 "o"; # e.g. "[HRESULT=a"
+20 ->  0 "p"; # e.g. "[HRESULT=a"
+20 ->  0 "q"; # e.g. "[HRESULT=a"
+20 ->  0 "r"; # e.g. "[HRESULT=a"
+20 ->  0 "s"; # e.g. "[HRESULT=a"
+20 ->  0 "t"; # e.g. "[HRESULT=a"
+20 ->  0 "u"; # e.g. "[HRESULT=a"
+20 ->  0 "v"; # e.g. "[HRESULT=a"
+20 ->  0 "w"; # e.g. "[HRESULT=a"
+20 ->  0 "x"; # e.g. "[HRESULT=a"
+20 ->  0 "y"; # e.g. "[HRESULT=a"
+20 ->  0 "z"; # e.g. "[HRESULT=a"
+20 ->  0 "{"; # e.g. "[HRESULT=a"
+20 ->  0 "|"; # e.g. "[HRESULT=a"
+20 ->  0 "}"; # e.g. "[HRESULT=a"
+20 ->  0 "~"; # e.g. "[HRESULT=a"
+20 ->  0 "\x7f"; # e.g. "[HRESULT=a"
+20 ->  0 "\x80"; # e.g. "[HRESULT=a"
+20 ->  0 "\x81"; # e.g. "[HRESULT=a"
+20 ->  0 "\x82"; # e.g. "[HRESULT=a"
+20 ->  0 "\x83"; # e.g. "[HRESULT=a"
+20 ->  0 "\x84"; # e.g. "[HRESULT=a"
+20 ->  0 "\x85"; # e.g. "[HRESULT=a"
+20 ->  0 "\x86"; # e.g. "[HRESULT=a"
+20 ->  0 "\x87"; # e.g. "[HRESULT=a"
+20 ->  0 "\x88"; # e.g. "[HRESULT=a"
+20 ->  0 "\x89"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8a"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8b"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8c"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8d"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8e"; # e.g. "[HRESULT=a"
+20 ->  0 "\x8f"; # e.g. "[HRESULT=a"
+20 ->  0 "\x90"; # e.g. "[HRESULT=a"
+20 ->  0 "\x91"; # e.g. "[HRESULT=a"
+20 ->  0 "\x92"; # e.g. "[HRESULT=a"
+20 ->  0 "\x93"; # e.g. "[HRESULT=a"
+20 ->  0 "\x94"; # e.g. "[HRESULT=a"
+20 ->  0 "\x95"; # e.g. "[HRESULT=a"
+20 ->  0 "\x96"; # e.g. "[HRESULT=a"
+20 ->  0 "\x97"; # e.g. "[HRESULT=a"
+20 ->  0 "\x98"; # e.g. "[HRESULT=a"
+20 ->  0 "\x99"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9a"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9b"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9c"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9d"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9e"; # e.g. "[HRESULT=a"
+20 ->  0 "\x9f"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xa9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xaa"; # e.g. "[HRESULT=a"
+20 ->  0 "\xab"; # e.g. "[HRESULT=a"
+20 ->  0 "\xac"; # e.g. "[HRESULT=a"
+20 ->  0 "\xad"; # e.g. "[HRESULT=a"
+20 ->  0 "\xae"; # e.g. "[HRESULT=a"
+20 ->  0 "\xaf"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xb9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xba"; # e.g. "[HRESULT=a"
+20 ->  0 "\xbb"; # e.g. "[HRESULT=a"
+20 ->  0 "\xbc"; # e.g. "[HRESULT=a"
+20 ->  0 "\xbd"; # e.g. "[HRESULT=a"
+20 ->  0 "\xbe"; # e.g. "[HRESULT=a"
+20 ->  0 "\xbf"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xc9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xca"; # e.g. "[HRESULT=a"
+20 ->  0 "\xcb"; # e.g. "[HRESULT=a"
+20 ->  0 "\xcc"; # e.g. "[HRESULT=a"
+20 ->  0 "\xcd"; # e.g. "[HRESULT=a"
+20 ->  0 "\xce"; # e.g. "[HRESULT=a"
+20 ->  0 "\xcf"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xd9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xda"; # e.g. "[HRESULT=a"
+20 ->  0 "\xdb"; # e.g. "[HRESULT=a"
+20 ->  0 "\xdc"; # e.g. "[HRESULT=a"
+20 ->  0 "\xdd"; # e.g. "[HRESULT=a"
+20 ->  0 "\xde"; # e.g. "[HRESULT=a"
+20 ->  0 "\xdf"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xe9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xea"; # e.g. "[HRESULT=a"
+20 ->  0 "\xeb"; # e.g. "[HRESULT=a"
+20 ->  0 "\xec"; # e.g. "[HRESULT=a"
+20 ->  0 "\xed"; # e.g. "[HRESULT=a"
+20 ->  0 "\xee"; # e.g. "[HRESULT=a"
+20 ->  0 "\xef"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf0"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf1"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf2"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf3"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf4"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf5"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf6"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf7"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf8"; # e.g. "[HRESULT=a"
+20 ->  0 "\xf9"; # e.g. "[HRESULT=a"
+20 ->  0 "\xfa"; # e.g. "[HRESULT=a"
+20 ->  0 "\xfb"; # e.g. "[HRESULT=a"
+20 ->  0 "\xfc"; # e.g. "[HRESULT=a"
+20 ->  0 "\xfd"; # e.g. "[HRESULT=a"
+20 ->  0 "\xfe"; # e.g. "[HRESULT=a"
+20 ->  0 "\xff"; # e.g. "[HRESULT=a"
+
+start: 12;
+end:   11;
